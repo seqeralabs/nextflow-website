@@ -1,6 +1,6 @@
-baseURL = "/"
+baseURL = "https://www.nextflow.io"
 languageCode = "en-us"
-title = "Hugo Advance"
+title = "Nextflow"
 theme = "hugo-advance"
 paginate = 3
 
