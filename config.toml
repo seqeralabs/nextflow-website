@@ -37,9 +37,9 @@ paginate = 3
         show_services_section = true
         services_count = 6
         show_splash_section_one = true
-        splash_one_image = "images/undraw_post_online_dkuk.svg"
-        splash_one_heading = "We Help Business Grow"
-        splash_one_paragraph = "Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit."
+        splash_one_image = "images/home.png"
+        splash_one_heading = "Create, deploy & share"
+        splash_one_paragraph = "Nextflow enables you to quickly create, deploy and share computational workflows. As an open-source tool, it is built around the central philosophy of zero config,  push-the-button deployments in any environment. With a functional approach, data drives your application’s parallelisation and reactive programming ensures maximum scalability. With out-of-the-box support for container engines, the most popular batch schedulers and cloud platforms, Nextflow achieves unrivalled portability."
         splash_one_link_url = "work"
         splash_one_link_text = "Our Work"
         show_partners = true
@@ -54,7 +54,7 @@ paginate = 3
         splash_one_background_image = "images/kaleidico-754543-unsplash.jpg"
         splash_one_heading = "We build great software"
         splash_one_paragraph = "Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit."
-       
+
     [params.contact_cta]
         heading = "Ready to get started?"
         subheading = "Get in touch and get a quote."
@@ -137,4 +137,3 @@ paginate = 3
     tag = "tags"
     category = "categories"
     author = "authors"
-  
