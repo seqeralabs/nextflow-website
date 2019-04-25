@@ -1,8 +1,8 @@
 
 
 {{ if .fullscreen }}
-<div class="hero-image hero-image-fullscreen {{ if .overlay }}hero-image-blend-overlay{{ end}}" style="{{ if .background }}background-image: url('{{ .background | relURL }}');{{ end }}"> 
-	{{/*  {{ if .diagonal }}  
+<div class="hero-image hero-image-fullscreen {{ if .overlay }}hero-image-blend-overlay{{ end}}" style="{{ if .background }}background-image: url('{{ .background | relURL }}');{{ end }}">
+	{{/*  {{ if .diagonal }}
 	<svg class="hero-diagonal" aria-hidden="true" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
 		<polygon fill="{{ if .diagonalfill }}{{.diagonalfill}}{{else}}#fff{{end}}" points="0,10 100, 0 100, 10"/>
 	</svg>
@@ -25,8 +25,8 @@
 	</div>
 </div>
 {{ else }}
-<div class="hero-image hero-image-set-height {{ if .overlay }}hero-image-blend-overlay{{ end}}" style="{{ if .background }}background-image: url('{{ .background | relURL }}'); {{end}}{{ if .height }}height: {{ .height }}px{{end}}"> 
-		{{ if .diagonal }}  
+<div class="hero-image hero-image-set-height {{ if .overlay }}hero-image-blend-overlay{{ end}}" style="{{ if .background }}background-image: url('{{ .background | relURL }}'); {{end}}{{ if .height }}height: {{ .height }}px{{end}}">
+		{{ if .diagonal }}
 		<svg class="hero-diagonal" aria-hidden="true" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
 			<polygon fill="{{ if .diagonalfill }}{{.diagonalfill}}{{else}}#fff{{end}}" points="0,10 100, 0 100, 10"/>
 		</svg>
@@ -39,6 +39,5 @@
 			</div>
 		</div>
 	</div>
-	
+
 {{ end }}
-    

@@ -3,6 +3,7 @@ title: 'Blog'
 date: 2019-02-24
 ---
 
-# The Big Idea
+# The Nextflow Blog
 
-Thoughts and updates from our creative team.
+Updates, thoughts and occasional ramblings from the core team along with guest posts
+discussing all things workflow.
