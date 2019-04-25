@@ -1,0 +1,23 @@
+.section-menu {
+  display: flex;
+  flex-direction: column;
+  @include whitebox();
+  padding: 30px;
+  border: none;
+  border-radius: 3px;
+  @include media-breakpoint-up(lg) {
+    padding: 50px;
+  }
+  ul {
+    list-style: none;
+    li {
+      list-style: none;
+      a {
+        font-size: 1.1rem;
+        &.active {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

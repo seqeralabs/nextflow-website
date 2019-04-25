@@ -1,0 +1,41 @@
+.footer {
+  background: $secondary;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .footer-title {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-family: $font-family-heading;
+    margin: 0;
+    margin-right: 30px;
+  }
+  .footer-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: block;
+      margin-right: 10px;
+      color: #ffffff;
+      &:last-of-type {
+        margin-right: 0;
+      }
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      &.copyright {
+        font-weight: bold;
+        color: #ffffff;
+      }
+    }
+    @include media-breakpoint-up(sm) {
+      li {
+        display: inline-block;
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{{ define "title" }}{{ end}}
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-home{{ end }}
+{{ define "header_classes" }}header-transparent{{ end }}
+
+{{ define "meta_tags" }}
+<meta name="description" content="{{ .Site.Params.homepage_meta_tags.meta_description }}" />
+<meta property="og:title" content="{{ .Site.Params.homepage_meta_tags.meta_og_title }}" />
+<meta property="og:type" content="{{ .Site.Params.homepage_meta_tags.meta_og_type }}" />
+<meta property="og:url" content="{{ .Site.Params.homepage_meta_tags.meta_og_url }}" />
+<meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
+<meta property="og:description" content="{{ .Site.Params.homepage_meta_tags.meta_og_description }}" />
+<meta name="twitter:card" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_card }}" />
+<meta name="twitter:site" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_site }}" />
+<meta name="twitter:creator" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_creator }}" />
+{{ end }}
+
+{{ define "main" }}
+
+<!-- Hero Image Partial-->
+{{ partial "hero-image.html" (dict "background" .Params.heroBackground "fullscreen" .Params.heroFullscreen "height" .Params.heroHeight "heading" .Params.heroHeading "subheading" .Params.heroSubheading "overlay" .Params.heroBackgroundOverlay "diagonal" .Params.heroDiagonal "diagonalfill" .Params.heroDiagonalFill) }}
+
+<!-- Services Section -->
+{{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
+{{ if and (gt (len $services) 0) (.Site.Params.homepage.show_services_section) }}
+<div class="strip strip-grey pb-10 pt-8">
+  <div class="container d-none d-md-block">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h2 class="text-center mb-3">Our Services</h2>
+      </div>
+      {{ range first .Site.Params.homepage.services_count (sort $services ".Params.weight") }}
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        {{ .Render "summary" }}
+      </div>
+      {{ end }}
+      <div class="col-12 text-center">
+        <a class="button button-primary text-center" href="{{ .Site.BaseURL }}services">View All Services</a>
+      </div>
+    </div>
+  </div>
+  <div class="container d-block d-md-none">
+      <div class="row justify-content-start">
+        <div class="col-12">
+          <h2 class="text-center mb-3">Our Services</h2>
+        </div>
+      </div>
+      <div class="slider">
+        {{ range first .Site.Params.homepage.services_count (sort $services ".Params.weight") }}
+          {{ .Render "summary" }}
+        {{ end }}
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+            <a class="button button-primary mt-2" href="{{ .Site.BaseURL }}services">View All Services</a>
+        </div>
+      </div>
+    </div>
+</div>
+{{end}}
+
+<!-- Splash One -->
+{{ if .Site.Params.homepage.show_splash_section_one }}
+<div class="strip strip-white pt-15 splash splash-one">
+  <div class="container">
+    <div class="row">
+      {{ if .Site.Params.homepage.splash_one_image }}
+      <div class="col-12 col-md-7 ">
+        <img class="img-fluid" src="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_one_image }}"/>
+      </div>
+      {{ end }}
+      <div class="col-12 {{ if .Site.Params.homepage.splash_one_image }}col-md-4{{ else }}col-md-12{{ end }}">
+        {{ if .Site.Params.homepage.splash_one_heading }}<h2>{{ .Site.Params.homepage.splash_one_heading }}</h2>{{ end }}
+        {{ if .Site.Params.homepage.splash_one_paragraph }}<p>{{ .Site.Params.homepage.splash_one_paragraph }}</p>{{ end }}
+        {{ if .Site.Params.homepage.splash_one_link_url }}<a class="button d-none d-md-inline-block" href="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_one_link_url }}">{{ .Site.Params.homepage.splash_one_link_text }}</a>{{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<!-- Partners -->
+{{ if and (gt (len .Site.Data.partners) 0) (.Site.Params.homepage.show_partners) }}
+<div class="strip strip-white home-partners">
+  <div class="container pt-5 pt-md-10 pb-10">
+    <div class="row">
+      <div class="col-12">
+        <div class="partners">
+        {{ range .Site.Data.partners }}
+          {{ if .image }}<div class="partner"><img alt="{{ .title }} logo" src="{{ .image }}" /></div> {{ end }}
+        {{end}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<!-- Work Section -->
+{{ $works := where (where .Site.RegularPages "Type" "work") ".Params.featured" true }}
+{{ if and (gt (len $works) 0) (.Site.Params.homepage.show_work_section) }}
+<div class="home-work strip strip-grey">
+  <div class="container pt-10 pb-10">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center mb-3">{{ .Site.Params.homepage.work_section_heading }}</h2>
+      </div>
+    </div>
+    <div class="row justify-content-between">
+      {{ range first .Site.Params.homepage.work_count (sort $works ".Params.weight") }}
+        <div class="col-12 col-md-6 mb-2">
+          {{ .Render "summary" }}
+        </div>
+      {{ end }}
+      {{ if .Site.Params.homepage.show_view_all_work_button }}
+      <div class="col-12 pt-4 text-center">
+        <a class="button button-primary" href="{{ .Site.BaseURL }}work">View All Work</a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<div class="strip strip-secondary">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+    <path fill="#f4f5fb" d="M738,99l262-93V0H0v5.6L738,99z"></path>
+  </svg>   
+</div>
+{{ end }}
+
+{{ define "footer_js" }}
+{{ $slick := resources.Get "js/libs/slick.min.js" }}
+{{ $home := resources.Get "js/pages/home.js" }}
+{{ $homeJS := slice $slick $home | resources.Concat "js/homeBundle.js" }}
+{{ if .Site.IsServer }}
+  <script type="text/javascript" src="{{ ($homeJS | fingerprint).RelPermalink }}"></script>
+  {{ else }}
+  <script type="text/javascript" src="{{ ($homeJS | minify | fingerprint).RelPermalink }}"></script>
+  {{ end }}
+{{ end }}

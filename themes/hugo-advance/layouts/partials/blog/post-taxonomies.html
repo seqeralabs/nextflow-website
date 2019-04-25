@@ -1,0 +1,10 @@
+{{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+  {{ if gt (len $taxonomy) 0 }}
+  <h4>{{ $taxonomyname }}</h4>
+  <ul>
+    {{ range $name, $value := $taxonomy }}
+      <li><a href="{{ printf "/%s/" $taxonomyname | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li>
+    {{ end }}
+  </ul>
+  {{ end }}
+{{ end }}

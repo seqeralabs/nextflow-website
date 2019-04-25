@@ -1,0 +1,44 @@
+.footer-third {
+  background: darken($secondary, 20%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      display: block;
+      color: #fff;
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      span {
+        display: inline-block;
+        height: 40px;
+        padding: 10px 0px 10px 8px;
+        font-weight: bold;
+        color: #fff;
+      }
+    }
+    @include media-breakpoint-up(sm) {
+      li {
+        display: inline-block;
+        margin-left: 10px;
+        &:first-of-type {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .zero {
+    color: #fff;
+    float: right;
+  }
+}

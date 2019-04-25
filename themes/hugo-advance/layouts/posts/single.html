@@ -1,0 +1,22 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-posts-single{{ end }}
+{{ define "header_classes" }}header-transparent{{ end }}
+
+{{ define "main" }}
+
+{{ partial "hero-image.html" (dict "background" .Params.heroBackground "fullscreen" .Params.heroFullscreen "height" .Params.heroHeight "heading" .Params.heroHeading "subheading" .Params.heroSubheading "overlay" .Params.heroBackgroundOverlay "diagonal" .Params.heroDiagonal "diagonalfill" .Params.heroDiagonalFill "content" .) }}
+<div class="strip strip-white">
+  <div class="container pt-4 pt-md-10 pb-4 pb-md-10">
+    <div class="row justify-content-start">
+      <div class="col-12 col-lg-9">
+        <div class="post post-single">
+          {{ partial "blog/post-author" . }}
+          <div class="content">{{.Content}}</div>
+          {{ partial "blog/post-tags" . }}
+          {{ partial "blog/post-categories" . }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

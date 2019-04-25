@@ -1,0 +1,34 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-taxonomy-list{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+<div class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-12"><h1>{{ .Title }}</h1></div>
+    </div>
+  </div>
+</div>
+<div class="container pb-6">
+  <div class="row">
+      <div class="col-12 col-md-8">
+        {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
+        {{ range $paginator.Pages }}
+            {{ .Render "summary" }}
+        {{ end }}
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="sidebar">
+          {{ partial "blog/post-taxonomies" . }}
+        </div>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      {{ partial "paginator" . }}
+    </div>
+  </div>
+</div>
+{{ end }}
+

@@ -1,0 +1,15 @@
+.page-posts-list {
+  .posts-sidebar {
+    @include whitebox();
+    padding: 40px;
+    h4 {
+      text-transform: capitalize;
+    }
+    ul {
+      margin-bottom: 10px;
+      li {
+        text-transform: capitalize;
+      }
+    }
+  }
+}

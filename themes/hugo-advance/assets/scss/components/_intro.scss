@@ -1,0 +1,50 @@
+.intro {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 140px;
+  padding-bottom: 100px;
+  h1 {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    font-family: $font-family-heading;
+    width: 70%;
+    font-weight: 500;
+    @include media-breakpoint-up(sm) {
+      width: 70%;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 3rem;
+      width: 70%;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 3rem;
+      width: 50%;
+    }
+  }
+  p {
+    width: 80%;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    line-height: 1.4;
+    @include media-breakpoint-up(sm) {
+      width: 70%;
+    }
+    @include media-breakpoint-up(md) {
+      width: 70%;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 50%;
+    }
+  }
+}
+
+.intro-small {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.intro-big {
+  padding-top: 180px;
+  padding-bottom: 140px;
+}

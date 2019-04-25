@@ -1,0 +1,72 @@
+.team-summary {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  @include whitebox();
+  padding: 30px;
+  height: 100%;
+  @include media-breakpoint-up(md) {
+    text-align: left;
+  }
+  .team-image {
+    margin-right: 20px;
+    text-align: center;
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 120px;
+    }
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      display: inline-block;
+      @include media-breakpoint-up(md) {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+  .team-block {
+    @include media-breakpoint-up(md) {
+      flex: 1;
+    }
+    .team-meta {
+      h2 {
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
+      .team-name {
+      }
+      .team-jobtitle {
+        font-size: 1.2rem;
+        color: #333;
+      }
+      .team-links {
+        margin-top: 6px;
+        i {
+          font-size: 1.8rem;
+          margin-right: 3px;
+        }
+        a {
+          &:last-of-type {
+            i {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    .team-content {
+      margin-top: 20px;
+      @include media-breakpoint-up(lg) {
+        width: auto;
+      }
+    }
+  }
+}

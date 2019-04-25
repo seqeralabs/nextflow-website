@@ -1,0 +1,13 @@
+<div class="menu-footer-primary">
+  <ul>
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.footer_secondary }}
+    <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
+      <a href="{{.URL}}">
+        {{ .Pre }}
+        <span>{{ .Name }}</span>
+      </a>
+    </li>
+    {{end}}
+  </ul>
+</div>

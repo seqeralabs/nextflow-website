@@ -1,0 +1,14 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-default-single{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+<div class="container pt-10 pb-6">
+    <div class="row justify-content-start">
+        <div class="col-12 col-md-8">
+            <h1>{{ .Title }}</h1>
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ end }}

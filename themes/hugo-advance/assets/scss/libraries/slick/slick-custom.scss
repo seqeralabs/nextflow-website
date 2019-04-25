@@ -1,0 +1,203 @@
+.slider.slick-slider {
+  margin: 0;
+  .slick-list {
+    .slick-track {
+      .slick-slide {
+        margin: 10px;
+        display: flex;
+      }
+    }
+  }
+}
+ul.slick-dots {
+  bottom: 0;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  list-style: none;
+  text-align: center;
+  vertical-align: middle;
+  li {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    button {
+      background: $primary;
+      border-radius: 50%;
+      height: inherit;
+      width: inherit;
+      &:hover {
+        background: lighten($primary, 20%);
+      }
+      &:before {
+        display: none;
+      }
+    }
+    &.slick-active {
+      top: 0;
+      width: 12px;
+      height: 12px;
+      button {
+        background: $secondary;
+        border-radius: 50%;
+        height: inherit;
+        width: inherit;
+        &:hover {
+          background: lighten($secondary, 20%);
+        }
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.slick-prev {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-arrow {
+  top: 50%;
+  height: 26px;
+  width: 14px;
+  margin-top: -13px;
+  position: absolute;
+  font-size: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  background-image: url(https://tarkikromanski.github.io/files/arrow-slider.png);
+  background-repeat: no-repeat;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0px;
+      font-size: 0px;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer;
+      &:hover,
+      &:focus {
+        outline: none;
+        &:before {
+        }
+      }
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: \2022;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    }
+    &.slick-active button:before {
+    }
+  }
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+  &:hover,
+  &:focus {
+    outline: none;
+    background: transparent;
+    color: transparent;
+    &:before {
+      opacity: 0.7;
+    }
+  }
+  &.slick-disabled:before {
+    opacity: 0.2;
+  }
+  &:before {
+    font-size: 20px;
+    line-height: 1;
+    color: $primary;
+    opacity: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.slick-prev {
+  left: -25px;
+  [dir='rtl'] & {
+    left: auto;
+    right: -25px;
+  }
+  &:before {
+    content: '\2190';
+    [dir='rtl'] & {
+      content: '\2192';
+    }
+  }
+}
+
+.slick-next {
+  right: -25px;
+  [dir='rtl'] & {
+    left: -25px;
+    right: auto;
+  }
+  &:before {
+    content: '\2192';
+    [dir='rtl'] & {
+      content: '\2190';
+    }
+  }
+}

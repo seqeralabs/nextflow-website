@@ -1,0 +1,15 @@
+.page-work-list {
+  .grid-sizer {
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 33%;
+    }
+  }
+  .grid-item {
+    float: left;
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 33%;
+    }
+  }
+}

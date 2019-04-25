@@ -1,0 +1,11 @@
+name = "Hugo Advance"
+license = "Pro"
+description = "Advance is a premium Hugo theme"
+homepage = "https://hugo-advance-pro.netlify.com"
+tags = ["responsive","minimal","business","company","bootstrap"]
+features = ["services","work","team","testimonials"]
+min_version = 0.51
+
+[author]
+  name = "Robert Austin"
+  homepage = "https://www.zerostatic.io"

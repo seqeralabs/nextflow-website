@@ -1,0 +1,87 @@
+{{ define "header_css" }}{{ end }} 
+{{ define "body_classes" }}page-contact{{end}}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+<div class="intro intro-big pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>{{ .Title }}</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-5 pb-md-8">
+  <div class="row">
+    <div class="col-12 col-md-8">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+
+<div class="strip strip-grey">
+  <div class="container pt-4 pt-md-10 pb-4 pb-md-10">
+    <div class="row">
+      <div class="col-12">
+        <form name="contact" method="POST" action="success" data-netlify="true">
+          <h2>Enquiry</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Your Name *"
+                  value=""
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Your Email *"
+                  value=""
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="phone"
+                  class="form-control"
+                  placeholder="Your Phone Number *"
+                  value=""
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  class="form-control"
+                  placeholder="Your Message *"
+                  style="width: 100%; height: 150px;"
+                ></textarea>
+              </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="submit"
+                    name="submit"
+                    class="button button-primary"
+                    value="Send Enquiry"
+                  />
+                </div>
+              </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ end }}

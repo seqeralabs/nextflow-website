@@ -1,0 +1,32 @@
+.service-summary {
+  display: flex;
+  flex-direction: column;
+  @include whitebox();
+  padding: 50px;
+  border: none;
+  height: 100%;
+  .service-image {
+    width: 60px;
+    margin-bottom: 10px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .service-title {
+    font-family: $font-family-heading;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+  .service-description {
+    font-size: 1.3rem;
+  }
+  .service-link {
+    flex: 0;
+    margin-top: auto;
+  }
+  a.service-read-more {
+    font-weight: 400;
+    font-family: $font-family-heading;
+  }
+}

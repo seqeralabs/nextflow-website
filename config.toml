@@ -1,0 +1,140 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Hugo Advance"
+theme = "hugo-advance"
+paginate = 3
+
+[params]
+    primary_color = "#1c3ed3"
+    secondary_color = "#6d1cd3"
+    grey_color = "#f4f5fb"
+    font_family_base = "'Lato', Arial, sans-serif, -apple-system"
+    font_family_heading = "'Palanquin Dark', Arial, sans-serif, -apple-system"
+
+    google_analytics_id = ""
+
+    [params.homepage_meta_tags]
+        meta_description = "Advance is a premium, multi-purpose Hugo theme. It has 5 content-types for archetypical SMB and marketing websites. A modern semi-flat visual design with customisable hero images and full-width sections."
+        meta_og_title = "Hugo Advance Theme"
+        meta_og_type = "website"
+        meta_og_url = "https://hugo-advance-pro.netlify.com"
+        meta_og_image = "https://hugo-advance-pro.netlify.com/images/tn.png"
+        meta_og_description = "Advance is a premium, multi-purpose Hugo theme. It has 5 content-types for archetypical SMB and marketing websites. A modern semi-flat visual design with customisable hero images and full-width sections."
+        meta_twitter_card = "summary"
+        meta_twitter_site = "@zerostaticio"
+        meta_twitter_creator = "@zerostaticio"
+
+    [params.global]
+        header_fixed = true
+
+    [params.footer]
+        show_menu_footer_primary = true
+        show_menu_footer_secondary = true
+        show_services_links = true
+        show_work_links = true
+
+    [params.homepage]
+        show_services_section = true
+        services_count = 6
+        show_splash_section_one = true
+        splash_one_image = "images/undraw_post_online_dkuk.svg"
+        splash_one_heading = "We Help Business Grow"
+        splash_one_paragraph = "Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit."
+        splash_one_link_url = "work"
+        splash_one_link_text = "Our Work"
+        show_partners = true
+        show_work_section = true
+        work_section_heading = "Our Work"
+        work_count = 2
+        show_view_all_work_button = true
+
+    [params.services]
+        show_features = true
+        show_splash_one_section = true
+        splash_one_background_image = "images/kaleidico-754543-unsplash.jpg"
+        splash_one_heading = "We build great software"
+        splash_one_paragraph = "Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit."
+       
+    [params.contact_cta]
+        heading = "Ready to get started?"
+        subheading = "Get in touch and get a quote."
+        button_url = "contact"
+        button_text = "Contact us"
+
+# Main Menu
+[[menu.main]]
+	name = "Services"
+	url = "/services/"
+    weight = 1
+
+[[menu.main]]
+	name = "Work"
+	url = "/work/"
+	weight = 2
+
+[[menu.main]]
+    name = "Team"
+    url = "/team/"
+    weight = 3
+
+[[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 4
+
+[[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 5
+
+# Footer Menu Primary
+[[menu.footer_primary]]
+	name = "Home"
+	url = "/"
+    weight = 1
+
+[[menu.footer_primary]]
+	name = "Services"
+	url = "/services/"
+    weight = 2
+
+[[menu.footer_primary]]
+	name = "Work"
+	url = "/work/"
+	weight = 3
+
+[[menu.footer_primary]]
+    name = "Team"
+    url = "/team/"
+    weight = 4
+
+[[menu.footer_primary]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 5
+
+[[menu.footer_primary]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
+
+# Footer Menu Secondary
+[[menu.footer_secondary]]
+    name = "Privacy Policy"
+    url = "/privacy/"
+    weight = 1
+
+[[menu.footer_secondary]]
+    name = "404"
+    url = "/404/"
+    weight = 2
+
+
+[permalinks]
+    post = "/:year/:month/:title/"
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    author = "authors"
+  

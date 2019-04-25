@@ -1,0 +1,31 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  @include whitebox();
+  padding: 30px;
+  border: none;
+  border-radius: 3px;
+  @include media-breakpoint-up(lg) {
+    padding: 40px;
+  }
+  h4 {
+    text-transform: capitalize;
+    margin-bottom: 0;
+  }
+  ul {
+    list-style: none;
+    margin-bottom: 20px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    li {
+      list-style: none;
+      text-transform: capitalize;
+      a {
+        &.active {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

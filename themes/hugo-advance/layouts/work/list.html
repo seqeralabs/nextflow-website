@@ -1,0 +1,32 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-work-list{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+<div class="intro intro-big">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">{{ .Content }}</div>
+    </div>
+  </div>
+</div>
+
+<div class="grid pb-md-10">
+  <div class="grid-sizer"></div>
+  {{ range shuffle .Pages }}
+  <div class="grid-item">{{ .Render "masonry" }}</div>
+  {{ end }}
+</div>
+{{ end }}
+
+{{ define "footer_js" }}
+{{ $masonry := resources.Get "js/libs/masonry.pkgd.min.js" }}
+{{ $imagesLoaded := resources.Get "js/libs/imagesloaded.pkgd.min.js" }}
+{{ $work := resources.Get "js/pages/work.js" }}
+{{ $workJS := slice $masonry $imagesLoaded $work | resources.Concat "js/workBundle.js" }}
+{{ if .Site.IsServer }}
+  <script type="text/javascript" src="{{ ($workJS | fingerprint).RelPermalink }}"></script>
+  {{ else }}
+  <script type="text/javascript" src="{{ ($workJS | minify | fingerprint).RelPermalink }}"></script>
+  {{ end }}
+{{ end }}

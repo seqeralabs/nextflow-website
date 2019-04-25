@@ -1,0 +1,28 @@
+{{ define "header_css" }}{{ end }} 
+{{ define "body_classes" }}page-default-terms{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+<div class="container pt-10 pb-6">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="title-1 black">{{ .Title }}</h1>
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+
+<div class="container pb-6">
+    {{ range $key, $value := .Data.Terms }}
+        <a href="{{ $.Site.BaseURL }}categories/{{ $key }}"><span>{{ $key }}</span> <span>{{ $value.Count }}</span></a>
+    {{ end}}
+    {{ range $key, $value := .Data.Terms }}
+        <h2 id="{{ $key }}">{{ $key }}</h2>
+        <ul>
+            {{ range $value.Pages.ByDate.Reverse }}
+                <li><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a></li>
+            {{ end}}
+        </ul>
+    {{ end}} 
+</div>
+{{ end }}

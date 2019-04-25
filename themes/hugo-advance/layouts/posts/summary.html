@@ -1,0 +1,19 @@
+<div class="post post-summary mb-4">
+    <div class="post-title">
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    </div>
+    <div class="post-meta">
+        {{ partial "blog/post-author" . }}
+        {{ if .Params.authors }}
+         <span class="on">-</span>
+         {{ end }}
+        {{ partial "blog/post-date" . }}
+    </div>
+    <div class="post-description"><p>{{ .Params.description }}</p></div>
+    <div class="post-content">
+        <p>{{ .Summary  }}</p>
+    </div>
+    {{ partial "blog/post-tags" . }}
+    {{ partial "blog/post-categories" . }}
+    <div class="post-link"><a class="post-read-more" href="{{ .Permalink }}" >Read More<i class="fas fa-long-arrow-alt-right ml-1"></i></a></div>
+</div>

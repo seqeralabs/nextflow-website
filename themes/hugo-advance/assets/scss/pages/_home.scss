@@ -1,0 +1,13 @@
+.page-home {
+  .splash {
+    h2 {
+      font-size: 2.6rem;
+      line-height: 1.2;
+      margin-bottom: 30px;
+      margin-top: 20px;
+      @include media-breakpoint-up(md) {
+        margin-top: 0;
+      }
+    }
+  }
+}

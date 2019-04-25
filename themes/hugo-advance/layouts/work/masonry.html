@@ -1,0 +1,11 @@
+<div class="work work-masonry">
+    {{ if .Params.image }}
+    <div class="work-image">
+      <a href="{{ .RelPermalink }}"><img src="{{.Params.image | relURL }}"/></a>
+    </div>
+    {{ end }}
+    <a href="{{ .Permalink }}" class="work-overlay">
+      <h2>{{ .Title }}</h2>
+      {{ .Content | truncate 120 "..." }}
+    </a>
+</div>

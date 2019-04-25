@@ -1,0 +1,77 @@
+// Type Styling for body content
+$heading-color: #222222;
+$paragrah-color: #3f3f3f;
+
+.content {
+  ul,
+  ol {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    list-style: disc;
+    li {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+      margin-left: 20px;
+      color: $paragrah-color;
+    }
+  }
+  a {
+    text-decoration: underline;
+  }
+  p {
+    font-size: 1.1rem;
+    font-family: $font-family-base;
+    color: $paragrah-color;
+  }
+  h1 {
+    font-size: 2.4rem;
+    font-family: $font-family-heading;
+    line-height: 1.4;
+    font-weight: 400;
+    color: $heading-color;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 2rem;
+    font-family: $font-family-base;
+    line-height: 1.2;
+    font-weight: 400;
+    color: $heading-color;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 1.6rem;
+    font-family: $font-family-base;
+    color: $heading-color;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: '\201C''\201D''\2018''\2019';
+  }
+  blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  blockquote p {
+    display: inline;
+  }
+  img {
+    margin: 40px 0 40px 0;
+    max-width: 100%;
+    height: auto;
+    @include media-breakpoint-up(md) {
+      margin: 60px 0 60px 0;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+<div class="footer-second">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-second-menu">
+            <div class="row">
+
+              {{ if .Site.Params.footer.show_menu_footer_primary }}
+                <div class="col-12 col-md-3">
+                  <h3>Site</h3>
+                  {{ partial "menu-footer-primary.html" . }}
+                </div>
+              {{ end }}
+
+              {{ $services := where .Site.RegularPages "Type" "services" }}
+              {{ if and (gt (len $services) 0) (.Site.Params.footer.show_services_links) }}
+              <div class="col-12 col-md-3">
+                <h3>Services</h3>
+                <ul>
+                  {{ range first 4 (sort $services ".Params.ByLastmod") }}
+                      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                  {{ end }}
+                </ul>
+              </div>
+              {{ end }}
+
+              {{ $works := where .Site.RegularPages "Type" "work" }}
+              {{ if and (gt (len $works) 0) (.Site.Params.footer.show_work_links) }}
+              <div class="col-12 col-md-3">
+                <h3>Work</h3>
+                <ul>
+                  {{ range first 4 (sort $works ".Params.ByLastmod") }}
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                  {{ end }}
+                </ul>
+              </div>
+              {{ end }}
+              
+              {{ if .Site.Params.footer.show_menu_footer_secondary }}
+              <div class="col-12 col-md-3">
+                <h3>Support</h3>
+                {{ partial "menu-footer-secondary.html" . }}
+              </div>
+              {{ end }}
+
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

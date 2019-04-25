@@ -1,0 +1,39 @@
+.page-posts-single {
+  .posts-sidebar {
+    @include whitebox();
+    padding: 40px;
+    h4 {
+      text-transform: capitalize;
+    }
+    ul {
+      margin-bottom: 10px;
+      li {
+        text-transform: capitalize;
+      }
+    }
+  }
+  .post-author {
+    display: flex;
+    margin-bottom: 30px;
+    .post-author-avatar {
+      margin-right: 10px;
+      img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+      }
+    }
+    .post-author-info {
+      a.post-author-name {
+        display: block;
+        font-size: 1.3rem;
+        color: #222;
+      }
+      span.post-author-date {
+        display: block;
+        color: #666;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

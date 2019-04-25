@@ -1,0 +1,135 @@
+// Font
+@import url('https://fonts.googleapis.com/css?family=Palanquin+Dark:400,500,700|Lato:400,700,900');
+
+// Hugo Variables
+$primary: {{ .Site.Params.primary_color | default "#1c3ed3" }};
+$secondary: {{ .Site.Params.secondary_color | default "#6d1cd3" }};
+$grey: {{ .Site.Params.grey_color | default "#f4f5fb" }};
+$font-family-base: {{ .Site.Params.font_base | default "'Lato', Arial, sans-serif, -apple-system" }};
+$font-family-heading:  {{ .Site.Params.font_heading | default "'Palanquin Dark', Arial, sans-serif, -apple-system" }};
+$font-family-mono:  "monospace";
+$font-size-base: 1rem;
+
+// Bootstrap
+@import 'bootstrap/functions';
+@import 'bootstrap-variables';
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
+@import 'bootstrap/root';
+@import 'bootstrap/reboot';
+@import 'bootstrap/grid';
+// @import 'bootstrap/type';
+@import 'bootstrap/tables';
+@import "bootstrap/images";
+// @import "bootstrap/code";
+@import "bootstrap/forms";
+// @import "bootstrap/buttons";
+// @import "bootstrap/transitions";
+// @import "bootstrap/dropdown";
+// @import "bootstrap/button-group";
+// @import "bootstrap/input-group";
+// @import "bootstrap/custom-forms";
+// @import "bootstrap/nav";
+// @import "bootstrap/navbar";
+// @import "bootstrap/card";
+// @import "bootstrap/breadcrumb";
+// @import "bootstrap/pagination";
+// @import "bootstrap/badge";
+// @import "bootstrap/jumbotron";
+// @import "bootstrap/alert";
+// @import "bootstrap/progress";
+// @import "bootstrap/media";
+// @import "bootstrap/list-group";
+// @import "bootstrap/close";
+// @import "bootstrap/modal";
+// @import "bootstrap/tooltip";
+// @import "bootstrap/popover";
+// @import "bootstrap/carousel";
+// @import "bootstrap/print";
+@import 'bootstrap/utilities';
+
+// Font Awesome
+$fa-font-path: "../../fonts/fontawesome5";
+@import "libraries/fontawesome5/fontawesome.scss";
+@import "libraries/fontawesome5/solid.scss";
+@import "libraries/fontawesome5/brands.scss";
+
+// Libraries
+@import 'libraries/slick/slick';
+@import 'libraries/slick/slick-custom';
+
+// Global 
+@import 'global/page';
+@import 'global/type';
+@import 'global/buttons';
+@import 'global/whitebox';
+@import 'global/content';
+@import 'global/strip';
+@import 'global/well';
+@import 'global/title';
+
+// Components
+@import 'components/intro';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/footer-second';
+@import 'components/footer-third';
+@import 'components/main-menu-mobile';
+@import 'components/social';
+@import 'components/feature';
+@import 'components/hero-image';
+@import 'components/section-menu';
+@import 'components/paginator';
+@import 'components/partner';
+@import 'components/sidebar';
+
+// Pages
+@import 'pages/home';
+@import 'pages/team/team-list';
+@import 'pages/team/team-summary';
+@import 'pages/team/page-team-list';
+@import 'pages/services/page-services-list';
+@import 'pages/services/page-services-single';
+@import 'pages/services/service-summary';
+@import 'pages/work/page-work-list.scss';
+@import 'pages/work/work-summary';
+@import 'pages/work/work-masonry';
+@import 'pages/posts/page-posts-list';
+@import 'pages/posts/page-posts-single';
+@import 'pages/posts/post-summary';
+
+body {
+  font-size: 1.1rem;
+  @include media-breakpoint-up(sm) {
+    font-size: 1rem;
+  }
+}
+// Display breakpoints for DEV
+{{ if .Site.IsServer }}
+body:after {
+  color: #000000;
+  font-size: 12px;
+  padding: 5px;
+  font-weight: bold;
+  right: 10px;
+  position: fixed;
+  text-align: center;
+  text-transform: uppercase;
+  bottom: 10px;
+  width: 200px;
+  z-index: 9999;
+  border: solid 1px #000000;
+  @each $name, $value in $grid-breakpoints {
+    @include media-breakpoint-up($name) {
+      content: "#{$name} - min-width: #{$value}";
+    }
+  }
+}
+{{ end }}
+
+svg {
+    display: block;
+    polygon {
+        display: inline-block;
+    }
+}
