@@ -5,8 +5,8 @@ theme = "hugo-advance"
 paginate = 3
 
 [params]
-    primary_color = "#1c3ed3"
-    secondary_color = "#6d1cd3"
+    primary_color = "#28AE61"
+    secondary_color = "#28AE61"
     grey_color = "#f4f5fb"
     font_family_base = "'Lato', Arial, sans-serif, -apple-system"
     font_family_heading = "'Palanquin Dark', Arial, sans-serif, -apple-system"
