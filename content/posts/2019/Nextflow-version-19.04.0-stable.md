@@ -1,8 +1,8 @@
 ---
-title: 'Nextflow version 19.04.0 stable'
+title: 'Version 19.04.0 stable'
 date: 2019-04-18T10:26:40+10:00
 draft: false
-tags: ['Stable','Release']
+tags: ['stable','release']
 categories: ['Development']
 authors: ['Paolo Di Tommaso']
 heroSubHeading: 'Nextflow 19.04.0 stable release is out!'

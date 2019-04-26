@@ -1,8 +1,7 @@
 ---
 title: 'Blog'
-date: 2019-02-24
+date: 2013-01-01
 ---
-
 # The Nextflow Blog
 
 Updates, thoughts and occasional ramblings from the core team along with guest posts
