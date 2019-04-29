@@ -1,0 +1,34 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-learn-single{{ end }}
+{{ define "header_classes" }}header-transparent{{ end }}
+
+{{ define "main" }}
+
+{{ partial "hero-image.html" (dict "background" .Params.heroBackground "fullscreen" .Params.heroFullscreen "height" .Params.heroHeight "heading" .Params.heroHeading "subheading" .Params.heroSubheading "overlay" .Params.heroBackgroundOverlay "diagonal" .Params.heroDiagonal "diagonalfill" .Params.heroDiagonalFill "content" .) }}
+
+<div id="hero-anchor" class="strip strip-white pb-4 pt-4 pb-md-10 pt-md-7">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-8 col-lg-7">
+        <div class="service service-single">
+          <div class="content">{{.Content}}</div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 offset-lg-1 {{ if .Params.heroDiagonal | and (.Params.heroHeight)}}section-menu-negative{{ end }}">
+        {{ partial "section-menu.html" . }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ define "footer_js" }}
+{{ $library := resources.Get "js/libs/library.js" }}
+{{ $services := resources.Get "js/pages/services.js" }}
+{{ $servicesJS := slice $library $services |resources.Concat "js/servicesBundle.js" }}
+{{ if .Site.IsServer }}
+  <script type="text/javascript" src="{{ $servicesJS.RelPermalink }}"></script>
+  {{ else }}
+  <script type="text/javascript" src="{{ ($servicesJS | minify | fingerprint).RelPermalink }}"></script>
+  {{ end }}
+{{ end }}

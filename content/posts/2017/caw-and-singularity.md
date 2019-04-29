@@ -1,19 +1,25 @@
-title=Running CAW with Singularity and Nextflow
-date=2017-11-16
-type=post
-tags=pipelines,nextflow,genomic,workflow,singularity,cancer
-status=published
-author=Maxime Garcia
-icon=maxime.jpg
-~~~~~~
+---
+title: 'The Cancer Analysis Workflow (CAW)'
+date: 2017-11-16T10:26:40+10:00
+draft: false
+tags: ['singularity']
+categories: ['']
+authors: ['Maxime Garcia']
+heroSubHeading: 'Running CAW with Singularity and Nextflow'
+heroBackground: 'posts/green-abstract.png'
+heroBackgroundOverlay: false
+heroHeight: 500
+heroDiagonal: false
+heroDiagonalFill: false
+---
 
 <i>This is a guest post authored by Maxime Garcia from the Science for Life Laboratory in Sweden. Max
-describes how they deploy complex cancer data analysis pipelines using Nextflow 
+describes how they deploy complex cancer data analysis pipelines using Nextflow
 and Singularity. We are very happy to share their experience across the Nextflow community.</i>
 
 ### The CAW pipeline
 
-<img src='/img/CAW_logo.png' alt="Cancer Analysis Workflow logo" style='float:right' />
+<img src='/posts/CAW_logo.png' alt="Cancer Analysis Workflow logo" style='float:right' />
 
 [Cancer Analysis Workflow](http://opensource.scilifelab.se/projects/sarek/) (CAW for short) is a Nextflow based analysis pipeline developed for the analysis of tumour: normal pairs.
 It is developed in collaboration with two infrastructures within [Science for Life Laboratory](https://www.scilifelab.se/): [National Genomics Infrastructure](https://ngisweden.scilifelab.se/) (NGI), in The Stockholm [Genomics Applications Development Facility](https://www.scilifelab.se/facilities/ngi-stockholm/) to be precise and [National Bioinformatics Infrastructure Sweden](https://www.nbis.se/) (NBIS).
@@ -47,23 +53,27 @@ We were already using Docker containers for our continuous integration testing w
 Because this process is quite slow, repetitive and I<s>'m lazy</s> like to automate everything, I made a simple NF [script](https://github.com/SciLifeLab/CAW/blob/master/buildContainers.nf) to build and push all docker containers.
 Basically it's just `build` and `pull` for all containers, with some configuration possibilities.
 
-```
+{{< highlight bash >}}
+
 docker build -t ${repository}/${container}:${tag} ${baseDir}/containers/${container}/.
 
 docker push ${repository}/${container}:${tag}
-```
+
+{{< / highlight >}}
 
 Since Singularity can directly pull images from DockerHub, I made the build script to pull all containers from DockerHub to have local Singularity image files.
 
-```
+{{< highlight bash >}}
+
 singularity pull --name ${container}-${tag}.img docker://${repository}/${container}:${tag}
-```
+
+{{< / highlight >}}
 
 After this, it's just a matter of moving all containers to the secure cluster we're using, and using the right configuration file in the profile.
 I'll spare you the details of the SFTP transfer.
 This is what the configuration file for such Singularity images looks like: [`singularity-path.config`](https://github.com/SciLifeLab/CAW/blob/master/configuration/singularity-path.config)
 
-```
+{{< highlight groovy "linenos=table" >}}
 /*
 vim: syntax=groovy
 -*- mode: groovy;-*-
@@ -93,7 +103,7 @@ process {
   // I'm not putting the whole file here
   // you probably already got the point
 }
-```
+{{< / highlight >}}
 
 This approach ran (almost) perfectly on the first try, except a process failing due to a typo on a container name...
 

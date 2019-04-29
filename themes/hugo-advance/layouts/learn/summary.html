@@ -1,0 +1,13 @@
+<div class="learn service-summary">
+    {{ if .Params.icon }}
+    <div class="learn-image">
+      <img src="{{ .Site.BaseURL }}{{ .Params.icon }}"/>
+    </div>
+    {{ end }}
+    <div class="learn-title">
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    </div>
+    <div class="learn-description"><p>{{ .Params.description }}</p></div>
+    <div class="learn-content">{{ .Content | truncate 120 "..." }}</div>
+    <div class="learn-link"><a class="learn-read-more" href="{{ .Permalink }}" >Read More<i class="fas fa-long-arrow-alt-right ml-1"></i></a></div>
+</div>

@@ -2,6 +2,7 @@
 title: 'Paolo Di Tommaso'
 name: 'Paolo Di Tommaso'
 image: 'team/paolo.png'
+weight: 1
 ---
 
-Paolo Di Tommaso is the original author of the Nextflow project.
+Paolo Di Tommaso

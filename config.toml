@@ -15,13 +15,13 @@ paginate = 3
 
     [params.homepage_meta_tags]
         meta_description = "Advance is a premium, multi-purpose Hugo theme. It has 5 content-types for archetypical SMB and marketing websites. A modern semi-flat visual design with customisable hero images and full-width sections."
-        meta_og_title = "Hugo Advance Theme"
+        meta_og_title = "Nextflow"
         meta_og_type = "website"
         meta_og_url = "https://hugo-advance-pro.netlify.com"
         meta_og_image = "https://hugo-advance-pro.netlify.com/images/tn.png"
         meta_og_description = "Advance is a premium, multi-purpose Hugo theme. It has 5 content-types for archetypical SMB and marketing websites. A modern semi-flat visual design with customisable hero images and full-width sections."
         meta_twitter_card = "summary"
-        meta_twitter_site = "@zerostaticio"
+        meta_twitter_site = "@nextflowio"
         meta_twitter_creator = "@zerostaticio"
 
     [params.global]
@@ -48,6 +48,13 @@ paginate = 3
         work_count = 2
         show_view_all_work_button = true
 
+[params.learn]
+        show_features = true
+        show_splash_one_section = true
+        splash_one_background_image = "images/kaleidico-754543-unsplash.jpg"
+        splash_one_heading = "We build great software"
+        splash_one_paragraph = "Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit."
+
     [params.services]
         show_features = true
         show_splash_one_section = true
@@ -63,29 +70,39 @@ paginate = 3
 
 # Main Menu
 [[menu.main]]
-	name = "Services"
+	name = "Quick Start"
 	url = "/services/"
     weight = 1
 
 [[menu.main]]
-	name = "Work"
-	url = "/work/"
-	weight = 2
+    	name = "Learn"
+    	url = "/learn/"
+        weight = 2
 
 [[menu.main]]
-    name = "Team"
-    url = "/team/"
+	name = "Docs"
+	url = "/docs/"
     weight = 3
+
+[[menu.main]]
+	name = "Community"
+	url = "/community/"
+	weight = 4
+
+[[menu.main]]
+    name = "Support"
+    url = "/suport/"
+    weight = 5
 
 [[menu.main]]
     name = "Blog"
     url = "/posts/"
-    weight = 4
+    weight = 6
 
 [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 5
+    name = "About"
+    url = "/team/"
+    weight = 7
 
 # Footer Menu Primary
 [[menu.footer_primary]]
@@ -94,29 +111,34 @@ paginate = 3
     weight = 1
 
 [[menu.footer_primary]]
-	name = "Services"
-	url = "/services/"
+  name = "Quick Start"
+  url = "/services/"
     weight = 2
 
 [[menu.footer_primary]]
-	name = "Work"
-	url = "/work/"
-	weight = 3
+	name = "Learn"
+	url = "/learn/"
+    weight = 3
 
 [[menu.footer_primary]]
-    name = "Team"
-    url = "/team/"
-    weight = 4
+	name = "Docs"
+	url = "/docs/"
+	weight = 4
 
 [[menu.footer_primary]]
-    name = "Blog"
-    url = "/posts/"
+    name = "Community"
+    url = "/community/"
     weight = 5
 
 [[menu.footer_primary]]
-    name = "Contact"
-    url = "/contact/"
+    name = "Support"
+    url = "/support/"
     weight = 6
+
+[[menu.footer_primary]]
+    name = "About"
+    url = "/team/"
+    weight = 7
 
 # Footer Menu Secondary
 [[menu.footer_secondary]]

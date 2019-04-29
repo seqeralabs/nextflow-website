@@ -68,12 +68,16 @@ In the `nextflow.config`, file specify the `awsbatch` executor, the Batch `queue
 the container to be used in the usual manner. You may also need to specify the AWS region
 and access credentials if they are not provided by other means. For example:
 
+{{< highlight bash >}}
+
     process.executor = 'awsbatch'
     process.queue = 'my-batch-queue'
     process.container = your-org/your-docker:image
     aws.region = 'eu-west-1'
     aws.accessKey = 'xxx'
     aws.secretKey = 'yyy'
+
+{{< / highlight >}}
 
 Each process can eventually use a different queue and Docker image (see Nextflow documentation for details).
 The container image(s) must be published in a Docker registry that is accessible from the
@@ -121,13 +125,19 @@ we used exactly the same pipeline implementation at [this GitHub repository](htt
 
 The AWS deploy used the following configuration profile:
 
+{{< highlight bash >}}
+
     aws.region = 'eu-west-1'
     aws.client.storageEncryption = 'AES256'
     process.queue = 'large'
     executor.name = 'awsbatch'
     executor.awscli = '/home/ec2-user/miniconda/bin/aws'
 
+{{< / highlight >}}
+
 While for the cluster deployment the following configuration was used:
+
+{{< highlight bash >}}
 
     executor = 'crg'
     singularity.enabled = true
@@ -135,6 +145,8 @@ While for the cluster deployment the following configuration was used:
     process.queue = 'cn-el7'
     process.time = '90 min'
     process.$quant.time = '4.5 h'
+
+{{< / highlight >}}
 
 ### Results
 

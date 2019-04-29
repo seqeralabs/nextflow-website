@@ -1,4 +1,4 @@
-{{ $posts := first 5 (where .Site.RegularPages "Section" "posts") }}
+{{ $posts := first 6 (where .Site.RegularPages "Section" "posts") }}
 {{ if gt (len $posts) 0 }}
   <h4>Recent Posts</h4>
   <ul>
@@ -9,4 +9,3 @@
     {{ end }}
   </ul>
 {{ end }}
-

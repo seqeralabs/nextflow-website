@@ -1,0 +1,64 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-services-list{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+
+<div class="intro intro-big">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-6">
+  <div class="row">
+    {{ range .Pages.ByWeight }}
+    <div class="col-12 col-md-6 mb-3">{{ .Render "summary" }}</div>
+    {{ end }}
+  </div>
+</div>
+
+{{ if and (gt (len .Site.Data.features) 0) (.Site.Params.services.show_features) }}
+<div class="strip strip-grey">
+  <div class="container pt-5 pb-5">
+    <div class="row justify-content-center">
+      {{ range .Site.Data.features }}
+      <div class="col-12 col-sm-4 col-md-4 mb-2">
+        <div class="feature">
+          {{ if .image }}<div class="feature-image"><img alt="{{ .title }} logo" src="{{ .image }}" /></div> {{ end }}
+          <h2 class="feature-title">{{ .title }}</h2>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<!-- Splash One -->
+{{ if .Site.Params.services.show_splash_one_section }}
+<div class="strip strip-bg-primary strip-bg-cover" style="background-image: url('{{ .Site.BaseURL }}{{ .Site.Params.services.splash_one_background_image }}');">
+  <svg aria-hidden="true" role="presentation" viewBox="0 0 100 5" >
+    <polygon fill="{{ .Site.Params.grey_color }}" points="0,0 100,0 100,5"/>
+  </svg>
+  <div class="container pt-10 pb-10">
+    <div class="row">
+      <div class="col-12 col-md-6">
+          {{ if .Site.Params.services.splash_one_heading }}<h2 class="text-white text-capitalize">{{ .Site.Params.services.splash_one_heading }}</h2>{{ end }}
+          {{ if .Site.Params.services.splash_one_paragraph }}<p class="text-white large">{{ .Site.Params.services.splash_one_paragraph }}</p>{{ end }}
+      </div>
+    </div>
+  </div>
+  <svg  aria-hidden="true" role="presentation" viewBox="0 0 100 10" >
+    <polygon fill="{{ .Site.Params.secondary_color }}" points="0,0 0,20 100,100 100,0 60,10"/>
+  </svg> 
+</div>
+{{ end }}
+
+{{ partial "contact-cta.html" (dict "heading" .Site.Params.contact_cta.heading "subheading" .Site.Params.contact_cta.subheading "button_url" .Site.Params.contact_cta.button_url "button_text" .Site.Params.contact_cta.button_text ) }}
+
+{{ end }}

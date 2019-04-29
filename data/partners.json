@@ -1,18 +1,18 @@
 [
   {
-    "title": "Netflix",
-    "image": "/logos/netflix.svg"
+    "title": "Wellcome Sanger Institute",
+    "image": "/logos/sanger.svg"
   },
   {
-    "title": "Android",
-    "image": "/logos/android.svg"
+    "title": "Boehringer Ingelheim",
+    "image": "/logos/boehringer.svg"
   },
   {
     "title": "Slack",
     "image": "/logos/slack.svg"
   },
   {
-    "title": "Algolia",
+    "title": "SciLifeLab",
     "image": "/logos/algolia.svg"
   },
   {
