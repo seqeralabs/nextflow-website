@@ -2,7 +2,7 @@
 title: 'Tutorial'
 date: 2018-11-28T15:15:34+10:00
 description: 'An in-depth tutorial to get you writing like a Nextflow pro in no time.'
-icon: 'learn/icons8-web_design.png'
+icon: 'learn/tutorial.png'
 heroSubHeading: 'Business plan hackathon handshake responsive web design.'
 heroBackground: 'learn/headway-537308-unsplash.jpg'
 heroBackgroundOverlay: false

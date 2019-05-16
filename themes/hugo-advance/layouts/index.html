@@ -61,7 +61,7 @@
 
 <!-- Splash One -->
 {{ if .Site.Params.homepage.show_splash_section_one }}
-<div class="strip strip-white pt-15 splash splash-one">
+<div class="strip strip-white pt-8 pb-8 splash splash-one">
   <div class="container">
     <div class="row">
       {{ if .Site.Params.homepage.splash_one_image }}
@@ -73,7 +73,100 @@
         {{ if .Site.Params.homepage.splash_one_heading }}<h2>{{ .Site.Params.homepage.splash_one_heading }}</h2>{{ end }}
         {{ if .Site.Params.homepage.splash_one_paragraph }}<p>{{ .Site.Params.homepage.splash_one_paragraph }}</p>{{ end }}
         {{ if .Site.Params.homepage.splash_one_link_url }}<a class="button d-none d-md-inline-block" href="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_one_link_url }}">{{ .Site.Params.homepage.splash_one_link_text }}</a>{{ end }}
+      </div>  
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<!-- Splash Two -->
+{{ if .Site.Params.homepage.show_splash_section_two }}
+<div class="strip strip-grey pt-8 pb-8 splash splash-two">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 {{ if .Site.Params.homepage.splash_two_image }}col-md-4{{ else }}col-md-12{{ end }}">
+        {{ if .Site.Params.homepage.splash_two_heading }}<h2>{{ .Site.Params.homepage.splash_two_heading }}</h2>{{ end }}
+        {{ if .Site.Params.homepage.splash_two_paragraph }}<p>{{ .Site.Params.homepage.splash_two_paragraph }}</p>{{ end }}
+        {{ if .Site.Params.homepage.splash_two_link_url }}<a class="button d-none d-md-inline-block" href="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_two_link_url }}">{{ .Site.Params.homepage.splash_two_link_text }}</a>{{ end }}
       </div>
+      {{ if .Site.Params.homepage.splash_two_image }}
+      <div class="col-12 col-md-7 ">
+        <img class="img-fluid" src="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_two_image }}"/>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<!-- Splash Three -->
+{{ if .Site.Params.homepage.show_splash_section_three }}
+<div class="strip strip-white pt-8 pb-8 splash splash-three">
+  <div class="container">
+    <div class="row">
+      {{ if .Site.Params.homepage.splash_three_image }}
+      <div class="col-12 col-md-7 ">
+        <img class="img-fluid" src="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_three_image }}"/>
+      </div>
+      {{ end }}
+      <div class="col-12 {{ if .Site.Params.homepage.splash_three_image }}col-md-4{{ else }}col-md-12{{ end }}">
+        {{ if .Site.Params.homepage.splash_three_heading }}<h2>{{ .Site.Params.homepage.splash_three_heading }}</h2>{{ end }}
+        {{ if .Site.Params.homepage.splash_three_paragraph }}<p>{{ .Site.Params.homepage.splash_three_paragraph }}</p>{{ end }}
+        {{ if .Site.Params.homepage.splash_three_link_url }}<a class="button d-none d-md-inline-block" href="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_three_link_url }}">{{ .Site.Params.homepage.splash_three_link_text }}</a>{{ end }}
+      </div>  
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<!-- Splash Four -->
+{{ if .Site.Params.homepage.show_splash_section_four }}
+<div class="strip strip-grey pt-8 pb-8 splash splash-four">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 {{ if .Site.Params.homepage.splash_four_image }}col-md-4{{ else }}col-md-12{{ end }}">
+        {{ if .Site.Params.homepage.splash_four_heading }}<h2>{{ .Site.Params.homepage.splash_four_heading }}</h2>{{ end }}
+        {{ if .Site.Params.homepage.splash_four_paragraph }}<p>{{ .Site.Params.homepage.splash_four_paragraph }}</p>{{ end }}
+        {{ if .Site.Params.homepage.splash_four_link_url }}<a class="button d-none d-md-inline-block" href="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_four_link_url }}">{{ .Site.Params.homepage.splash_four_link_text }}</a>{{ end }}
+      </div>
+      {{ if .Site.Params.homepage.splash_four_image }}
+      <div class="col-12 col-md-7 ">
+        <img class="img-fluid" src="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_four_image }}"/>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<!-- Splash Five -->
+{{ if .Site.Params.homepage.show_splash_section_five }}
+<div class="strip strip-white pt-8 pb-8 splash splash-five">
+  <div class="container">
+    <div class="row">
+      {{ if .Site.Params.homepage.splash_five_image }}
+      <div class="col-12 col-md-7 ">
+        <img class="img-fluid" src="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_five_image }}"/>
+      </div>
+      {{ end }}
+      <div class="col-12 {{ if .Site.Params.homepage.splash_five_image }}col-md-4{{ else }}col-md-12{{ end }}">
+        {{ if .Site.Params.homepage.splash_five_heading }}<h2>{{ .Site.Params.homepage.splash_five_heading }}</h2>{{ end }}
+        {{ if .Site.Params.homepage.splash_five_paragraph }}<p>{{ .Site.Params.homepage.splash_five_paragraph }}</p>{{ end }}
+        {{ if .Site.Params.homepage.splash_five_link_url }}<a class="button d-none d-md-inline-block" href="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_five_link_url }}">{{ .Site.Params.homepage.splash_five_link_text }}</a>{{ end }}
+      </div>  
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<!-- Splash Six Quickstart -->
+{{ if .Site.Params.homepage.show_splash_section_five }}
+<div class="strip strip-grey pt-8 pb-8 splash splash-five">
+  <div class="container pt-5 pt-md-10 pb-10">
+    <div class="row">
+        <div class="col-12">
+           <h2 style="text-align: center;"> Quick Start</h2>
+        </div>
     </div>
   </div>
 </div>
@@ -85,6 +178,8 @@
   <div class="container pt-5 pt-md-10 pb-10">
     <div class="row">
       <div class="col-12">
+          {{ if .Site.Params.homepage.partners_heading }}<h2>{{ .Site.Params.homepage.partners_heading }}</h2>{{ end }}
+          {{ if .Site.Params.homepage.partners_subheading }}<p>{{ .Site.Params.homepage.partners_subheading }}</p>{{ end }}
         <div class="partners">
         {{ range .Site.Data.partners }}
           {{ if .image }}<div class="partner"><img alt="{{ .title }} logo" src="{{ .image }}" /></div> {{ end }}
