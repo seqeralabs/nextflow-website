@@ -38,29 +38,29 @@ paginate = 3
         services_count = 6
 
         show_splash_section_one = true
-        splash_one_image = "images/polyglot.png"
-        splash_one_heading = "Polyglot"
-        splash_one_paragraph = "Write workflows in your favourtive scripting language. Whether you are Python developer, an R wizard or an old-school Perl programmer, Nextflow provides you with the flexibility to do things your way"
+        splash_one_image = "images/environments.png"
+        splash_one_heading = "Clouds and clusters"
+        splash_one_paragraph = "Out-of-the-box support for AWS Batch, Google Cloud Pipelines and Kubernetes plus common batch schedulers including SLURM, LSF & Univa Grid Engine."
 
         show_splash_section_two = true
-        splash_two_image = "images/dataflow.png"
-        splash_two_heading = "Dataflow"
-        splash_two_paragraph = "The dataflow programming model uses a functional, reactive programming approach enabling massively scaleable workloads"
+        splash_two_image = "images/dependencies.png"
+        splash_two_heading = "Containers"
+        splash_two_paragraph = "Container engines intergration to enable packaging of all workflow dependencies and ensure reproducible results across any environment."
 
         show_splash_section_three = true
-        splash_three_image = "images/dependencies.png"
-        splash_three_heading = "Containers"
-        splash_three_paragraph = "Support for container engines allows all dependencies to be packaged provides for fully portable worfloads across execution environments."
+        splash_three_image = "images/polyglot.png"
+        splash_three_heading = "Polyglot"
+        splash_three_paragraph = "Write workflows in your favourtive scripting language. Whether you are Python developer or an old-school Perl programmer, Nextflow provides the flexibility to reuse code and do things your way."
 
         show_splash_section_four = true
-        splash_four_image = "images/environments.png"
-        splash_four_heading = "Clouds and clusters"
-        splash_four_paragraph = "An abstraction layer between workflow logic and the execution layer ensures execution on multiple platforms without it changing. Out-of-the-box support for SGE, LSF, SLURM, PBS and HTCondor batch schedulers, Kubernetes, Amazon AWS and Google Cloud."
+        splash_four_image = "images/dataflow.png"
+        splash_four_heading = "Performance at scale"
+        splash_four_paragraph = "The dataflow programming model uses a reactive approach for orchestrating massive workloads across billions of distributed tasks."
 
         show_splash_section_five = true
         splash_five_image = "images/sharing.png"
-        splash_five_heading = "Sharing"
-        splash_five_paragraph = "Integration with Git provides full tracebility of code and support for and git-hosting solutions allows workflows to be shared with the world." 
+        splash_five_heading = "Tracing & Sharing"
+        splash_five_paragraph = "Integration with Git provides full tracebility of code. Support for hosting solutions allows workflows to be shared with the world."
 
         show_partners = true
         partners_heading = "THE WORLD'S LEADING ORGANISATIONS TRUST NEXTFLOW"
