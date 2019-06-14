@@ -2,16 +2,22 @@ baseURL = "https://www.nextflow.io"
 languageCode = "en-us"
 title = "Nextflow"
 theme = "hugo-advance"
-paginate = 3
+paginate = 5
 
 [params]
     primary_color = "#28AE61"
     secondary_color = "#28AE61"
-    grey_color = "#f4f5fb"
-    font_family_base = "'Nunito', Arial, sans-serif, -apple-system"
-    font_family_heading = "'Nunito', Arial, sans-serif, -apple-system"
-
+    grey_color = "#F0F0F0"
+    font_family_base = "'Slabo 27px', sans-serif;"
+    font_family_heading = "'Open Sans', sans-serif;"
     google_analytics_id = ""
+
+    google_fonts = [
+      ["Slabo 27px"],
+      ["Open Sans"],
+      ["Montserrat", "400, 700"],
+      ["Roboto", "400, 400i, 700, 700i"]
+    ]
 
     [params.homepage_meta_tags]
         meta_description = "Advance is a premium, multi-purpose Hugo theme. It has 5 content-types for archetypical SMB and marketing websites. A modern semi-flat visual design with customisable hero images and full-width sections."
@@ -36,6 +42,8 @@ paginate = 3
     [params.homepage]
         show_services_section = false
         services_count = 6
+
+        main_image = "images/home.png"
 
         show_splash_section_one = true
         splash_one_image = "images/environments.png"

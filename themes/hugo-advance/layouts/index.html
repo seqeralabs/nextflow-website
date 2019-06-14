@@ -18,12 +18,12 @@
 {{ define "main" }}
 
 <!-- Hero Image Partial-->
-{{ partial "hero-image.html" (dict "background" .Params.heroBackground "fullscreen" .Params.heroFullscreen "height" .Params.heroHeight "heading" .Params.heroHeading "subheading" .Params.heroSubheading "overlay" .Params.heroBackgroundOverlay "diagonal" .Params.heroDiagonal "diagonalfill" .Params.heroDiagonalFill) }}
+{{ partial "hero-image-index.html" (dict "background" .Params.heroBackground "fullscreen" .Params.heroFullscreen "height" .Params.heroHeight "heading" .Params.heroHeading "subheading" .Params.heroSubheading "overlay" .Params.heroBackgroundOverlay "diagonal" .Params.heroDiagonal "diagonalfill" .Params.heroDiagonalFill) }}
 
 <!-- Services Section -->
 {{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
 {{ if and (gt (len $services) 0) (.Site.Params.homepage.show_services_section) }}
-<div class="strip strip-grey pb-10 pt-8">
+<div class="strip strip-white pb-10 pt-8">
   <div class="container d-none d-md-block">
     <div class="row justify-content-center">
       <div class="col-12">
@@ -61,7 +61,7 @@
 
 <!-- Splash One -->
 {{ if .Site.Params.homepage.show_splash_section_one }}
-<div class="strip strip-white pt-8 pb-8 splash splash-one">
+<div class="strip strip-grey pt-8 pb-8 splash splash-one">
   <div class="container">
     <div class="row">
       {{ if .Site.Params.homepage.splash_one_image }}
@@ -81,7 +81,7 @@
 
 <!-- Splash Two -->
 {{ if .Site.Params.homepage.show_splash_section_two }}
-<div class="strip strip-grey pt-8 pb-8 splash splash-two">
+<div class="strip strip-white pt-8 pb-8 splash splash-two">
   <div class="container">
     <div class="row">
       <div class="col-12 {{ if .Site.Params.homepage.splash_two_image }}col-md-6{{ else }}col-md-12{{ end }}">
@@ -101,7 +101,7 @@
 
 <!-- Splash Three -->
 {{ if .Site.Params.homepage.show_splash_section_three }}
-<div class="strip strip-white pt-8 pb-8 splash splash-three">
+<div class="strip strip-grey pt-8 pb-8 splash splash-three">
   <div class="container">
     <div class="row">
       {{ if .Site.Params.homepage.splash_three_image }}
@@ -121,7 +121,7 @@
 
 <!-- Splash Four -->
 {{ if .Site.Params.homepage.show_splash_section_four }}
-<div class="strip strip-grey pt-8 pb-8 splash splash-four">
+<div class="strip strip-white pt-8 pb-8 splash splash-four">
   <div class="container">
     <div class="row">
       <div class="col-12 {{ if .Site.Params.homepage.splash_four_image }}col-md-6{{ else }}col-md-12{{ end }}">
@@ -141,7 +141,7 @@
 
 <!-- Splash Five -->
 {{ if .Site.Params.homepage.show_splash_section_five }}
-<div class="strip strip-white pt-8 pb-8 splash splash-five">
+<div class="strip strip-grey pt-8 pb-8 splash splash-five">
   <div class="container">
     <div class="row">
       {{ if .Site.Params.homepage.splash_five_image }}
@@ -161,7 +161,7 @@
 
 <!-- Splash Six Quickstart -->
 {{ if .Site.Params.homepage.show_splash_section_five }}
-<div class="strip strip-grey pt-8 pb-8 splash splash-five">
+<div class="strip strip-white pt-8 pb-8 splash splash-five">
   <div class="container pt-5 pt-md-10 pb-10">
     <div class="row">
         <div class="col-12">

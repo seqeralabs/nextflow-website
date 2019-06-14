@@ -1,8 +1,8 @@
 ---
 title: 'Home'
 date: 2019-02-22
-heroHeading: 'Event-driven, data workflows'
-heroSubHeading: 'Massively scalable workloads across clusters and clouds with a single command.'
+heroHeading: 'Event-driven data pipelines.'
+heroSubHeading: 'Scalable workflows across clusters and clouds with a single action.'
 heroBackground: ''
 heroBackgroundOverlay: false
 heroHeight: 600
