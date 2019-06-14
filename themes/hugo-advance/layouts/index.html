@@ -71,6 +71,7 @@
       {{ end }}
       <div class="col-12 {{ if .Site.Params.homepage.splash_one_image }}col-md-6{{ else }}col-md-12{{ end }}">
         {{ if .Site.Params.homepage.splash_one_heading }}<h2>{{ .Site.Params.homepage.splash_one_heading }}</h2>{{ end }}
+        {{ if .Site.Params.homepage.splash_one_subheading }}<p class="xlarge" style="color:#28AE61">{{ .Site.Params.homepage.splash_one_subheading }}</p>{{ end }}
         {{ if .Site.Params.homepage.splash_one_paragraph }}<p class="large">{{ .Site.Params.homepage.splash_one_paragraph }}</p>{{ end }}
         {{ if .Site.Params.homepage.splash_one_link_url }}<a class="button d-none d-md-inline-block" href="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_one_link_url }}">{{ .Site.Params.homepage.splash_one_link_text }}</a>{{ end }}
       </div>
@@ -85,8 +86,9 @@
   <div class="container">
     <div class="row">
       <div class="col-12 {{ if .Site.Params.homepage.splash_two_image }}col-md-6{{ else }}col-md-12{{ end }}">
-        {{ if .Site.Params.homepage.splash_two_heading }}<h2>{{ .Site.Params.homepage.splash_two_heading }}</h2>{{ end }}
-        {{ if .Site.Params.homepage.splash_two_paragraph }}<p class="large">{{ .Site.Params.homepage.splash_two_paragraph }}</p>{{ end }}
+        {{ if .Site.Params.homepage.splash_two_heading }}<h2 class="right-align">{{ .Site.Params.homepage.splash_two_heading }}</h2>{{ end }}
+        {{ if .Site.Params.homepage.splash_two_subheading }}<p class="xlarge right-align" style="color:#28AE61">{{ .Site.Params.homepage.splash_two_subheading }}</p>{{ end }}
+        {{ if .Site.Params.homepage.splash_two_paragraph }}<p class="large right-align">{{ .Site.Params.homepage.splash_two_paragraph }}</p>{{ end }}
         {{ if .Site.Params.homepage.splash_two_link_url }}<a class="button d-none d-md-inline-block" href="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_two_link_url }}">{{ .Site.Params.homepage.splash_two_link_text }}</a>{{ end }}
       </div>
       {{ if .Site.Params.homepage.splash_two_image }}
@@ -111,6 +113,7 @@
       {{ end }}
       <div class="col-12 {{ if .Site.Params.homepage.splash_three_image }}col-md-6{{ else }}col-md-12{{ end }}">
         {{ if .Site.Params.homepage.splash_three_heading }}<h2>{{ .Site.Params.homepage.splash_three_heading }}</h2>{{ end }}
+        {{ if .Site.Params.homepage.splash_three_subheading }}<p class="xlarge" style="color:#28AE61">{{ .Site.Params.homepage.splash_three_subheading }}</p>{{ end }}
         {{ if .Site.Params.homepage.splash_three_paragraph }}<p class="large">{{ .Site.Params.homepage.splash_three_paragraph }}</p>{{ end }}
         {{ if .Site.Params.homepage.splash_three_link_url }}<a class="button d-none d-md-inline-block" href="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_three_link_url }}">{{ .Site.Params.homepage.splash_three_link_text }}</a>{{ end }}
       </div>
@@ -125,9 +128,10 @@
   <div class="container">
     <div class="row">
       <div class="col-12 {{ if .Site.Params.homepage.splash_four_image }}col-md-6{{ else }}col-md-12{{ end }}">
-        {{ if .Site.Params.homepage.splash_four_heading }}<h2>{{ .Site.Params.homepage.splash_four_heading }}</h2>{{ end }}
-        {{ if .Site.Params.homepage.splash_four_paragraph }}<p class="large">{{ .Site.Params.homepage.splash_four_paragraph }}</p>{{ end }}
-        {{ if .Site.Params.homepage.splash_four_link_url }}<a class="button d-none d-md-inline-block" href="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_four_link_url }}">{{ .Site.Params.homepage.splash_four_link_text }}</a>{{ end }}
+        {{ if .Site.Params.homepage.splash_four_heading }}<h2 class="right-align">{{ .Site.Params.homepage.splash_four_heading }}</h2>{{ end }}
+        {{ if .Site.Params.homepage.splash_four_subheading }}<p class="xlarge right-align" style="color:#28AE61">{{ .Site.Params.homepage.splash_four_subheading }}</p>{{ end }}
+        {{ if .Site.Params.homepage.splash_four_paragraph }}<p class="large right-align">{{ .Site.Params.homepage.splash_four_paragraph }}</p>{{ end }}
+        {{ if .Site.Params.homepage.splash_four_link_url }}<a class="button d-none d-md-inline-block right-align" href="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_four_link_url }}">{{ .Site.Params.homepage.splash_four_link_text }}</a>{{ end }}
       </div>
       {{ if .Site.Params.homepage.splash_four_image }}
       <div class="col-12 col-md-6 ">
@@ -151,6 +155,7 @@
       {{ end }}
       <div class="col-12 {{ if .Site.Params.homepage.splash_five_image }}col-md-6{{ else }}col-md-12{{ end }}">
         {{ if .Site.Params.homepage.splash_five_heading }}<h2>{{ .Site.Params.homepage.splash_five_heading }}</h2>{{ end }}
+        {{ if .Site.Params.homepage.splash_five_subheading }}<p class="xlarge" style="color:#28AE61">{{ .Site.Params.homepage.splash_five_subheading }}</p>{{ end }}
         {{ if .Site.Params.homepage.splash_five_paragraph }}<p class="large">{{ .Site.Params.homepage.splash_five_paragraph }}</p>{{ end }}
         {{ if .Site.Params.homepage.splash_five_link_url }}<a class="button d-none d-md-inline-block" href="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_five_link_url }}">{{ .Site.Params.homepage.splash_five_link_text }}</a>{{ end }}
       </div>

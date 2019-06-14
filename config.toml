@@ -47,27 +47,32 @@ paginate = 5
 
         show_splash_section_one = true
         splash_one_image = "images/environments.png"
-        splash_one_heading = "Clouds and clusters"
-        splash_one_paragraph = "Out-of-the-box support for AWS Batch, Google Cloud Pipelines and Kubernetes plus common batch schedulers including SLURM, LSF & Univa Grid Engine."
+        splash_one_heading = "Powerful execution engines"
+        splash_one_subheading= "Deploy across clouds and clusters effortlessly."
+        splash_one_paragraph = "Out-of-the-box support for AWS, GCP and Kubernetes plus batch schedulers including SLURM, LSF & Grid Engine."
 
         show_splash_section_two = true
         splash_two_image = "images/dependencies.png"
-        splash_two_heading = "Containers"
-        splash_two_paragraph = "Container engines intergration to enable packaging of all workflow dependencies and ensure reproducible results across any environment."
+        splash_two_heading = "Dependency management"
+        splash_two_subheading= "Containers without the hassle."
+        splash_two_paragraph = "Container engine intergration enables packaging of all workflow dependencies and ensures reproducible results across environments."
 
         show_splash_section_three = true
         splash_three_image = "images/polyglot.png"
         splash_three_heading = "Polyglot"
-        splash_three_paragraph = "Write workflows in your favourtive scripting language. Whether you are Python developer or an old-school Perl programmer, Nextflow provides the flexibility to reuse code and do things your way."
+        splash_three_subheading= "Write workflows in your language."
+        splash_three_paragraph = "Whether you are Python developer or an old-school Perl programmer, Nextflow provides the flexibility to reuse code and do things your way."
 
         show_splash_section_four = true
         splash_four_image = "images/dataflow.png"
-        splash_four_heading = "Performance at scale"
+        splash_four_heading = "Dataflow progamming"
+        splash_four_subheading= "Unrivalled performance at scale."
         splash_four_paragraph = "The dataflow programming model uses a reactive approach for orchestrating massive workloads across billions of distributed tasks."
 
         show_splash_section_five = true
         splash_five_image = "images/sharing.png"
-        splash_five_heading = "Tracing & Sharing"
+        splash_five_heading = "Sharing & Provenance"
+        splash_five_subheading= "Track and store workflows as code."
         splash_five_paragraph = "Integration with Git provides full tracebility of code. Support for hosting solutions allows workflows to be shared with the world."
 
         show_partners = true
