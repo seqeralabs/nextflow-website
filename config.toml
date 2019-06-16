@@ -8,11 +8,12 @@ paginate = 5
     primary_color = "#28AE61"
     secondary_color = "#28AE61"
     grey_color = "#F0F0F0"
-    font_family_base = "'Slabo 27px', sans-serif;"
-    font_family_heading = "'Open Sans', sans-serif;"
+    font_family_base = "'Raleway', sans-serif;"
+    font_family_heading = "'Slabo 27px', sans-serif;"
     google_analytics_id = ""
 
     google_fonts = [
+      ["Raleway", "400"],
       ["Slabo 27px"],
       ["Open Sans"],
       ["Montserrat", "400, 700"],
