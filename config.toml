@@ -51,7 +51,7 @@ paginate = 5
         show_splash_section_one = true
         splash_one_image = "images/environments.png"
         splash_one_heading = "Powerful HPC engines"
-        splash_one_subheading= "Deploy across clouds and clusters effortlessly."
+        splash_one_subheading= "Launch across clouds and clusters effortlessly."
         splash_one_paragraph = "Out-of-the-box support for AWS, GCP and K8S plus batch schedulers including SLURM, LSF & Grid Engine."
 
         show_splash_section_two = true
@@ -79,17 +79,16 @@ paginate = 5
         splash_five_paragraph = "Integration with Git provides full tracebility and hosting solutions allows your work to be shared with the world."
 
         show_splash_section_six = true
-        splash_six_image = "images/apache.png"
-        splash_six_heading = "Open-source"
+        splash_six_image = "images/apache.svg"
+        splash_six_heading = "100% Open-source"
         splash_six_subheading= "Free to use, modify & distribute."
         splash_six_paragraph = "Licensed under the Apache software license 2.0."
 
         show_partners = true
-        partners_heading = "In production at the world's most innovative organisations since 2014"
-        partners_subheading = "Battle tested across production environments since 2014"
+        partners_heading = "Trusted by the world's most innovative organisations since 2014"
+        partners_subheading = ""
 
-
-        show_work_section = true
+        show_work_section = false
         work_section_heading = "Our Work"
         work_count = 2
         show_view_all_work_button = true
