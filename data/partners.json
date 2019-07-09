@@ -8,15 +8,15 @@
     "image": "/logos/boehringer.png"
   },
   {
-    "title": "Slack",
-    "image": "/logos/slack.svg"
+    "title": "EMBL-EBI",
+    "image": "/logos/embl-ebi.svg"
   },
   {
-    "title": "SciLifeLab",
-    "image": "/logos/algolia.svg"
+    "title": "Roche",
+    "image": "/logos/roche.svg"
   },
   {
-    "title": "Github",
-    "image": "/logos/github.svg"
+    "title": "WHO",
+    "image": "/logos/who.svg"
   }
 ]

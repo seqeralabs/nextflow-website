@@ -2,9 +2,10 @@
 title: 'Paolo Di Tommaso'
 draft: false
 image: 'team/paolo.png'
-jobtitle: 'Nextflow Lead'
+jobtitle: 'Project Lead'
 linkedin_url: 'https://www.linkedin.com/in/paoloditommaso/'
 twitter_url: 'https://twitter.com/PaoloDiTommaso'
+flag_image: 'team/italy.svg'
 weight: 1
 ---
 

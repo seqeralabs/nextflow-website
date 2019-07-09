@@ -207,7 +207,7 @@
     <div class="row">
       <div class="col-12">
         <h1 class="text-center mb-3">Get Started</h1>
-        <h3 class="text-center mb-3">Nextflow can be installed can be installed on any POSIX compatible system (Linux,
+        <h3 class="text-center mb-3">Nextflow can be installed on any POSIX compatible system (Linux,
           OS X, etc).</h3>
         <h3 class="text-center mb-3" style="color:#28AE61">Simply follow these three steps.</h3>
       </div>
@@ -247,7 +247,7 @@
 
             <div class="col-md-4">
               <!--PRICE CONTENT START-->
-              <div class="generic_content active clearfix">
+              <div class="generic_content clearfix">
                 <div class="generic_head_price clearfix">
                   <div class="generic_head_content clearfix">
                     <div class="head_bg"></div>
@@ -334,13 +334,13 @@
 <!-- Partners -->
 {{ if and (gt (len .Site.Data.partners) 0) (.Site.Params.homepage.show_partners) }}
 <div class="strip strip-white home-partners">
-
   <div class="container pt-5 pt-md-10 pb-10">
     <div class="row">
       <div class="col-12">
-        {{ if .Site.Params.homepage.partners_heading }}<h2>{{ .Site.Params.homepage.partners_heading }}</h2>{{ end }}
+        {{ if .Site.Params.homepage.partners_heading }}<h1 class="text-center mb-3">{{ .Site.Params.homepage.partners_heading }}</h1>{{ end }}
         {{ if .Site.Params.homepage.partners_subheading }}<p>{{ .Site.Params.homepage.partners_subheading }}</p>
         {{ end }}
+        </br> </br>
         <div class="partners">
           {{ range .Site.Data.partners }}
           {{ if .image }}<div class="partner"><img alt="{{ .title }} logo" src="{{ .image }}" /></div> {{ end }}
@@ -352,35 +352,10 @@
 </div>
 {{ end }}
 
-<!-- Work Section -->
-{{ $works := where (where .Site.RegularPages "Type" "work") ".Params.featured" true }}
-{{ if and (gt (len $works) 0) (.Site.Params.homepage.show_work_section) }}
-<div class="home-work strip strip-grey">
-  <div class="container pt-10 pb-10">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="text-center mb-3">{{ .Site.Params.homepage.work_section_heading }}</h2>
-      </div>
-    </div>
-    <div class="row justify-content-between">
-      {{ range first .Site.Params.homepage.work_count (sort $works ".Params.weight") }}
-      <div class="col-12 col-md-6 mb-2">
-        {{ .Render "summary" }}
-      </div>
-      {{ end }}
-      {{ if .Site.Params.homepage.show_view_all_work_button }}
-      <div class="col-12 pt-4 text-center">
-        <a class="button button-primary" href="{{ .Site.BaseURL }}work">View All Work</a>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</div>
-{{ end }}
 
 <div class="strip strip-secondary">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-    <path fill="#f4f5fb" d="M738,99l262-93V0H0v5.6L738,99z"></path>
+    <path fill="#FFFFFF" d="M738,99l262-93V0H0v5.6L738,99z"></path>
   </svg>
 </div>
 {{ end }}
