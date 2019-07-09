@@ -98,6 +98,9 @@ $fa-font-path: "../../fonts/fontawesome5";
 @import 'pages/posts/page-posts-single';
 @import 'pages/posts/post-summary';
 
+// Install
+@import 'install/install';
+
 body {
   font-size: 1.1rem;
   @include media-breakpoint-up(sm) {
