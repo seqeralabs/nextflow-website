@@ -127,6 +127,7 @@ paginate = 5
 [[menu.main]]
 	name = "Docs"
 	url = "/docs/"
+    identifier = "docs"
     weight = 3
 
 [[menu.main]]

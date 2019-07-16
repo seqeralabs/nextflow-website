@@ -1,0 +1,19 @@
+<div class="work work-summary">
+    {{ if .Params.image }}
+    <div class="work-image">
+      <a href="{{ .RelPermalink }}"><img src="{{ .Site.BaseURL }}{{ .Params.image }}"/></a>
+    </div>
+    {{ end }}
+    <div class="work-title">
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    </div>
+    <div class="work-meta">
+        {{ if .Params.clientName }}<span>{{.Params.clientName}}</span> | {{ end }}
+        {{ if .Params.clientType }}<span>{{.Params.clientType}}</span>{{ end }}
+    </div>
+    {{ if .Params.description }}
+      <div class="work-description"><p>{{ .Params.description }}</p></div>
+    {{ end }}
+    <div class="work-content">{{ .Content | truncate 120 "..." }}</div>
+    <div class="work-link"><a class="work-read-more" href="{{ .Permalink }}" >Read More<i class="fas fa-long-arrow-alt-right ml-1"></i></a></div>
+</div>
