@@ -137,7 +137,7 @@ paginate = 5
 
 [[menu.main]]
     name = "Support"
-    url = "/suport/"
+    url = "/support/"
     weight = 5
 
 [[menu.main]]
