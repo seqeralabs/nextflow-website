@@ -9,7 +9,7 @@ function ThemeNav () {
         win: null,
         winScroll: false,
         winResize: false,
-        linkScroll: false,
+        linkScroll: true,
         winPosition: 0,
         winHeight: null,
         docHeight: null,

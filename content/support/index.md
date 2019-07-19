@@ -5,14 +5,17 @@ draft: false
 type: 'community'
 featured: true
 weight: 1
-heroHeading: 'Need help or found a bug?'
-heroSubHeading: 'You have come to the right place!'
-heroBackground: 'support/powder.jpg'
+heroHeading: 'Support'
+heroSubHeading: ''
+heroBackground: 'support/triangles.jpg'
 heroDiagonal: true
 heroDiagonalFill: '#eee'
-image: 'support/powder.jpg'
+heroHeight: 300
+image: 'support/triangles.jpg'
 ---
-### If you can't find what you are looking for in the [documentation](https://www.nextflow.io/docs/latest/index.html), there exist several support paths.
+# Need help or found a bug?
+
+### You have come to the right place! If you can't find what you are looking for in the [documentation](https://www.nextflow.io/docs/latest/index.html), there exist several support paths.
 
 ### When particiating the community support channels, please remember to follow our [code-of-conduct](https://github.com/nextflow-io/nextflow/blob/master/CODE-OF-CONDUCT.md).
 
@@ -23,33 +26,27 @@ Stuck on something and need some advice? Ask the community on Gitter or use the 
 
 <div class="container">
   <div class="row">
-    <div class="col-12 col-lg-6" style="padding-top: 15px; padding-bottom: 15px;">
-      <div class="card h-100">
-        <img class="card-img-top" style="width: 100%; height: 15vw; object-fit: cover; margin: 0px" src="gitter-logo.png" alt="Gitter">
-        <div class="card-body">
-          <h3 class="card-title">Gitter Channel</h3>
-          <h4 class="card-title" style="color:#28AE61">Q+A via Git Chat</h4>
-          <p class="card-text">
-          24/7 chat channel for the community to ask questions and provide support.</p>
-          <a href="https://gitter.im/nextflow-io/nextflow" class="btn btn-primary">More details</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-lg-6" style="padding-top: 15px; padding-bottom: 15px;">
-      <div class="card h-100">
-        <img class="card-img-top" style="width: 100%; height: 15vw; object-fit: cover; margin: 0px" src="google-groups-logo.png" alt="Google Groups">
-        <div class="card-body">
-          <h3 class="card-title">Nextflow Forum</h3>
-          <h4 class="card-title" style="color:#28AE61">A Google groups forum</h4>
-          <p class="card-text">Longer form questions for when a detailed description of the problem is required.</p>
-          <a href="https://groups.google.com/forum/#!forum/nextflow" class="btn btn-primary">More details</a>
-        </div>
-      </div>
-    </div>
+    {{< small_card 
+      image="gitter-logo.png" 
+      alt_image_text="Gitter"
+      card_title="Gitter Channel" 
+      card_subtitle="Q+A via Git chat" 
+      description="24/7 chat channel for the community to ask questions and provide support."
+      link="https://gitter.im/nextflow-io/nextflow"
+    >}}
+
+    {{< small_card
+      image="google-groups-logo.png" 
+      alt_image_text="Alt"
+      card_title="Nextflow Forum" 
+      card_subtitle="A Google groups forum" 
+      description="Longer form questions for when a detailed description of the problem is required."
+      link="https://groups.google.com/forum/#!forum/nextflow"
+    >}}
+
   </div>
   </br>
 </div>
-
 
 
 ## Issue Tracker
@@ -74,7 +71,7 @@ Found a bug or have a great idea for a new feature?
 
 
 ## Professional Support
-If your team or organisation needs advice or long-term maintaince support of Nextflow
+If your team or organisation needs support or long-term maintenance, consider the commercial offerings provided by Seqera Labs.
 
 <div class="container">
   <div class="row">
@@ -84,7 +81,7 @@ If your team or organisation needs advice or long-term maintaince support of Nex
         <div class="card-body">
           <h3 class="card-title">Support & Services</h3>
           <h4 class="card-title" style="color:#28AE61">Provided by Seqera Labs</h4>
-          <p class="card-text">For production settings and highly regulated environments.</p>
+          <p class="card-text">Timely support and maintenance releases for organisations using Nextflow in production settings and deployments in regulated environments.</p>
           <a href="https://www.seqera.io/" class="btn btn-primary">More details</a>
         </div>
       </div>

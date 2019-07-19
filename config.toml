@@ -116,7 +116,7 @@ paginate = 5
 # Main Menu
 [[menu.main]]
 	name = "Quick Start"
-	url = "/services/"
+	url = "/#getting-started"
     weight = 1
 
 [[menu.main]]

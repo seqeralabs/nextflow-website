@@ -98,8 +98,13 @@ $fa-font-path: "../../fonts/fontawesome5";
 @import 'pages/posts/page-posts-single';
 @import 'pages/posts/post-summary';
 
-// Install
+// Install Section
 @import 'install/install';
+
+// Scroll
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-size: 1.1rem;

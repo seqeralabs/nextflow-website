@@ -1,7 +1,17 @@
 ---
 title: 'About'
+date: 2019-07-16T15:23:36+10:00
+draft: false
+featured: true
+weight: 1
+heroHeading: 'About'
+heroSubHeading: ''
+heroBackground: 'team/bubble.jpg'
+heroDiagonal: true
+heroDiagonalFill: '#eee'
+heroHeight: 300
+image: 'team/bubble.jpg'
 ---
-
 # Meet the core team
 
 Originally developed at the Centre for Genomic Regulation (CRG) in Barcelona and now maintained by [Seqera Labs](http://www.seqera.io).

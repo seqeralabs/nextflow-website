@@ -5,13 +5,16 @@ draft: false
 type: 'community'
 featured: true
 weight: 1
-heroHeading: 'Community information for events, training and initiatives.'
-heroSubHeading: '"Alone, we can do so little; together, we can do so much"'
-heroBackground: 'community/bubble.jpg'
+heroHeading: 'Community'
+heroSubHeading: ''
+heroBackground: 'community/pyramids.jpg'
 heroDiagonal: true
 heroDiagonalFill: '#eee'
-image: 'community/bubble.jpg'
+heroHeight: 300
+image: 'community/pyramids.jpg'
 ---
+# Events, training opportunities and community initiatives.
+
 ### The Nextflow community is full of talented and awesome people working together. We operate according a [code-of-conduct](https://github.com/nextflow-io/nextflow/blob/master/CODE-OF-CONDUCT.md) to promote and foster inclusive and productive collaborations. 
 
 ### You can always follow us on [Twitter](https://twitter.com/nextflowio) to stay up-to-date with all the latest community news and events.

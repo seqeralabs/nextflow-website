@@ -3,6 +3,10 @@
 {{ define "header_classes" }}{{ end }}
 
 {{ define "main" }}
+
+{{ partial "hero-image.html" (dict "background" .Params.heroBackground "fullscreen" .Params.heroFullscreen "height" .Params.heroHeight "heading" .Params.heroHeading "subheading" .Params.heroSubheading "overlay" .Params.heroBackgroundOverlay "diagonal" .Params.heroDiagonal "diagonalfill" .Params.heroDiagonalFill "content" .) }}
+
+
 <div class="intro intro-big">
   <div class="container">
     <div class="row">
