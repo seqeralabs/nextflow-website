@@ -126,9 +126,9 @@ paginate = 5
 
 [[menu.main]]
 	name = "Docs"
-	url = "/docs/"
-    identifier = "docs"
+	url = "/docs/latest/index.html"
     weight = 3
+
 
 [[menu.main]]
 	name = "Community"

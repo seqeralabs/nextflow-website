@@ -37,13 +37,12 @@ Stuck on something and need some advice? Ask the community on Gitter or use the 
 
     {{< small_card
       image="google-groups-logo.png" 
-      alt_image_text="Alt"
+      alt_image_text="Google Forum"
       card_title="Nextflow Forum" 
       card_subtitle="A Google groups forum" 
       description="Longer form questions for when a detailed description of the problem is required."
       link="https://groups.google.com/forum/#!forum/nextflow"
     >}}
-
   </div>
   </br>
 </div>
@@ -54,17 +53,14 @@ Found a bug or have a great idea for a new feature?
 
 <div class="container">
   <div class="row">
-    <div class="col-12 col-sm-12 col-md-12 col-lg-8 my-0">
-      <div class="card h-100">
-        <img class="card-img-top" style="width: 100%; height: 15vw; object-fit: cover; margin: 0px" src="github-logo.png" alt="GitHub">
-        <div class="card-body">
-          <h3 class="card-title">Nextflow GitHub Issues</h3>
-          <h4 class="card-title" style="color:#28AE61">The issue tracker for the Nextflow repository</h4>
-          <p class="card-text">Create a bug report to help us improve Nextflow or submit a new feature proposal.</p>
-          <a href="https://www.crg.eu/en/event/coursescrg-nextflow-2019" class="btn btn-primary">More details</a>
-        </div>
-      </div>
-    </div>
+    {{< medium_card
+      image="github-logo.png" 
+      alt_image_text="Github"
+      card_title="Nextflow GitHub Issues" 
+      card_subtitle="The issue tracker for the Nextflow repository" 
+      description="LCreate a bug report to help us improve Nextflow or submit a new feature proposal."
+      link="https://github.com/nextflow-io/nextflow/issues"
+    >}}
   </div>
   </br>
 </div>
@@ -75,17 +71,14 @@ If your team or organisation needs support or long-term maintenance, consider th
 
 <div class="container">
   <div class="row">
-    <div class="col-12 col-sm-12 col-md-12 col-lg-8 my-0">
-      <div class="card h-100">
-        <img class="card-img-top" style="width: 100%; height: 15vw; object-fit: cover; margin: 0px" src="seqera.png" alt="Seqera">
-        <div class="card-body">
-          <h3 class="card-title">Support & Services</h3>
-          <h4 class="card-title" style="color:#28AE61">Provided by Seqera Labs</h4>
-          <p class="card-text">Timely support and maintenance releases for organisations using Nextflow in production settings and deployments in regulated environments.</p>
-          <a href="https://www.seqera.io/" class="btn btn-primary">More details</a>
-        </div>
-      </div>
-    </div>
+    {{< medium_card
+      image="seqera.png" 
+      alt_image_text="Seqera Labs"
+      card_title="Support & Services" 
+      card_subtitle="Provided by Seqera Labs" 
+      description="Timely support and maintenance releases for organisations using Nextflow in production settings and deployments in regulated environments."
+      link="https://www.seqera.io/"
+    >}}
   </div>
   </br>
 </div>
