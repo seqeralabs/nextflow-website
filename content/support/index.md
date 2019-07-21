@@ -58,7 +58,7 @@ Found a bug or have a great idea for a new feature?
       alt_image_text="Github"
       card_title="Nextflow GitHub Issues" 
       card_subtitle="The issue tracker for the Nextflow repository" 
-      description="LCreate a bug report to help us improve Nextflow or submit a new feature proposal."
+      description="Create a bug report to help us improve Nextflow or submit a new feature proposal."
       link="https://github.com/nextflow-io/nextflow/issues"
     >}}
   </div>

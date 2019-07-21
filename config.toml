@@ -23,15 +23,15 @@ paginate = 5
     ]
 
     [params.homepage_meta_tags]
-        meta_description = "Advance is a premium, multi-purpose Hugo theme. It has 5 content-types for archetypical SMB and marketing websites. A modern semi-flat visual design with customisable hero images and full-width sections."
+        meta_description = "Scientific workflows and pipelines for genomics, bioinformatics and data science at scale across clusters and cloud."
         meta_og_title = "Nextflow"
         meta_og_type = "website"
-        meta_og_url = "https://hugo-advance-pro.netlify.com"
+        meta_og_url = "https://www.nextflow.io"
         meta_og_image = "https://hugo-advance-pro.netlify.com/images/tn.png"
-        meta_og_description = "Advance is a premium, multi-purpose Hugo theme. It has 5 content-types for archetypical SMB and marketing websites. A modern semi-flat visual design with customisable hero images and full-width sections."
-        meta_twitter_card = "summary"
-        meta_twitter_site = "@nextflowio"
-        meta_twitter_creator = "@zerostaticio"
+        meta_og_description = "Scientific workflows and pipelines for genomics, bioinformatics and data science at scale across clusters and cloud."
+        meta_twitter_card = "Scientific workflows and pipelines for genomics, bioinformatics and data science at scale across clusters and cloud."
+        meta_twitter_site = "https://www.nextflow.io"
+        meta_twitter_creator = "Evan Floden"
 
     [params.global]
         header_fixed = true
@@ -67,19 +67,19 @@ paginate = 5
         install_step_three_command = "./nextflow run hello"
         install_step_three_subtitle = "Start creating and launching workflows!"
 
-        install_link = "Get Started"
+        install_link = "/docs/latest/getstarted.html"
         install_link_text = "See installation docs"
 
         show_partners = true
         partners_heading = "Trusted by the world's most innovative organisations since 2014"
-        partners_subheading = "And a community of thousands of scientists, engineers and developers."
+        partners_subheading = "Along with a community of thousands of scientists, engineers and developers."
 
         show_work_section = false
         work_section_heading = "Our Work"
         work_count = 2
         show_view_all_work_button = true
 
-[params.learn]
+    [params.learn]
         show_features = true
         show_splash_one_section = true
         splash_one_background_image = "images/kaleidico-754543-unsplash.jpg"
@@ -98,6 +98,9 @@ paginate = 5
         subheading = "Get in touch and get a quote."
         button_url = "contact"
         button_text = "Contact us"
+
+    [params.repo]
+        url = "https://github.com/nextflow-io/nextflow"
 
 # Main Menu
 [[menu.main]]
@@ -144,7 +147,7 @@ paginate = 5
 
 [[menu.footer_primary]]
   name = "Quick Start"
-  url = "/services/"
+  url = "/#getting-started"
     weight = 2
 
 [[menu.footer_primary]]
