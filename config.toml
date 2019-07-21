@@ -48,45 +48,31 @@ paginate = 5
 
         main_image = "images/home.png"
 
-        show_splash_section_one = true
-        splash_one_image = "images/environments.png"
-        splash_one_heading = "Powerful HPC engines"
-        splash_one_subheading= "Launch across clouds and clusters effortlessly."
-        splash_one_paragraph = "Out-of-the-box support for AWS, GCP and K8S plus batch schedulers including SLURM, LSF & Grid Engine."
+        install_title = "Get Started"
+        install_subtitle = "Nextflow can be installed on any POSIX compatible system (Linux, OS X, etc)."
+        install_subsubtitle = "Simply follow these three steps."
 
-        show_splash_section_two = true
-        splash_two_image = "images/dependencies.png"
-        splash_two_heading = "Portable & reproducible"
-        splash_two_subheading= "Containers without the hassle."
-        splash_two_paragraph = "Docker, Singularity and Conda intergrations encapsulate all workflow dependencies across environments."
+        install_step_one_title = "Check"
+        install_step_one_description = "Java <span>8 or later</span> is required"
+        install_step_one_command = "java -version"
+        install_step_one_subtitle = "Version numbers 1.8.y_z and 8 identify the same Java release."
 
-        show_splash_section_three = true
-        splash_three_image = "images/polyglot.png"
-        splash_three_heading = "Language agnostic"
-        splash_three_subheading= "Write workflows in your language."
-        splash_three_paragraph = "The flexibility to develop, port and reuse code allowing you to do things your way."
+        install_step_two_title = "Install"
+        install_step_two_description = "<span>One line</span> installation"
+        install_step_two_command = "curl -s https://get.nextflow.io | bash"
+        install_step_two_subtitle = "A file nextflow is created in the current directory."
 
-        show_splash_section_four = true
-        splash_four_image = "images/dataflow.png"
-        splash_four_heading = "Dataflow progamming"
-        splash_four_subheading= "Unrivalled performance at scale."
-        splash_four_paragraph = "The dataflow programming model uses a reactive approach for orchestrating massive workloads across billions of distributed tasks."
+        install_step_three_title = "Launch"
+        install_step_three_description = "Try a <span>simple</span> demo"
+        install_step_three_command = "./nextflow run hello"
+        install_step_three_subtitle = "Start creating and launching workflows!"
 
-        show_splash_section_five = true
-        splash_five_image = "images/sharing.png"
-        splash_five_heading = "Sharing & provenance"
-        splash_five_subheading= "Track and store workflows as code."
-        splash_five_paragraph = "Integration with Git provides full tracebility and hosting solutions allows your work to be shared with the world."
-
-        show_splash_section_six = true
-        splash_six_image = "images/apache.svg"
-        splash_six_heading = "100% Open-source"
-        splash_six_subheading= "Free to use, modify & distribute."
-        splash_six_paragraph = "Licensed under the Apache software license 2.0."
+        install_link = "Get Started"
+        install_link_text = "See installation docs"
 
         show_partners = true
         partners_heading = "Trusted by the world's most innovative organisations since 2014"
-        partners_subheading = ""
+        partners_subheading = "And a community of thousands of scientists, engineers and developers."
 
         show_work_section = false
         work_section_heading = "Our Work"

@@ -82,7 +82,6 @@ Training events taught by Nextflow expert trainers. </br> Contact [Seqera Labs](
   </br>
 </div>
 
-
 ## Community Initiatives
 <div class="container">
   <div class="row">

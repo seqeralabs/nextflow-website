@@ -20,344 +20,57 @@
 <!-- Hero Image Partial-->
 {{ partial "hero-image-index.html" (dict "background" .Params.heroBackground "fullscreen" .Params.heroFullscreen "height" .Params.heroHeight "heading" .Params.heroHeading "subheading" .Params.heroSubheading "overlay" .Params.heroBackgroundOverlay "diagonal" .Params.heroDiagonal "diagonalfill" .Params.heroDiagonalFill) }}
 
-<!-- Splash One -->
-{{ if .Site.Params.homepage.show_splash_section_one }}
-<div class="strip strip-grey pt-8 pb-8 splash splash-one">
-  <div class="container">
-    <div class="row">
-      {{ if .Site.Params.homepage.splash_one_image }}
-      <div class="col-12 col-md-6 ">
-        <img class="img-fluid" src="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_one_image }}" />
-      </div>
-      {{ end }}
-      <div class="col-12 {{ if .Site.Params.homepage.splash_one_image }}col-md-6{{ else }}col-md-12{{ end }}">
-        {{ if .Site.Params.homepage.splash_one_heading }}<h2>{{ .Site.Params.homepage.splash_one_heading }}</h2>
-        {{ end }}
-        {{ if .Site.Params.homepage.splash_one_subheading }}<p class="xlarge" style="color:#28AE61">
-          {{ .Site.Params.homepage.splash_one_subheading }}</p>{{ end }}
-        {{ if .Site.Params.homepage.splash_one_paragraph }}<p class="large">
-          {{ .Site.Params.homepage.splash_one_paragraph }}</p>{{ end }}
-        {{ if .Site.Params.homepage.splash_one_link_url }}<a class="button d-none d-md-inline-block"
-          href="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_one_link_url }}">{{ .Site.Params.homepage.splash_one_link_text }}</a>{{ end }}
-      </div>
-    </div>
-  </div>
-</div>
-{{ end }}
 
-
-<div class="strip-bg-grey">
-  <svg class="hero-diagonal" aria-hidden="true" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 10" preserveAspectRatio="none">
-    <polygon fill="#FFFFFF" points="0,10 200, 0 200, 10"/>
-  </svg>
-</div>
-
-<!-- Splash Two -->
-{{ if .Site.Params.homepage.show_splash_section_two }}
-<div class="strip strip-white pt-8 pb-8 splash splash-two">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 {{ if .Site.Params.homepage.splash_two_image }}col-md-6{{ else }}col-md-12{{ end }}">
-        {{ if .Site.Params.homepage.splash_two_heading }}<h2 class="right-align">
-          {{ .Site.Params.homepage.splash_two_heading }}</h2>{{ end }}
-        {{ if .Site.Params.homepage.splash_two_subheading }}<p class="xlarge right-align" style="color:#28AE61">
-          {{ .Site.Params.homepage.splash_two_subheading }}</p>{{ end }}
-        {{ if .Site.Params.homepage.splash_two_paragraph }}<p class="large right-align">
-          {{ .Site.Params.homepage.splash_two_paragraph }}</p>{{ end }}
-        {{ if .Site.Params.homepage.splash_two_link_url }}<a class="button d-none d-md-inline-block"
-          href="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_two_link_url }}">{{ .Site.Params.homepage.splash_two_link_text }}</a>{{ end }}
-      </div>
-      {{ if .Site.Params.homepage.splash_two_image }}
-      <div class="col-12 col-md-6 ">
-        <img class="img-fluid" src="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_two_image }}" />
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</div>
-{{ end }}
-
-<div class="strip-bg-grey">
-  <svg class="hero-diagonal" aria-hidden="true" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 10" preserveAspectRatio="none">
-    <polygon fill="#FFFFFF" points="0,0 200, 10 200, 0"/>
-  </svg>
-</div>
-
-<!-- Splash Three -->
-{{ if .Site.Params.homepage.show_splash_section_three }}
-<div class="strip strip-grey pt-8 pb-8 splash splash-three">
-  <div class="container">
-    <div class="row">
-      {{ if .Site.Params.homepage.splash_three_image }}
-      <div class="col-12 col-md-6 ">
-        <img class="img-fluid" src="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_three_image }}" />
-      </div>
-      {{ end }}
-      <div class="col-12 {{ if .Site.Params.homepage.splash_three_image }}col-md-6{{ else }}col-md-12{{ end }}">
-        {{ if .Site.Params.homepage.splash_three_heading }}<h2>{{ .Site.Params.homepage.splash_three_heading }}</h2>
-        {{ end }}
-        {{ if .Site.Params.homepage.splash_three_subheading }}<p class="xlarge" style="color:#28AE61">
-          {{ .Site.Params.homepage.splash_three_subheading }}</p>{{ end }}
-        {{ if .Site.Params.homepage.splash_three_paragraph }}<p class="large">
-          {{ .Site.Params.homepage.splash_three_paragraph }}</p>{{ end }}
-        {{ if .Site.Params.homepage.splash_three_link_url }}<a class="button d-none d-md-inline-block"
-          href="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_three_link_url }}">{{ .Site.Params.homepage.splash_three_link_text }}</a>{{ end }}
-      </div>
-    </div>
-  </div>
-</div>
-{{ end }}
-
-<div class="strip-bg-grey">
-    <svg class="hero-diagonal" aria-hidden="true" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 10" preserveAspectRatio="none">
-      <polygon fill="#FFFFFF" points="0,10 200, 0 200, 10"/>
-    </svg>
-  </div>
-
-<!-- Splash Four -->
-{{ if .Site.Params.homepage.show_splash_section_four }}
-<div class="strip strip-white pt-8 pb-8 splash splash-four">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 {{ if .Site.Params.homepage.splash_four_image }}col-md-6{{ else }}col-md-12{{ end }}">
-        {{ if .Site.Params.homepage.splash_four_heading }}<h2 class="right-align">
-          {{ .Site.Params.homepage.splash_four_heading }}</h2>{{ end }}
-        {{ if .Site.Params.homepage.splash_four_subheading }}<p class="xlarge right-align" style="color:#28AE61">
-          {{ .Site.Params.homepage.splash_four_subheading }}</p>{{ end }}
-        {{ if .Site.Params.homepage.splash_four_paragraph }}<p class="large right-align">
-          {{ .Site.Params.homepage.splash_four_paragraph }}</p>{{ end }}
-        {{ if .Site.Params.homepage.splash_four_link_url }}<a class="button d-none d-md-inline-block right-align"
-          href="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_four_link_url }}">{{ .Site.Params.homepage.splash_four_link_text }}</a>{{ end }}
-      </div>
-      {{ if .Site.Params.homepage.splash_four_image }}
-      <div class="col-12 col-md-6 ">
-        <img class="img-fluid" src="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_four_image }}" />
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</div>
-{{ end }}
-
-<div class="strip-bg-grey">
-    <svg class="hero-diagonal" aria-hidden="true" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 10" preserveAspectRatio="none">
-      <polygon fill="#FFFFFF" points="0,0 200, 10 200, 0"/>
-    </svg>
-  </div>
-
-<!-- Splash Five -->
-{{ if .Site.Params.homepage.show_splash_section_five }}
-<div class="strip strip-grey pt-8 pb-8 splash splash-five">
-  <div class="container">
-    <div class="row">
-      {{ if .Site.Params.homepage.splash_five_image }}
-      <div class="col-12 col-md-6 ">
-        <img class="img-fluid" src="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_five_image }}" />
-      </div>
-      {{ end }}
-      <div class="col-12 {{ if .Site.Params.homepage.splash_five_image }}col-md-6{{ else }}col-md-12{{ end }}">
-        {{ if .Site.Params.homepage.splash_five_heading }}<h2>{{ .Site.Params.homepage.splash_five_heading }}</h2>
-        {{ end }}
-        {{ if .Site.Params.homepage.splash_five_subheading }}<p class="xlarge" style="color:#28AE61">
-          {{ .Site.Params.homepage.splash_five_subheading }}</p>{{ end }}
-        {{ if .Site.Params.homepage.splash_five_paragraph }}<p class="large">
-          {{ .Site.Params.homepage.splash_five_paragraph }}</p>{{ end }}
-        {{ if .Site.Params.homepage.splash_five_link_url }}<a class="button d-none d-md-inline-block"
-          href="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_five_link_url }}">{{ .Site.Params.homepage.splash_five_link_text }}</a>{{ end }}
-      </div>
-    </div>
-  </div>
-</div>
-{{ end }}
-
-<div class="strip-bg-grey">
-    <svg class="hero-diagonal" aria-hidden="true" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 10" preserveAspectRatio="none">
-      <polygon fill="#FFFFFF" points="0,10 200, 0 200, 10"/>
-    </svg>
-  </div>
-
-<!-- Splash Six -->
-{{ if .Site.Params.homepage.show_splash_section_six }}
-<div class="strip strip-white pt-8 pb-8 splash splash-six">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 {{ if .Site.Params.homepage.splash_six_image }}col-md-6{{ else }}col-md-12{{ end }}">
-        {{ if .Site.Params.homepage.splash_six_heading }}<h2 class="right-align">
-          {{ .Site.Params.homepage.splash_six_heading }}</h2>{{ end }}
-        {{ if .Site.Params.homepage.splash_six_subheading }}<p class="xlarge right-align" style="color:#28AE61">
-          {{ .Site.Params.homepage.splash_six_subheading }}</p>{{ end }}
-        {{ if .Site.Params.homepage.splash_six_paragraph }}<p class="large right-align">
-          {{ .Site.Params.homepage.splash_six_paragraph }}</p>{{ end }}
-        {{ if .Site.Params.homepage.splash_six_link_url }}<a class="button d-none d-md-inline-block right-align"
-          href="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_four_link_url }}">{{ .Site.Params.homepage.splash_six_link_text }}</a>{{ end }}
-      </div>
-      {{ if .Site.Params.homepage.splash_six_image }}
-      <div class="col-12 col-md-6 ">
-        <img class="img-fluid" src="{{ .Site.BaseURL }}{{ .Site.Params.homepage.splash_six_image }}" />
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</div>
-{{ end }}
-
-
-<div id="getting-started" class="home-work strip strip-grey">
-  <div class="container pt-10 pb-10">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="text-center mb-3">Get Started</h1>
-        <h3 class="text-center mb-3">Nextflow can be installed on any POSIX compatible system (Linux,
-          OS X, etc).</h3>
-        <h3 class="text-center mb-3" style="color:#28AE61">Simply follow these three steps.</h3>
-      </div>
-    </div>
-    <div id="generic_price_table">
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="generic_content clearfix">
-                <div class="generic_head_price clearfix">
-                  <div class="generic_head_content clearfix">
-                    <div class="head_bg"></div>
-                    <div class="head">
-                      <span>Check</span>
-                    </div>
-                  </div>
-                  <div class="generic_price_tag clearfix">
-                    <span class="price">
-                      <span class="currency">1</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="generic_feature_list">
-                  <ul>
-                    <li>Java <span>8 or later</span> is required</li>
-                  </ul>
-                </div>
-                <div class="head_bg"></div>
-                <div class="head">
-                    <highlight>java -version</highlight>
-                </div> </br></br>
-                <p> Version numbers 1.8.y_z and 8 identify the same Java release. </p>
-              </div>
-              <!--//PRICE CONTENT END-->
-            </div>
-
-            <div class="col-md-4">
-              <!--PRICE CONTENT START-->
-              <div class="generic_content clearfix">
-                <div class="generic_head_price clearfix">
-                  <div class="generic_head_content clearfix">
-                    <div class="head_bg"></div>
-                    <div class="head">
-                      <span>Install</span>
-                    </div>
-                  </div>
-                  <div class="generic_price_tag clearfix">
-                    <span class="price">
-                      <span class="currency">2</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="generic_feature_list">
-                  <ul>
-                    <li><span>One line</span> installation</li>
-                  </ul>
-                </div>
-                <div class="head_bg"></div>
-                <div class="head">
-                  <highlight>curl -s https://get.nextflow.io | bash </highlight>
-                </div> </br>
-                <p>A file nextflow is created in the current directory.</p>
-              </div>
-              <!--//PRICE CONTENT END-->
-            </div>
-            <div class="col-md-4">
-
-              <!--PRICE CONTENT START-->
-              <div class="generic_content clearfix">
-                <div class="generic_head_price clearfix">
-                  <div class="generic_head_content clearfix">
-                    <div class="head_bg"></div>
-                    <div class="head">
-                      <span>Launch</span>
-                    </div>
-                    <!--//HEAD END-->
-
-                  </div>
-                  <!--//HEAD CONTENT END-->
-
-                  <!--PRICE START-->
-                  <div class="generic_price_tag clearfix">
-                    <span class="price">
-                      <span class="currency">3</span>
-                    </span>
-                  </div>
-                  <!--//PRICE END-->
-
-                </div>
-                <!--//HEAD PRICE DETAIL END-->
-
-                <!--FEATURE LIST START-->
-                <div class="generic_feature_list">
-                  <ul>
-                    <li>Try a<span> simple</span> demo</li>
-                  </ul>
-                </div>
-                <div class="head_bg"></div>
-                <div class="head">
-                    <highlight>./nextflow run hello</highlight>
-                </div> </br></br>
-                <p>Start creating and launching workflows!</p>
-              </br>
-              </div>
-
-              <!--//PRICE CONTENT END-->
-
-            </div>
-          </div>
-          <!--//BLOCK ROW END-->
-
-          <div class="col-12 pt-4 text-center">
-          </br>
-            <a class="button button-primary" href="{{ .Site.BaseURL }}docs#installation">See installation docs</a>
-          </div>
-
+<!-- Spash features (Content: data/splash.json ) -->
+{{ range .Site.Data.splash }}
+  <div class="strip strip-{{ .colour }} pt-8 pb-8 splash">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 ">
+          {{if not (modBool .title 2)}} <img class="img-fluid" src="{{ .image }}" />
+          {{ else }} <h2 class="right-align">{{ .heading }}</h2>
+                     <p class="xlarge right-align" style="color:#28AE61">{{ .subheading }}</p>
+                     <p class="large right-align">{{ .paragraph }}</p>
+          {{ end }}
         </div>
-      </section>
+        <div class="col-12  col-md-6">
+          {{if (modBool .title 2)}} <img class="img-fluid" src="{{ .image }}" />
+          {{ else }} <h2>{{ .heading }}</h2> 
+                     <p class="xlarge" style="color:#28AE61">{{ .subheading }}</p>
+                     <p class="large">{{ .paragraph }}</p>
+          {{ end }}
+        </div>
+      </div>
     </div>
   </div>
   <svg class="hero-diagonal" aria-hidden="true" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 10" preserveAspectRatio="none">
-    <polygon fill="#FFFFFF" points="0,10 200, 0 200, 10"/>
+    <polygon fill="#FFFFFF" points="{{ .points }}"/>
   </svg>
-</div>
+  </div>
+{{ end }}
 
+<!-- Getting started partial (Content: config.toml, Template: layouts/patials/install.html) -->
+{{ partial "install.html" . }}
 
-
-<!-- Partners -->
+<!-- Partners (Content: data/partners.json ) -->
 {{ if and (gt (len .Site.Data.partners) 0) (.Site.Params.homepage.show_partners) }}
 <div class="strip strip-white home-partners">
   <div class="container pt-5 pt-md-10 pb-10">
     <div class="row">
       <div class="col-12">
         {{ if .Site.Params.homepage.partners_heading }}<h1 class="text-center mb-3">{{ .Site.Params.homepage.partners_heading }}</h1>{{ end }}
-        {{ if .Site.Params.homepage.partners_subheading }}<p>{{ .Site.Params.homepage.partners_subheading }}</p>
-        {{ end }}
         </br> </br>
         <div class="partners">
           {{ range .Site.Data.partners }}
           {{ if .image }}<div class="partner"><img alt="{{ .title }} logo" src="{{ .image }}" /></div> {{ end }}
           {{end}}
         </div>
-        <h2 class="text-center mb-3"></br>And an active community of thousands of users.</h2>
+        <h2 class="text-center mb-3"></br>{{.Site.Params.homepage.partners_subheading}}</h2>
       </div>
     </div>
   </div>
 </div>
 {{ end }}
-
 
 <div class="strip strip-secondary">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
