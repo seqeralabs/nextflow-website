@@ -2,11 +2,13 @@
 title: 'Marshall Headphones'
 date: 2018-12-20T15:13:51+10:00
 draft: false
-weight: 100
-heroHeading: 'Marshall, now portable'
+weight: 8
+headerTransparent: true
+heroHeading: 'Marshall is now portable'
 heroSubHeading: "It's like a concert in your ears"
 heroBackground: 'work/dhe-haivan-1147505-unsplash.jpg'
-image: 'work/dhe-haivan-1147505-unsplash.jpg'
+thumbnail: 'work/dhe-haivan-1147505-unsplash.jpg'
+works: ['Product Design', 'Industrial Design']
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum

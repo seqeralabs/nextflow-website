@@ -2,12 +2,14 @@
 title: 'Unsplash Book'
 date: 2018-12-20T15:47:09+10:00
 draft: false
-weight: 100
+weight: 9
+thumbnail: 'work/vladimir-kudinov-92153-unsplash.jpg'
+headerTransparent: true
 heroHeading: 'Unsplash Book'
 heroSubHeading: 'Memorata haberet sepulcrales gentisque dum sic.'
 heroBackground: 'work/vladimir-kudinov-92153-unsplash.jpg'
 heroBackgroundOverlay: true
-image: 'work/vladimir-kudinov-92153-unsplash.jpg'
+works: ['Book Design']
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum

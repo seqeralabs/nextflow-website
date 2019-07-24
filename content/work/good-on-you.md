@@ -2,11 +2,13 @@
 title: 'Good on You'
 date: 2018-12-20T14:49:53+10:00
 draft: false
-weight: 200
+weight: 6
+headerTransparent: true
 heroHeading: 'Good on You'
 heroSubHeading: 'Our portfolio and previous projects'
 heroBackground: 'work/ryan-everton-1234720-unsplash.jpg'
-image: 'work/ryan-everton-1234720-unsplash.jpg'
+thumbnail: 'work/ryan-everton-1234720-unsplash.jpg'
+works: ['Retail Design']
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum

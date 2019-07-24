@@ -11,22 +11,60 @@
   </div>
 </div>
 
-<div class="grid pb-md-10">
-  <div class="grid-sizer"></div>
+{{ if .Site.Params.work.show_filters }}
+<div class="container pb-6">
+  <ul id="filter" class="filter">
+    <li><a id="all" class="active" href="#">All</a></li>
+    {{ range $name, $taxonomy := .Site.Taxonomies.works }}
+    {{ with $.Site.GetPage (printf "/works/%s" $name) }}
+    <li><a id="{{ $name }}" href="#">{{ .Title }}</a></li>
+    {{ end }}
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
+{{ $counter := 100 }}
+<div class="work-gallery masonry pb-0 pb-md-10">
+  {{ if eq (.Site.Params.work.order_work_grid) "shuffle" }}
   {{ range shuffle .Pages }}
-  <div class="grid-item">{{ .Render "masonry" }}</div>
+  <div class="work-gallery-item masonry-item {{ range .Params.works }}{{ . | urlize }} {{ end }}" data-aos="fade-in">
+    {{ .Render "summary" }}</div>
+  {{ end }}
+
+  {{ else if eq (.Site.Params.work.order_work_grid) "weight"}}
+  {{ range .Pages.ByWeight }}
+  {{ $counter = add $counter 50 }}
+  <div id="{{ $counter }}" class="work-gallery-item masonry-item {{ range .Params.works }}{{ . | urlize }} {{ end }}"
+    data-aos="fade-in">
+    {{ .Render "summary" }}
+  </div>
+  {{ end }}
+
+  {{ else if eq (.Site.Params.work.order_work_grid) "lastmod"}}
+  {{ range .Pages.ByLastmod.Reverse }}
+  <div class="work-gallery-item masonry-item {{ range .Params.works }}{{ . | urlize }} {{ end }}" data-aos="fade-in">
+    {{ .Render "summary" }}</div>
+  {{ end }}
+
+  {{ else }}
+  {{ range shuffle .Pages }}
+  <div class="work-gallery-item masonry-item {{ range .Params.works }}{{ . | urlize }} {{ end }}" data-aos="fade-in">
+    {{ .Render "summary" }}</div>
+  {{ end }}
   {{ end }}
 </div>
 {{ end }}
 
+
 {{ define "footer_js" }}
-{{ $masonry := resources.Get "js/libs/masonry.pkgd.min.js" }}
-{{ $imagesLoaded := resources.Get "js/libs/imagesloaded.pkgd.min.js" }}
+{{ $aos := resources.Get "js/libs/aos.js" }}
 {{ $work := resources.Get "js/pages/work.js" }}
-{{ $workJS := slice $masonry $imagesLoaded $work | resources.Concat "js/workBundle.js" }}
+{{ $workJS := slice $aos $work | resources.Concat "js/workBundle.js" }}
+
 {{ if .Site.IsServer }}
-  <script type="text/javascript" src="{{ ($workJS | fingerprint).RelPermalink }}"></script>
-  {{ else }}
-  <script type="text/javascript" src="{{ ($workJS | minify | fingerprint).RelPermalink }}"></script>
-  {{ end }}
+<script type="text/javascript" src="{{ ($workJS | fingerprint).RelPermalink }}"></script>
+{{ else }}
+<script type="text/javascript" src="{{ ($workJS | minify | fingerprint).RelPermalink }}"></script>
+{{ end }}
 {{ end }}

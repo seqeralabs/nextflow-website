@@ -2,11 +2,13 @@
 title: 'Fossil Watches'
 date: 2018-12-20T15:46:10+10:00
 draft: false
-weight: 100
+weight: 3
+thumbnail: 'work/marc-olivier-jodoin-608671-unsplash.jpg'
+headerTransparent: true
 heroHeading: 'Fossil Watches'
 heroSubHeading: 'Memorata haberet sepulcrales gentisque dum sic.'
 heroBackground: 'work/marc-olivier-jodoin-608671-unsplash.jpg'
-image: 'work/marc-olivier-jodoin-608671-unsplash.jpg'
+works: ['Industrial Design', 'Product Design']
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum

@@ -15,7 +15,7 @@ image: 'support/triangles.jpg'
 ---
 # Need help or found a bug?
 
-### You have come to the right place! If you can't find what you are looking for in the [documentation](https://www.nextflow.io/docs/latest/index.html), there exist several support paths.
+### You have come to the right place! If you can't find what you are looking for in the [documentation](https://www.nextflow.io/docs/latest/index.html), there exists several avenues for support.
 
 ### When particiating the community support channels, please remember to follow our [code-of-conduct](https://github.com/nextflow-io/nextflow/blob/master/CODE-OF-CONDUCT.md).
 

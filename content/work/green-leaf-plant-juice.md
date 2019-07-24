@@ -1,57 +1,62 @@
 ---
 title: 'Green Leaf Plant Juice'
-date: 2018-12-20T15:23:36+10:00
+date: 2018-12-20
 draft: false
 featured: true
 weight: 2
-heroHeading: 'Green Leaf Plant Juice'
-heroSubHeading: 'Memorata haberet sepulcrales gentisque dum sic.'
+thumbnail: 'work/devin-avery-535359-unsplash.jpg'
+headerTransparent: true
+hero: true
+heroHeading: 'Green Lead Plant Juice'
+heroSubHeading: ''
 heroBackground: 'work/devin-avery-535359-unsplash.jpg'
-image: 'work/devin-avery-535359-unsplash.jpg'
+heroHeadingColor: '#1c5434'
+heroBackgroundOverlay: false
+heroFullscreen: false
+heroHeight: 600
+heroDiagonal: false
+works: ['Retail Design']
+gallery:
+  [
+    'https://source.unsplash.com/bMH8ub9z1_U/500',
+    'https://source.unsplash.com/nXK19o7aZrM/500',
+    'https://source.unsplash.com/6FIC9e4J5s0/500',
+    'https://source.unsplash.com/BRVqq2uak4E/500',
+  ]
+workClient: 'Green Leaf'
+workDate: 2017-05-12
 ---
+
+# A Fresh Look
+
+Green leaf plant juice approached us to design a fresh new brand and labeling for their range of organic juices.
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
 de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
 crimen habet Priamum nec.
 
+![iPhone](https://source.unsplash.com/cToxdG42ujw/500)
+
 ## Ne verba patulosque numen vix libet
+
+Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
+de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
+crimen habet Priamum nec.
+![iPhone](https://source.unsplash.com/YSA1IRkGAsg/800)
+
+## Postquam tamen
 
 Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis.
 Ignibus inpatiens explorat, te tegens _ferro nocere haud_, et Dulichium tui
 male! Quo sed [fuit flexit et](#vexant-achivi) hic die solido, gloria?
 
-1. Cum det dixit Parcarum qui spemque est
-2. Exit ex huic
-3. Quod consiste agitataque claustraque vicina videt lacertis
-4. Loquor videt
-5. Ardua non igne caelesti coniugis cognovi diversorum
-6. Per nunc pariterque saeva vindicet
+![iPhone](https://source.unsplash.com/46n1T0BMKUM/800)
+
+Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis.
+Ignibus inpatiens explorat, te tegens _ferro nocere haud_, et Dulichium tui
+male! Quo sed [fuit flexit et](#vexant-achivi) hic die solido, gloria?
 
 Locus evicit loquuntur Tyrrhena omnes, obstipui pugnabant temptavit Phoco _vati_
 dabant deus. Memorata haberet sepulcrales gentisque dum sic, in flumina templa!
 Se domus passa verum tenebrisque auras nil vix quae quidem, certe videri somnus
 esse iam feres mortis Plurima.
-
-## Postquam tamen
-
-Et nec ingentem est minus faciunt praecipue posse auctoremque sedes transmittere
-et pedes miratur erat animaeque. Tellus admonuit humanam funes, sagittis et
-licet! Inserui quamvis Clymeni.
-
-- Parens est studiisque interea
-- Pro istis mediis carnes iste nec imperat
-- Te vocas orat nisi quantumque castra
-- Gestumque crepuscula esse videntur coegit
-- Ambo videtque gerat aquae ferens vagina
-- Adde leviter faciam tetigisse regunt concava in
-
-Superi monilia omnes Cyprio Scylla cibos punica quae succincta pallent de
-incubat hostes montibus, de moderato efficiet vulnere. Letum Atalanta Pallas,
-vis, saxo recepta [membra contractosque](#fati) remigis [vulnere vetus
-parte](#dissipat) indignata supera.
-
-Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane
-iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem
-et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter
-somnus, fortius ante ille. Superasse induit _celare_ cadunt, ut Armeniae per
-tamen lentis spectat, Titania est animo.

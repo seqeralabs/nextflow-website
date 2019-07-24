@@ -1,13 +1,19 @@
 ---
 title: 'Adore Sunglasses'
-date: 2018-12-20T15:22:30+10:00
+date: 2018-12-20
 draft: false
 featured: true
-weight: 1
+weight: 5
+thumbnail: 'work/tamara-bellis-434725-unsplash.jpg'
+headerTransparent: true
 heroHeading: 'Adore Sunglasses'
-heroSubHeading: 'Memorata haberet sepulcrales gentisque dum sic.'
+heroSubHeading: 'Memorata hafberet sepulcrales gentisque dum sic.'
 heroBackground: 'work/tamara-bellis-434725-unsplash.jpg'
+heroHeadingColor: '#f4bc57'
+heroSubHeadingColor: '#fff'
+works: ['Product Design']
 image: 'work/tamara-bellis-434725-unsplash.jpg'
+clientName: 'Harvey Norman'
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum

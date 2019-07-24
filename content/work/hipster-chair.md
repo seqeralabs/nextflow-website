@@ -1,12 +1,14 @@
 ---
-title: 'Hipster Chair'
-date: 2018-12-20T15:07:16+10:00
+title: 'White Chair'
+date: 2018-12-24
 draft: false
-weight: 100
+weight: 1
+thumbnail: 'work/kara-eads-1234326-unsplash.jpg'
+headerTransparent: true
 heroHeading: 'Sit Down, Relax'
 heroSubHeading: 'The perfect chair for the office'
 heroBackground: 'work/kara-eads-1234326-unsplash.jpg'
-image: 'work/kara-eads-1234326-unsplash.jpg'
+works: ['Industrial Design']
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum

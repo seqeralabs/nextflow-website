@@ -79,6 +79,11 @@ paginate = 5
         work_count = 2
         show_view_all_work_button = true
 
+    [params.work] 
+        # Work Page
+        order_work_grid = 'weight' # shuffle, lastmod, weight
+        show_filters = true # show filters
+
     [params.learn]
         show_features = true
         show_splash_one_section = true
@@ -193,4 +198,5 @@ paginate = 5
 [taxonomies]
     tag = "tags"
     category = "categories"
+    work =  "works"
     author = "authors"

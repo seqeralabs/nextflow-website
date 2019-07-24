@@ -4,10 +4,28 @@
     font-family: $font-family-heading;
     color: $primary;
   }
-  .work-image {
-    img {
-      width: 100%;
-      height: auto;
+  .work-client {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: rgb(66, 64, 64);
+    span {
+      color: $primary;
+    }
+  }
+  .work-date {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: rgb(66, 64, 64);
+  }
+  .work-skills {
+    margin-top: 20px;
+    ul {
+      li {
+        font-size: 15px;
+        color: rgb(107, 107, 107);
+        text-transform: uppercase;
+        display: block;
+      }
     }
   }
   .content {
@@ -20,14 +38,31 @@
       }
     }
   }
-  .masonry {
+  .work-gallery {
     /* Masonry container */
-    column-count: 3;
-    column-gap: 1em;
-  }
-  .item {
-    /* Masonry bricks or child elements */
-    background-color: #eee;
-    margin: 0 0 1em;
+    column-count: 1;
+    column-width: 33%;
+    column-fill: auto;
+    @include media-breakpoint-up(sm) {
+      column-count: 2;
+      column-gap: 15px;
+    }
+    @include media-breakpoint-up(md) {
+      column-count: 3;
+    }
+    @include media-breakpoint-up(lg) {
+      column-count: 3;
+    }
+    .work-gallery-item {
+      /* Masonry bricks or child elements */
+      background-color: #eee;
+      margin: 0;
+      margin: 0 0 20px 0;
+      @include media-breakpoint-up(sm) {
+      }
+      img {
+        @include img-fluid();
+      }
+    }
   }
 }
