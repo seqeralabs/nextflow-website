@@ -14,14 +14,40 @@ desciption: 'This example shows how write a pipeline made up of two simple BASH 
 
 ### In this example we see how write a pipeline made up of two simple BASH processes so that the results produced by the first are consumed by the second process.
 
-
-{{< highlight groovy "linenos=table" >}}
-
-process foo {
-    conda "bwa samtools multiqc"
-
+```groovy
+#!/usr/bin/env nextflow
+ 
+params.in = "$baseDir/data/sample.fa"
+sequences = file(params.in)
+ 
+// Split a fasta file into multiple files with awk
+process splitSequences {
+ 
+    input:
+    file 'input.fa' from sequences
+ 
+    output:
+    file 'seq_*' into records
+ 
     """
-    your_command --here
+    awk '/^>/{f="seq_"++d} {print > f}' < input.fa
     """
 }
-{{< / highlight >}}
+ 
+// Reverse the sequences with rev
+process reverse {
+ 
+    input:
+    file x from records
+     
+    output:
+    stdout result
+ 
+    """
+    cat $x | rev
+    """
+}
+ 
+// Print the channel content
+result.subscribe { println it }
+```

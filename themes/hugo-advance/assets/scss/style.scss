@@ -21,7 +21,7 @@ $font-size-base: 1rem;
 // @import 'bootstrap/type';
 @import 'bootstrap/tables';
 @import "bootstrap/images";
-// @import "bootstrap/code";
+ @import "bootstrap/code";
 @import "bootstrap/forms";
 @import "bootstrap/buttons";
 // @import "bootstrap/transitions";
@@ -69,6 +69,7 @@ $fa-font-path: "../../fonts/fontawesome5";
 @import 'global/title';
 
 // Components
+@import 'components/syntax';
 @import 'components/intro';
 @import 'components/header';
 @import 'components/footer';

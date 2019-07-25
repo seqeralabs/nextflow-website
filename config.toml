@@ -4,6 +4,10 @@ title = "Nextflow"
 theme = "hugo-advance"
 paginate = 5
 
+pygmentsCodeFences = true
+pygmentsStyle = "vs"
+pygmentsOptions = "linenos=table"
+
 [params]
     primary_color = "#28AE61"
     secondary_color = "#28AE61"

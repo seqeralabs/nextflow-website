@@ -11,7 +11,6 @@ code {
   font-size: 15px;
   font-weight: normal;
   line-height: 1.4em;
-  background: #363741;
 
   // Streamline the style when inside anchors to avoid broken underline and more
   a > & {
@@ -60,14 +59,13 @@ pre {
   @include font-size($code-font-size);
   color: $pre-color;
   display: block;
-  margin: 0 0 24px 0;
-  padding: 12px 20px 13px;
+  margin: 0 0 0px 0;
+  padding: 2px 2px 2px;
   border-radius: 4px;
   font-family: 'Courier', monospace;
   font-size: 15px;
   font-weight: normal;
   line-height: 1.4em;
-  background: #363741;
 
   // Account for some code outputs that place code tags in pre tags
   code {
@@ -75,14 +73,13 @@ pre {
     color: inherit;
     word-break: normal;
     display: block;
-    margin: 0 0 24px 0;
-    padding: 12px 20px 13px;
+    margin: 15px 15px 0px 0px;
+    padding: 5px 10px 10px;
     border-radius: 4px;
     font-family: 'Courier', monospace;
     font-size: 15px;
     font-weight: normal;
     line-height: 1.4em;
-    background: #363741;
 
   }
 }
