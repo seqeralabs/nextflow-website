@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2014/share-nextflow-pipelines-with-github.html']
 ---
 
 The [GitHub](https://github.com) code repository and collaboration platform is widely

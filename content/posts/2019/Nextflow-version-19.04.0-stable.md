@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2019/Nextflow-version-19.04.0-stable.html']
 ---
 We are excited to announce the new Nextflow 19.04.0 stable release!
 

@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2015/introducing-nextflow-console.html']
 ---
 
 The latest version of Nextflow introduces a new *console* graphical interface.

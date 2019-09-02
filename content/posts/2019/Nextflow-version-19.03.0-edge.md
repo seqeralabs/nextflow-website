@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2019/Nextflow-version-19.03.0-edge.html']
 ---
 
 It's time for the monthly Nextflow release for March, edge version 19.03. This is another great release with some cool new features, bug fixes and improvements.

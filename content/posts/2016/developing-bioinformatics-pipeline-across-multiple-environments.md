@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2016/developing-bioinformatics-pipeline-across-multiple-environments.html']
 ---
 
 As a new bioinformatics student with little formal computer science training, there are

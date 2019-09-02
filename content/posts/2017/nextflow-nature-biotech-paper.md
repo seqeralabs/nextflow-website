@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2017/nextflow-nature-biotech-paper.html']
 ---
 
 We are excited to announce the publication of our work *[Nextflow enables reproducible computational workflows](http://rdcu.be/qZVo)* in Nature Biotechnology.

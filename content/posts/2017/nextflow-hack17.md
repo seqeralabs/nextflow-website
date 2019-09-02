@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2017/nextflow-hack17.html']
 ---
 
 Last week saw the inaugural Nextflow meeting organised at the Centre for Genomic Regulation

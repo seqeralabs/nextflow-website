@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2018/goodbye-zero-hello-apache.html']
 ---
 
 Today marks an important milestone in the Nextflow project. We are thrilled to announce three important changes to better meet users’ needs and ground the project on a solid foundation upon which to build a vibrant ecosystem of tools and data analysis applications for genomic research and beyond.

@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2017/scaling-with-aws-batch.html']
 ---
 
 The latest Nextflow release (0.26.0) includes built-in support for [AWS Batch](https://aws.amazon.com/batch/),
