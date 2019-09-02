@@ -3,17 +3,17 @@
     "title": 1,
     "show" : true,
     "colour": "grey",
-    "points": "0,10 200,0 200,10",
+    "points": "0,0 200,0 0,10",
     "image":"images/environments.png",
     "heading":"Powerful HPC engines",
     "subheading": "Launch across clouds and clusters effortlessly.",
-    "paragraph": "Out-of-the-box intergrations for AWS, GCP and K8S plus batch schedulers including SLURM, LSF & Grid Engine."
+    "paragraph": "Out-of-the-box integrations for AWS, GCP and K8S plus batch schedulers including SLURM, LSF & Grid Engine."
   },
   {
     "title": 2,
     "show" : true,
     "colour": "white",
-    "points": "0,10 200,0 0,0",
+    "points": "0,10 200,0 200,10",
     "image":"images/dependencies.png",
     "heading":"Portable & reproducible",
     "subheading": "Containers without the hassle.",
@@ -23,7 +23,7 @@
     "title": 3,
     "show" : true,
     "colour": "grey",
-    "points": "0,10 200, 0 200, 10",
+    "points": "0,10 0,0 200, 0",
     "image":"images/polyglot.png",
     "heading":"Language agnostic",
     "subheading": "Write workflows in your language.",
@@ -33,9 +33,9 @@
     "title": 4,
     "show" : true,
     "colour": "white",
-    "points": "0,10 200,0 0,0",
+    "points": "0,10 200,0 200,10",
     "image":"images/dataflow.png",
-    "heading":"Dataflow progamming",
+    "heading":"Dataflow programming",
     "subheading": "Unrivalled performance at scale.",
     "paragraph": "The reactive dataflow programming model can orchestrate billions of distributed tasks for truly massive workloads."
   },
@@ -43,11 +43,11 @@
     "title": 5,
     "show" : true,
     "colour": "grey",
-    "points": "0,10 200,0 200,10",
+    "points": "0,10 0,0 200,0",
     "image":"images/sharing.png",
     "heading":"Sharing & provenance",
     "subheading": "Track and store workflows as code.",
-    "paragraph": "Integration with Git provides full tracebility and hosting solutions allows your work to be shared with the world."
+    "paragraph": "Integration with Git provides full traceability and hosting solutions allows your work to be shared with the world."
   },
   {
     "title": 6,
