@@ -1,12 +1,15 @@
 ---
-title: 'Cannon Lens'
-date: 2018-12-20T15:49:26+10:00
+title: 'London Tagging'
+date: 2018-12-20T15:09:45+10:00
 draft: false
-weight: 100
-heroHeading: 'Cannon Lens'
-heroSubHeading: 'Memorata haberet sepulcrales gentisque dum sic.'
-heroBackground: 'work/jinen-shah-563957-unsplash.jpg'
-image: 'work/jinen-shah-563957-unsplash.jpg'
+weight: 10
+thumbnail: 'work/dj-paine-1235372-unsplash.jpg'
+headerTransparent: true
+heroHeading: 'London Tags'
+heroSubHeading: 'Roaming east London for inspiration.'
+heroBackground: 'work/dj-paine-1235372-unsplash.jpg'
+works: ['Book Design']
+type: work
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum

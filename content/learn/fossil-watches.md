@@ -1,14 +1,15 @@
 ---
-title: 'White Chair'
-date: 2018-12-24
+title: 'Fossil Watches'
+date: 2018-12-20T15:46:10+10:00
 draft: false
-weight: 1
-thumbnail: 'work/kara-eads-1234326-unsplash.jpg'
+weight: 3
+thumbnail: 'work/marc-olivier-jodoin-608671-unsplash.jpg'
 headerTransparent: true
-heroHeading: 'Sit Down, Relax'
-heroSubHeading: 'The perfect chair for the office'
-heroBackground: 'work/kara-eads-1234326-unsplash.jpg'
-works: ['Industrial Design']
+heroHeading: 'Fossil Watches'
+heroSubHeading: 'Memorata haberet sepulcrales gentisque dum sic.'
+heroBackground: 'work/marc-olivier-jodoin-608671-unsplash.jpg'
+works: ['Industrial Design', 'Product Design']
+type: work
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum

@@ -1,16 +1,20 @@
 ---
-title: 'Tutorial'
-date: 2018-11-28T15:15:34+10:00
-description: 'An in-depth tutorial to get you writing like a Nextflow pro in no time.'
-icon: 'learn/tutorial.png'
-heroSubHeading: 'Business plan hackathon handshake responsive web design.'
-heroBackground: 'learn/headway-537308-unsplash.jpg'
-heroBackgroundOverlay: false
-heroHeight: true
-heroDiagonal: true
-heroDiagonalFill: false
+title: 'Adore Sunglasses'
+date: 2018-12-20
+draft: false
 featured: true
-weight: 6
+weight: 5
+thumbnail: 'work/tamara-bellis-434725-unsplash.jpg'
+headerTransparent: true
+heroHeading: 'Adore Sunglasses'
+heroSubHeading: 'Memorata hafberet sepulcrales gentisque dum sic.'
+heroBackground: 'work/tamara-bellis-434725-unsplash.jpg'
+heroHeadingColor: '#f4bc57'
+heroSubHeadingColor: '#fff'
+works: ['Product Design']
+image: 'work/tamara-bellis-434725-unsplash.jpg'
+clientName: 'Harvey Norman'
+type: work
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum

@@ -1,19 +1,15 @@
 ---
-title: 'Adore Sunglasses'
-date: 2018-12-20
+title: 'White Chair'
+date: 2018-12-24
 draft: false
-featured: true
-weight: 5
-thumbnail: 'work/tamara-bellis-434725-unsplash.jpg'
+weight: 1
+thumbnail: 'work/kara-eads-1234326-unsplash.jpg'
 headerTransparent: true
-heroHeading: 'Adore Sunglasses'
-heroSubHeading: 'Memorata hafberet sepulcrales gentisque dum sic.'
-heroBackground: 'work/tamara-bellis-434725-unsplash.jpg'
-heroHeadingColor: '#f4bc57'
-heroSubHeadingColor: '#fff'
-works: ['Product Design']
-image: 'work/tamara-bellis-434725-unsplash.jpg'
-clientName: 'Harvey Norman'
+heroHeading: 'Sit Down, Relax'
+heroSubHeading: 'The perfect chair for the office'
+heroBackground: 'work/kara-eads-1234326-unsplash.jpg'
+works: ['Industrial Design']
+type: work
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum

@@ -25,6 +25,7 @@ gallery:
   ]
 workClient: 'Green Leaf'
 workDate: 2017-05-12
+type: work
 ---
 
 # A Fresh Look

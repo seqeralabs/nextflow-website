@@ -1,13 +1,16 @@
 ---
-title: 'Genomics Example'
-date: 2018-11-18T12:33:46+10:00
-description: 'A basic RNA-Seq pipeline to understand the Nextflow syntax'
-icon: 'learn/icons8-touch_id.png'
-featured: true
-weight: 3
+title: 'Cannon Lens'
+date: 2018-12-20T15:49:26+10:00
+draft: false
+weight: 100
+heroHeading: 'Cannon Lens'
+heroSubHeading: 'Memorata haberet sepulcrales gentisque dum sic.'
+heroBackground: 'work/jinen-shah-563957-unsplash.jpg'
+image: 'work/jinen-shah-563957-unsplash.jpg'
+type: work
 ---
 
-Lorem markdownum aequalis strigis. _Saetigeri iubeas_, vultu huic alvum nondum
+Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
 de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
 crimen habet Priamum nec.
 

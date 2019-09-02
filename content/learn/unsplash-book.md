@@ -1,14 +1,16 @@
 ---
-title: 'Fossil Watches'
-date: 2018-12-20T15:46:10+10:00
+title: 'Unsplash Book'
+date: 2018-12-20T15:47:09+10:00
 draft: false
-weight: 3
-thumbnail: 'work/marc-olivier-jodoin-608671-unsplash.jpg'
+weight: 9
+thumbnail: 'work/vladimir-kudinov-92153-unsplash.jpg'
 headerTransparent: true
-heroHeading: 'Fossil Watches'
+heroHeading: 'Unsplash Book'
 heroSubHeading: 'Memorata haberet sepulcrales gentisque dum sic.'
-heroBackground: 'work/marc-olivier-jodoin-608671-unsplash.jpg'
-works: ['Industrial Design', 'Product Design']
+heroBackground: 'work/vladimir-kudinov-92153-unsplash.jpg'
+heroBackgroundOverlay: true
+works: ['Book Design']
+type: work
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum

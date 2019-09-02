@@ -1,14 +1,15 @@
 ---
-title: 'Marshall Headphones'
-date: 2018-12-20T15:13:51+10:00
+title: 'Good on You'
+date: 2018-12-20T14:49:53+10:00
 draft: false
-weight: 8
+weight: 6
 headerTransparent: true
-heroHeading: 'Marshall is now portable'
-heroSubHeading: "It's like a concert in your ears"
-heroBackground: 'work/dhe-haivan-1147505-unsplash.jpg'
-thumbnail: 'work/dhe-haivan-1147505-unsplash.jpg'
-works: ['Product Design', 'Industrial Design']
+heroHeading: 'Good on You'
+heroSubHeading: 'Our portfolio and previous projects'
+heroBackground: 'work/ryan-everton-1234720-unsplash.jpg'
+thumbnail: 'work/ryan-everton-1234720-unsplash.jpg'
+works: ['Retail Design']
+type: work
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum

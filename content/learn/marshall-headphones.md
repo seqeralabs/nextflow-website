@@ -1,15 +1,15 @@
 ---
-title: 'Unsplash Book'
-date: 2018-12-20T15:47:09+10:00
+title: 'Marshall Headphones'
+date: 2018-12-20T15:13:51+10:00
 draft: false
-weight: 9
-thumbnail: 'work/vladimir-kudinov-92153-unsplash.jpg'
+weight: 8
 headerTransparent: true
-heroHeading: 'Unsplash Book'
-heroSubHeading: 'Memorata haberet sepulcrales gentisque dum sic.'
-heroBackground: 'work/vladimir-kudinov-92153-unsplash.jpg'
-heroBackgroundOverlay: true
-works: ['Book Design']
+heroHeading: 'Marshall is now portable'
+heroSubHeading: "It's like a concert in your ears"
+heroBackground: 'work/dhe-haivan-1147505-unsplash.jpg'
+thumbnail: 'work/dhe-haivan-1147505-unsplash.jpg'
+works: ['Product Design', 'Industrial Design']
+type: work
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum

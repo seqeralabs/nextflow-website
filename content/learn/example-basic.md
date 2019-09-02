@@ -10,6 +10,7 @@ heroSubHeading: 'A basic pipeline example'
 heroBackground: 'work/blue-circuit.jpg'
 works: ['Example']
 desciption: 'This example shows how write a pipeline made up of two simple BASH processes.'
+type: 'work'
 ---
 
 ### In this example we see how write a pipeline made up of two simple BASH processes so that the results produced by the first are consumed by the second process.

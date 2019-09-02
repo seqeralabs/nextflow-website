@@ -11,6 +11,7 @@ heroDiagonal: true
 heroDiagonalFill: false
 featured: true
 weight: 6
+type: work
 ---
 
 ### EXECUTION
