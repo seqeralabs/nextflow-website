@@ -8,7 +8,7 @@ headerTransparent: true
 heroHeading: 'Basic Pipeline'
 heroSubHeading: 'A basic pipeline example'
 heroBackground: 'work/blue-circuit.jpg'
-works: ['Example']
+works: ['Examples']
 desciption: 'This example shows how write a pipeline made up of two simple BASH processes.'
 type: 'work'
 ---

@@ -1,17 +1,16 @@
 ---
-title: 'BASICS'
-date: 2018-11-28T15:15:34+10:00
-description: 'A brief introduction to Nextflow concepts through examples'
-icon: 'learn/tutorial.png'
-heroSubHeading: 'A brief introduction to Nextflow concepts through examples'
-heroBackground: 'learn/blackboard.png'
-heroBackgroundOverlay: false
-heroHeight: true
-heroDiagonal: true
-heroDiagonalFill: false
-featured: true
-weight: 6
-type: work
+title: 'Concepts'
+date: 2018-12-20T15:46:10+10:00
+draft: false
+weight: 3
+thumbnail: 'work/blue-circuit.jpg'
+headerTransparent: true
+heroHeading: 'Concepts'
+heroSubHeading: 'A basic pipeline example'
+heroBackground: 'work/blue-circuit.jpg'
+works: ['Examples']
+desciption: 'This example shows how write a pipeline made up of two simple BASH processes.'
+type: 'work'
 ---
 
 ### EXECUTION
