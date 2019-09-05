@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2016/more-fun-containers-hpc.html']
 ---
 
 Nextflow was one of the first workflow frameworks to provide built-in support for Docker containers.

@@ -1,0 +1,55 @@
+
+
+{{ if .fullscreen }}
+<div class="hero-image hero-image-fullscreen {{ if .overlay }}hero-image-blend-overlay{{ end}}" style="{{ if .background }}background-image: url('{{ .background | relURL }}');{{ end }}">
+	{{/*  {{ if .diagonal }}
+	<svg class="hero-diagonal" aria-hidden="true" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+		<polygon fill="#F0F0F0" points="0,10 100, 0 100, 10"/>
+	</svg>
+	{{ end}}  */}}
+	<div class="container" style="align-items: center;">
+		<div class="row">
+			<div class="col-12 col-md-6 pt-8 pt-md-2" style="display:flex; align-items:center;">
+				<div class="hero-text">
+				<h1>{{ .heading }}{{ if not .heading }}{{ .content.Params.title }}{{ end }}</h1> <br>
+				<p>{{ .subheading }}</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 pt-8 pt-md-2" style="display:flex; align-items:center;">
+				<img class="img-fluid" src="images/home.png"/>
+			</div>
+		</div>
+	</div>
+  <div class="hero-down">
+		<a href="#hero-anchor">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 898.75 533.751" transform="matrix(.69 0 0 .69 15.5 15.5)" fill="#fff">
+		<path d="M224.687 309.061L0 84.372l42.186-42.186L84.372 0l182.815 182.811L450 365.622l182.5-182.496L815 .63l41.874 41.874L898.75 84.38 674.062 309.065 449.373 533.751 224.687 309.06z"/>
+		</svg>
+		</svg>
+	  </a>
+  </div>
+</div>
+{{ else }}
+<div class="hero-image hero-image-set-height {{ if .overlay }}hero-image-blend-overlay{{ end}}" style="{{ if .background }}background-image: url('{{ .background | relURL }}'); {{end}}{{ if .height }}height: {{ .height }}px{{end}}">
+		{{ if .diagonal }}
+		<svg class="hero-diagonal" aria-hidden="true" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+			<polygon fill="#F0F0F0" points="0,10 100, 0 100, 10"/>
+		</svg>
+		{{ end}}
+		<div class="container" style="align-items: center;">
+			<div class="row">
+		    <div class="ol-12 col-md-6 pt-8 pt-md-2" style="display:flex; align-items:center;">
+					<div class="hero-text">
+				  <h1>{{ .heading }}{{ if not .heading }}{{ .content.Params.title }}{{ end }}</h1> <br>
+					<p>{{ .subheading }}</p>
+				  </div>
+				</div>
+				<div class="col-12 col-md-6 pt-8 pt-md-2" style="display:flex; align-items:center;">
+          <img class="img-fluid" src="images/home.png"/>
+				</div>
+			</div>
+		</div>
+  </div>
+
+{{ end }}

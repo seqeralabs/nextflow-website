@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2016/enabling-elastic-computing-nextflow.html']
 ---
 
 <p class="text-muted" style='font-size: 1.2em; padding-bottom: 10px'>

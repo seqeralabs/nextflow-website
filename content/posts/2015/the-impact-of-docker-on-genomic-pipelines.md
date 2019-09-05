@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2015/the-impact-of-docker-on-genomic-pipelines.html']
 ---
 
 In a recent publication we assessed the impact of Docker containers technology

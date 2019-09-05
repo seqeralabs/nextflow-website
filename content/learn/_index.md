@@ -1,8 +1,17 @@
 ---
 title: 'Learn'
 date: 2018-02-10T11:52:18+07:00
+hero: false
+heroHeading: 'Learn'
+heroSubHeading: ''
+heroBackground: ''
+heroBackgroundOverlay: false
+heroHeight: 500
+heroDiagonal: false
+heroDiagonalFill: '#ffffff'
+type: 'work'
 ---
 
-# Get up to speed with Nextflow
+# Learn
 
-Each year we helps hundreds of customers with their creative and development needs.
+Our portfolio showcases our most recent client work across all disciplines.

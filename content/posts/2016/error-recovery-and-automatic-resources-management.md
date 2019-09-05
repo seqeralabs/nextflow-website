@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2016/error-recovery-and-automatic-resources-management.html']
 ---
 
 Recently a new feature has been added to Nextflow that allows failing jobs to be rescheduled,

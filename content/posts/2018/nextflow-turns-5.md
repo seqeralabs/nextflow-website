@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2018/nextflow-turns-5.html']
 ---
 
 Nextflow is growing up. The past week marked five years since the [first commit](https://github.com/nextflow-io/nextflow/commit/c080150321e5000a2c891e477bb582df07b7f75f) of the project on GitHub. Like a parent reflecting on their child attending school for the first time, we know reaching this point hasn’t been an entirely solo journey, despite Paolo's best efforts!

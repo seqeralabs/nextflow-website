@@ -1,0 +1,19 @@
+.filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  li {
+    margin-right: 20px;
+    a {
+      border-bottom: 2px solid #ccc;
+      text-decoration: none;
+      &:hover {
+        border-color: $primary;
+      }
+      &.active {
+        border-color: $primary;
+        color: $primary;
+      }
+    }
+  }
+}

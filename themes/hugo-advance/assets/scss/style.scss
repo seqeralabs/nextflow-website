@@ -5,8 +5,8 @@
 $primary: {{ .Site.Params.primary_color | default "#1c3ed3" }};
 $secondary: {{ .Site.Params.secondary_color | default "#6d1cd3" }};
 $grey: {{ .Site.Params.grey_color | default "#f4f5fb" }};
-$font-family-base: {{ .Site.Params.font_base | default "'Lato', Arial, sans-serif, -apple-system" }};
-$font-family-heading:  {{ .Site.Params.font_heading | default "'Palanquin Dark', Arial, sans-serif, -apple-system" }};
+$font-family-base: {{ .Site.Params.font_family_base | default "'Lato', Arial, sans-serif, -apple-system" }};
+$font-family-heading:  {{ .Site.Params.font_family_heading | default "'Palanquin Dark', Arial, sans-serif, -apple-system" }};
 $font-family-mono:  "monospace";
 $font-size-base: 1rem;
 
@@ -21,9 +21,9 @@ $font-size-base: 1rem;
 // @import 'bootstrap/type';
 @import 'bootstrap/tables';
 @import "bootstrap/images";
-// @import "bootstrap/code";
+ @import "bootstrap/code";
 @import "bootstrap/forms";
-// @import "bootstrap/buttons";
+@import "bootstrap/buttons";
 // @import "bootstrap/transitions";
 // @import "bootstrap/dropdown";
 // @import "bootstrap/button-group";
@@ -31,7 +31,7 @@ $font-size-base: 1rem;
 // @import "bootstrap/custom-forms";
 // @import "bootstrap/nav";
 // @import "bootstrap/navbar";
-// @import "bootstrap/card";
+@import "bootstrap/card";
 // @import "bootstrap/breadcrumb";
 // @import "bootstrap/pagination";
 // @import "bootstrap/badge";
@@ -58,7 +58,7 @@ $fa-font-path: "../../fonts/fontawesome5";
 @import 'libraries/slick/slick';
 @import 'libraries/slick/slick-custom';
 
-// Global 
+// Global
 @import 'global/page';
 @import 'global/type';
 @import 'global/buttons';
@@ -69,9 +69,11 @@ $fa-font-path: "../../fonts/fontawesome5";
 @import 'global/title';
 
 // Components
+//@import 'components/syntax';
 @import 'components/intro';
 @import 'components/header';
 @import 'components/footer';
+@import 'components/_filter.scss';
 @import 'components/footer-second';
 @import 'components/footer-third';
 @import 'components/main-menu-mobile';
@@ -97,6 +99,14 @@ $fa-font-path: "../../fonts/fontawesome5";
 @import 'pages/posts/page-posts-list';
 @import 'pages/posts/page-posts-single';
 @import 'pages/posts/post-summary';
+
+// Install Section
+@import 'install/install';
+
+// Scroll
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-size: 1.1rem;

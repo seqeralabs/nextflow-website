@@ -1,9 +1,9 @@
 ---
 title: 'Home'
 date: 2019-02-22
-heroHeading: 'Data-driven pipelines'
-heroSubHeading: 'Massively scalable workloads across clusters and clouds with a single command.'
-heroBackground: ''
+heroHeading: 'Massively scaleable scientific workflows'
+heroSubHeading: 'Launch across clusters and clouds with a single action.'
+heroBackground: '/images/hero_home_1.jpg'
 heroBackgroundOverlay: false
 heroHeight: 600
 heroDiagonal: true

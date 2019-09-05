@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2017/nextflow-and-cwl.html']
 ---
 
 The Common Workflow Language ([CWL](http://www.commonwl.org/)) is a specification for defining

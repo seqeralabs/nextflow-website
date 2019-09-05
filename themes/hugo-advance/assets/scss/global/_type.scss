@@ -19,6 +19,14 @@ p.large {
   font-size: 1.2rem;
 }
 
+p.xlarge {
+  font-size: 1.5rem;
+}
+
+p.right-align {
+  text-align: right;
+}
+
 h1 {
   font-family: $font-family-heading;
 }
@@ -33,6 +41,11 @@ h2 {
     line-height: 1.4;
   }
 }
+
+h2.right-align {
+  text-align: right;
+}
+
 
 h3 {
   color: #333;

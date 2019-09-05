@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2017/nextflow-workshop.html']
 ---
 
 We are excited to announce the first Nextflow workshop that will take place at the

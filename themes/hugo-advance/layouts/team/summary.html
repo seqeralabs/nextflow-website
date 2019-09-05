@@ -7,7 +7,11 @@
   <div class="team-block">
     <div class="team-meta">
       <h2 class="team-name">{{ .Title }}</h2>
-      <div class="team-jobtitle">{{ .Params.Jobtitle }}</div>
+      <div class="team-jobtitle">{{ .Params.Jobtitle }}
+          {{ if .Params.flag_image }}
+      <img src="{{ .Site.BaseURL }}{{ .Params.flag_image }}" style="max-height: 30px; max-width:30px">
+    {{ end }}
+      </div>
       <div class="team-links">
       {{ if .Params.linkedin_url }}
         <a class="team-linkedin" target="_blank" href="{{ .Params.linkedin_url }}">
@@ -29,6 +33,7 @@
             <i class="fab fa-behance-square"></i>
         </a> 
       {{ end }}
+
       </div>
     </div>
     <div class="team-content">{{ .Content }}</div>

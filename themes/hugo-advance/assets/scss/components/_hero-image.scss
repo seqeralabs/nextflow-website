@@ -16,7 +16,7 @@
     height: inherit;
   }
   .hero-text {
-    flex: 0;
+    //flex: 0;
     color: #ffffff;
     margin: auto 0;
     h1 {
@@ -24,7 +24,7 @@
       line-height: 1.2;
       font-weight: 400;
       @include media-breakpoint-up(md) {
-        font-size: 4rem;
+        font-size: 3rem;
         width: 80%;
       }
     }
@@ -40,7 +40,7 @@
       line-height: 1.3;
       @include media-breakpoint-up(md) {
         font-size: 1.6rem;
-        width: 60%;
+        width: 80%;
       }
     }
   }

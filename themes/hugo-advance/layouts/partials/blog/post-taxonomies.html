@@ -3,7 +3,7 @@
   <h4>{{ $taxonomyname }}</h4>
   <ul>
     {{ range $name, $value := $taxonomy }}
-      <li><a href="{{ printf "/%s/" $taxonomyname | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li>
+      <li><a href="{{ printf "/%s/" $taxonomyname | relLangURL }}{{ $name | urlize }}">{{ humanize $name }}</a></li>
     {{ end }}
   </ul>
   {{ end }}

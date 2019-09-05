@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2016/best-practice-for-reproducibility.html']
 ---
 Publication time acts as a snapshot for scientific work. Whether a project is ongoing
 or not, work which was performed months ago must be described, new software documented,

@@ -2,27 +2,40 @@ baseURL = "https://www.nextflow.io"
 languageCode = "en-us"
 title = "Nextflow"
 theme = "hugo-advance"
-paginate = 3
+paginate = 5
+
+pygmentsCodeFences = true
+pygmentsStyle = "vs"
+pygmentsOptions = "linenos=table"
 
 [params]
     primary_color = "#28AE61"
     secondary_color = "#28AE61"
-    grey_color = "#f4f5fb"
-    font_family_base = "'Lato', Arial, sans-serif, -apple-system"
-    font_family_heading = "'Palanquin Dark', Arial, sans-serif, -apple-system"
-
+    grey_color = "#F0F0F0"
+    font_family_base = "'Quicksand', sans-serif;"
+    font_family_heading = "'Quicksand', sans-serif;"
     google_analytics_id = ""
 
+    google_fonts = [
+      ["Raleway", "400"],
+      ["Quicksand", "300"],
+      ["Slabo 27px"],
+      ["DM Serif Display"],
+      ["Open Sans"],
+      ["Montserrat", "400, 700"],
+      ["Roboto", "400, 400i, 700, 700i"]
+    ]
+
     [params.homepage_meta_tags]
-        meta_description = "Advance is a premium, multi-purpose Hugo theme. It has 5 content-types for archetypical SMB and marketing websites. A modern semi-flat visual design with customisable hero images and full-width sections."
+        meta_description = "Scientific workflows and pipelines for genomics, bioinformatics and data science at scale across clusters and cloud."
         meta_og_title = "Nextflow"
         meta_og_type = "website"
-        meta_og_url = "https://hugo-advance-pro.netlify.com"
+        meta_og_url = "https://www.nextflow.io"
         meta_og_image = "https://hugo-advance-pro.netlify.com/images/tn.png"
-        meta_og_description = "Advance is a premium, multi-purpose Hugo theme. It has 5 content-types for archetypical SMB and marketing websites. A modern semi-flat visual design with customisable hero images and full-width sections."
-        meta_twitter_card = "summary"
-        meta_twitter_site = "@nextflowio"
-        meta_twitter_creator = "@zerostaticio"
+        meta_og_description = "Scientific workflows and pipelines for genomics, bioinformatics and data science at scale across clusters and cloud."
+        meta_twitter_card = "Scientific workflows and pipelines for genomics, bioinformatics and data science at scale across clusters and cloud."
+        meta_twitter_site = "https://www.nextflow.io"
+        meta_twitter_creator = "Evan Floden"
 
     [params.global]
         header_fixed = true
@@ -34,21 +47,48 @@ paginate = 3
         show_work_links = true
 
     [params.homepage]
-        show_services_section = true
+        show_services_section = false
         services_count = 6
-        show_splash_section_one = true
-        splash_one_image = "images/home.png"
-        splash_one_heading = "Create, deploy & share"
-        splash_one_paragraph = "Nextflow enables you to quickly create, deploy and share computational workflows. As an open-source tool, it is built around the central philosophy of zero config,  push-the-button deployments in any environment. With a functional approach, data drives your application’s parallelisation and reactive programming ensures maximum scalability. With out-of-the-box support for container engines, the most popular batch schedulers and cloud platforms, Nextflow achieves unrivalled portability."
-        splash_one_link_url = "work"
-        splash_one_link_text = "Our Work"
+
+        main_image = "images/home.png"
+
+        install_title = "Get Started"
+        install_subtitle = "Nextflow can be installed on any POSIX compatible system (Linux, OS X, etc)."
+        install_subsubtitle = "Simply follow these three steps."
+
+        install_step_one_title = "Check"
+        install_step_one_description = "Java <span>8 or later</span> is required"
+        install_step_one_command = "java -version"
+        install_step_one_subtitle = "Version numbers 1.8.y_z and 8 identify the same Java release."
+
+        install_step_two_title = "Install"
+        install_step_two_description = "<span>One line</span> installation"
+        install_step_two_command = "curl -s https://get.nextflow.io | bash"
+        install_step_two_subtitle = "A file nextflow is created in the current directory."
+
+        install_step_three_title = "Launch"
+        install_step_three_description = "Try a <span>simple</span> demo"
+        install_step_three_command = "./nextflow run hello"
+        install_step_three_subtitle = "Start creating and launching workflows!"
+
+        install_link = "/docs/latest/getstarted.html"
+        install_link_text = "See installation docs"
+
         show_partners = true
-        show_work_section = true
+        partners_heading = "Trusted by the world's most innovative organisations since 2014"
+        partners_subheading = "Along with a community of thousands of scientists, engineers and developers."
+
+        show_work_section = false
         work_section_heading = "Our Work"
         work_count = 2
         show_view_all_work_button = true
 
-[params.learn]
+    [params.work] 
+        # Work Page
+        order_work_grid = 'weight' # shuffle, lastmod, weight
+        show_filters = true # show filters
+
+    [params.learn]
         show_features = true
         show_splash_one_section = true
         splash_one_background_image = "images/kaleidico-754543-unsplash.jpg"
@@ -68,10 +108,13 @@ paginate = 3
         button_url = "contact"
         button_text = "Contact us"
 
+    [params.repo]
+        url = "https://github.com/nextflow-io/nextflow"
+
 # Main Menu
 [[menu.main]]
 	name = "Quick Start"
-	url = "/services/"
+	url = "/#getting-started"
     weight = 1
 
 [[menu.main]]
@@ -81,8 +124,9 @@ paginate = 3
 
 [[menu.main]]
 	name = "Docs"
-	url = "/docs/"
+	url = "/docs/latest/index.html"
     weight = 3
+
 
 [[menu.main]]
 	name = "Community"
@@ -91,7 +135,7 @@ paginate = 3
 
 [[menu.main]]
     name = "Support"
-    url = "/suport/"
+    url = "/support/"
     weight = 5
 
 [[menu.main]]
@@ -112,7 +156,7 @@ paginate = 3
 
 [[menu.footer_primary]]
   name = "Quick Start"
-  url = "/services/"
+  url = "/#getting-started"
     weight = 2
 
 [[menu.footer_primary]]
@@ -158,4 +202,5 @@ paginate = 3
 [taxonomies]
     tag = "tags"
     category = "categories"
+    work =  "works"
     author = "authors"

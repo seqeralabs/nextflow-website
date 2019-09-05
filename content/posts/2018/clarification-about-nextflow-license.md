@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2018/clarification-about-nextflow-license.html']
 ---
 
 <div class='text-muted' style='margin-bottom:2em'>

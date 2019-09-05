@@ -3,6 +3,14 @@ code {
   @include font-size($code-font-size);
   color: $code-color;
   word-break: break-word;
+  display: block;
+  margin: 0 0 24px 0;
+  padding: 12px 20px 13px;
+  border-radius: 4px;
+  font-family: 'Courier', monospace;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.4em;
 
   // Streamline the style when inside anchors to avoid broken underline and more
   a > & {
@@ -18,26 +26,61 @@ kbd {
   background-color: $kbd-bg;
   @include border-radius($border-radius-sm);
   @include box-shadow($kbd-box-shadow);
+  display: block;
+  margin: 0 0 24px 0;
+  padding: 12px 20px 13px;
+  border-radius: 4px;
+  font-family: 'Courier', monospace;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.4em;
+  background: #363741;
 
   kbd {
     padding: 0;
     @include font-size(100%);
     font-weight: $nested-kbd-font-weight;
     @include box-shadow(none);
+    display: block;
+    margin: 0 0 24px 0;
+    padding: 12px 20px 13px;
+    border-radius: 4px;
+    font-family: 'Courier', monospace;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.4em;
+    background: #363741;
   }
 }
 
 // Blocks of code
 pre {
-  display: block;
+
   @include font-size($code-font-size);
   color: $pre-color;
+  display: block;
+  margin: 0 0 0px 0;
+  padding: 2px 2px 2px;
+  border-radius: 4px;
+  font-family: 'Courier', monospace;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.4em;
 
   // Account for some code outputs that place code tags in pre tags
   code {
     @include font-size(inherit);
     color: inherit;
     word-break: normal;
+    display: block;
+    margin: 15px 15px 0px 0px;
+    padding: 5px 10px 10px;
+    border-radius: 4px;
+    font-family: 'Courier', monospace;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.4em;
+
   }
 }
 

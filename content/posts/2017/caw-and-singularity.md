@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2017/caw-and-singularity.html']
 ---
 
 <i>This is a guest post authored by Maxime Garcia from the Science for Life Laboratory in Sweden. Max

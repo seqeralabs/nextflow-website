@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2015/mpi-like-execution-with-nextflow.html']
 ---
 
 The main goal of Nextflow is to make workflows portable across different

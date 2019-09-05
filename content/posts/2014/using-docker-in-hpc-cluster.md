@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2014/using-docker-in-hpc-cluster.html']
 ---
 
 Scientific data analysis pipelines are rarely composed by a single piece of software.

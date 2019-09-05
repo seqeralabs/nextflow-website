@@ -1,0 +1,110 @@
+<div id="getting-started" class="home-work strip strip-grey">
+  <div class="container pt-10 pb-10">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center mb-3">{{ .Site.Params.homepage.install_title }}</h1>
+        <h3 class="text-center mb-3">{{ .Site.Params.homepage.install_subtitle }}</h3>
+        <h3 class="text-center mb-3" style="color:#28AE61">{{ .Site.Params.homepage.Params.subsubtitle }}</h3>
+      </div>
+    </div>
+    <div id="generic_price_table">
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="generic_content clearfix">
+                <div class="generic_head_price clearfix">
+                  <div class="generic_head_content clearfix">
+                    <div class="head_bg"></div>
+                    <div class="head">
+                      <span>{{ .Site.Params.homepage.install_step_one_title }}</span>
+                    </div>
+                  </div>
+                  <div class="generic_price_tag clearfix">
+                    <span class="price">
+                      <span class="currency">1</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="generic_feature_list">
+                  <ul>
+                    <li>{{ .Site.Params.homepage.install_step_one_description | safeHTML }}</li>
+                  </ul>
+                </div>
+                <div class="head_bg"></div>
+                <div class="head">
+                  <highlight>{{ .Site.Params.homepage.install_step_one_command }}</highlight>
+                </div> </br></br>
+                <p>{{ .Site.Params.homepage.install_step_one_subtitle }}</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="generic_content clearfix">
+                <div class="generic_head_price clearfix">
+                  <div class="generic_head_content clearfix">
+                    <div class="head_bg"></div>
+                    <div class="head">
+                      <span>{{ .Site.Params.homepage.install_step_two_title }}</span>
+                    </div>
+                  </div>
+                  <div class="generic_price_tag clearfix">
+                    <span class="price">
+                      <span class="currency">2</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="generic_feature_list">
+                  <ul>
+                    <li>{{ .Site.Params.homepage.install_step_two_description | safeHTML }}</li>
+                  </ul>
+                </div>
+                <div class="head_bg"></div>
+                <div class="head">
+                  <highlight>{{ .Site.Params.homepage.install_step_two_command }}</highlight>
+                </div> </br>
+                <p>{{ .Site.Params.homepage.install_step_two_subtitle }}</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="generic_content clearfix">
+                <div class="generic_head_price clearfix">
+                  <div class="generic_head_content clearfix">
+                    <div class="head_bg"></div>
+                    <div class="head">
+                      <span>{{ .Site.Params.homepage.install_step_three_title }}</span>
+                    </div>
+                  </div>
+                  <div class="generic_price_tag clearfix">
+                    <span class="price">
+                      <span class="currency">3</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="generic_feature_list">
+                  <ul>
+                    <li>{{ .Site.Params.homepage.install_step_three_description | safeHTML }}</li>
+                  </ul>
+                </div>
+                <div class="head_bg"></div>
+                <div class="head">
+                  <highlight>{{ .Site.Params.homepage.install_step_three_command }}</highlight>
+                </div> </br></br>
+                <p>{{ .Site.Params.homepage.install_step_three_subtitle }}</p>
+                </br>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 pt-4 text-center">
+            </br>
+            <a class="button button-primary"
+              href="{{ .Site.Params.homepage.install_link }}" >{{ .Site.Params.homepage.install_link_text }}</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <svg class="hero-diagonal" aria-hidden="true" role="presentation" xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 200 10" preserveAspectRatio="none">
+    <polygon fill="#FFFFFF" points="0,10 200, 0 200, 10" />
+  </svg>
+</div>

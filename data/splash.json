@@ -1,0 +1,62 @@
+[ 
+  {
+    "title": 1,
+    "show" : true,
+    "colour": "grey",
+    "points": "0,0 200,0 0,10",
+    "image":"images/environments.png",
+    "heading":"Powerful HPC engines",
+    "subheading": "Launch across clouds and clusters effortlessly.",
+    "paragraph": "Out-of-the-box integrations for AWS, GCP and K8S plus batch schedulers including SLURM, LSF & Grid Engine."
+  },
+  {
+    "title": 2,
+    "show" : true,
+    "colour": "white",
+    "points": "0,10 200,0 200,10",
+    "image":"images/dependencies.png",
+    "heading":"Portable & reproducible",
+    "subheading": "Containers without the hassle.",
+    "paragraph": "Docker, Singularity and Conda support to encapsulate all workflow dependencies across environments."
+  },
+  {
+    "title": 3,
+    "show" : true,
+    "colour": "grey",
+    "points": "0,10 0,0 200, 0",
+    "image":"images/polyglot.png",
+    "heading":"Language agnostic",
+    "subheading": "Write workflows in your language.",
+    "paragraph": "The flexibility to develop, port and reuse code from any scripting language."
+  },
+  {
+    "title": 4,
+    "show" : true,
+    "colour": "white",
+    "points": "0,10 200,0 200,10",
+    "image":"images/dataflow.png",
+    "heading":"Dataflow programming",
+    "subheading": "Unrivalled performance at scale.",
+    "paragraph": "The reactive dataflow programming model can orchestrate billions of distributed tasks for truly massive workloads."
+  },
+  {
+    "title": 5,
+    "show" : true,
+    "colour": "grey",
+    "points": "0,10 0,0 200,0",
+    "image":"images/sharing.png",
+    "heading":"Sharing & provenance",
+    "subheading": "Track and store workflows as code.",
+    "paragraph": "Integration with Git provides full traceability and hosting solutions allows your work to be shared with the world."
+  },
+  {
+    "title": 6,
+    "show" : true,
+    "colour": "white",
+    "points": "0,0 0,0 0,0",
+    "image":"images/apache.svg",
+    "heading":"100% Open-source",
+    "subheading": "Free to use, modify & distribute.",
+    "paragraph": "Licensed under the Apache software license 2.0."
+  }
+]

@@ -11,6 +11,7 @@ heroBackgroundOverlay: false
 heroHeight: 500
 heroDiagonal: false
 heroDiagonalFill: false
+aliases: ['/blog/2018/conda-support-has-landed.html']
 ---
 
 Nextflow aims to ease the development of large scale, reproducible workflows allowing  
