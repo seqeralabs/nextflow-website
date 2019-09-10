@@ -24,7 +24,7 @@ on master branch of the project and included in the
 
 The implementation of this feature has opened the possibility for many fantastic improvements to Nextflow and its syntax. We are extremely excited as it results in a radical new way of writing Nextflow applications! So much so, that we are referring to these changes as DSL 2.
 
-#### Enabling DSL 2 syntax
+### Enabling DSL 2 syntax
 
 Since this is still a preview technology and, above all, to not break 
 any existing applications, to enable the new syntax you will need to add 
@@ -34,7 +34,7 @@ the following line at the beginning of your workflow script:
 nextflow.preview.dsl=2
 ```
 
-#### Module files 
+### Module files 
 
 A module file simply consists of one or more `process` definitions, written with the usual syntax. The *only* difference is that the `from` and `into` clauses in the `input:` and `output:` definition blocks has to be omitted. For example: 
 
@@ -77,6 +77,7 @@ INDEX( transcriptome_file )
 FASTQC( read_pairs_ch )
 QUANT( INDEX.out, read_pairs_ch )
 MULTIQC( QUANT.out.mix(FASTQC.out).collect(), multiqc_file )
+
 {{< /highlight >}}
 
 Notably, each process defines its own namespace in the script scope which allows the access of the process output channel(s) using the `.out` attribute. This can be used then as any other Nextflow channel variable in your pipeline script.
