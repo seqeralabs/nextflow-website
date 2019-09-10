@@ -13,70 +13,53 @@ heroDiagonalFill: '#fff'
 heroHeight: 300
 image: 'community/pyramids.jpg'
 ---
-# Events, training opportunities and community initiatives.
+# Chat, forums, GitHub & community initiatives
 
 ### The Nextflow community is full of talented and awesome people working together. We operate according a [code-of-conduct](https://github.com/nextflow-io/nextflow/blob/master/CODE-OF-CONDUCT.md) to promote and foster inclusive and productive collaborations. 
 
-### You can always follow us on [Twitter](https://twitter.com/nextflowio) to stay up-to-date with all the latest community news and events.
+### You can always follow the community news on [Twitter](https://twitter.com/nextflowio) to stay up-to-date with all the latest news and events.
 
 </br>
 
-## Conferences & Events
-Upcoming events featuring Nextflow.
+## Ask the community
+Stuck on something and need some advice? Ask the community on Gitter or use the Google Forum for more detailed questions.
+
 <div class="container">
   <div class="row">
-    {{< medium_card
-      image="barcelona_1.jpg" 
-      alt_image_text="Nextflow Camp 2019"
-      card_title="Nextflow Camp 2019" 
-      card_subtitle="Barcelona, 19-20 September 2019" 
-      description="The annual event bringing together the Nextflow community, big data scientists and cloud experts. Discuss the state of Nextflow technology, the latest developments and tackle the open questions in a collaborative manner."
-      link="https://www.crg.eu/en/event/coursescrg-nextflow-2019"
+    {{< small_card 
+      image="gitter-logo.png" 
+      alt_image_text="Gitter"
+      card_title="Gitter Channel" 
+      card_subtitle="Q+A via Git chat" 
+      description="24/7 chat channel for the community to ask questions and provide support."
+      link="https://gitter.im/nextflow-io/nextflow"
+    >}}
+
+    {{< small_card
+      image="google-groups-logo.png" 
+      alt_image_text="Google Forum"
+      card_title="Nextflow Forum" 
+      card_subtitle="A Google groups forum" 
+      description="Longer form questions for when a detailed description of the problem is required."
+      link="https://groups.google.com/forum/#!forum/nextflow"
     >}}
   </div>
   </br>
 </div>
 
-## Training & Hackathons
-Training events taught by Nextflow expert trainers. </br> Contact [Seqera Labs](https://www.seqera.io/#section-training) for more information about organising training for your organisation.
+
+## Issue Tracker
+Found a bug or have a great idea for a new feature?
 
 <div class="container">
   <div class="row">
-    {{< small_card 
-      image="barcelona_1.jpg" 
-      alt_image_text="Nextflow Training 2019"
-      card_title="Nextflow Camp Training 2019" 
-      card_subtitle="Barcelona, Spain 17-18 September 2019" 
-      description="A two-day intensive workshop help prior to Nextflow Camp. This workshop is intended for beginners and intermediate users covering topics of best practices, containerization, cloud deployment, Git integration and reproducibility."
-      link="https://www.crg.eu/en/event/coursescrg-nextflow-2019"
-    >}}
-
-    {{< small_card
-      image="lyon_1.jpg" 
-      alt_image_text="Training at IARC"
-      card_title="Training at IARC" 
-      card_subtitle="Lyon, France 24-26 September 2019" 
-      description="Reproducible and portable bioinformatics data analyses with Nextflow hosted at the Centre International de Recherche sur le Cancer at the World Health Organisation in Lyon, France."
-      link="https://www.canceropole-clara.com/agenda/formation-nextflow-reproducible-and-portable-bioinformatics-data-analyses/"
-    >}}
-  </div>
-  <div class="row">
-    {{< small_card 
-      image="oslo_1.jpg" 
-      alt_image_text="NVI Nextflow Training"
-      card_title="NVI Nextflow Training" 
-      card_subtitle="Oslo, Norway 10-11 October 2019" 
-      description="A two-day intensive workshop held at the Norwegian Vetinary Institute in Olso, Norway. This workshop is intended for beginners and intermediate users covering topics of best practices, containerization, cloud deployment, Git integration and reproducibility."
-      link="#"
-    >}}
-
-    {{< small_card
-      image="perth_1.jpg" 
-      alt_image_text="Pawsey Workshop 2019"
-      card_title="Pawsey Workshop 2019" 
-      card_subtitle="Perth, Australia 11-14 November 2019"
-      description="Nextflow goes down-under with a four-day workshop, which also includes a two-day hackathon hosted at the Pawsey Supercomputing Centre in Kensington, Western Australia. Applications for expressions of interest are now open."
-      link="https://pawsey.org.au/event/eoi-for-nextflow-workshop-at-pawsey"
+    {{< medium_card
+      image="github-logo.png" 
+      alt_image_text="Github"
+      card_title="Nextflow GitHub Issues" 
+      card_subtitle="The issue tracker for the Nextflow repository" 
+      description="Create a bug report to help us improve Nextflow or submit a new feature proposal."
+      link="https://github.com/nextflow-io/nextflow/issues"
     >}}
   </div>
   </br>
@@ -96,3 +79,4 @@ Training events taught by Nextflow expert trainers. </br> Contact [Seqera Labs](
   </div>
   </br>
 </div>
+

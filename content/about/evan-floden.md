@@ -10,6 +10,6 @@ weight: 2
 type: 'team'
 ---
 
-Evan is a workflow developer helping scientists and engineers to find solutions to their problems with Nextflow. His background is in Biotechnology and Bioinformatics and he worked on the Nextflow project
+Evan is a workflow developer helping scientists and engineers to find solutions to their problems using Nextflow. His background is in Biotechnology and Bioinformatics and he worked on the Nextflow project
 during his PhD from 2014 to 2018. Evan's interest include genomics, scientific workflow optimization, 
 home automation and bicycle touring. 

@@ -14,7 +14,7 @@ pygmentsOptions = "linenos=table"
     grey_color = "#F0F0F0"
     font_family_base = "'Quicksand', sans-serif;"
     font_family_heading = "'Quicksand', sans-serif;"
-    google_analytics_id = ""
+    google_analytics_id = "UA-364526-10"
 
     google_fonts = [
       ["Raleway", "400"],
@@ -27,13 +27,13 @@ pygmentsOptions = "linenos=table"
     ]
 
     [params.homepage_meta_tags]
-        meta_description = "Scientific workflows and pipelines for genomics, bioinformatics and data science at scale across clusters and cloud."
+        meta_description = "Scientific workflows and HPC pipelines for genomics, bioinformatics and data science at scale across clusters and cloud."
         meta_og_title = "Nextflow"
         meta_og_type = "website"
         meta_og_url = "https://www.nextflow.io"
         meta_og_image = "https://hugo-advance-pro.netlify.com/images/tn.png"
-        meta_og_description = "Scientific workflows and pipelines for genomics, bioinformatics and data science at scale across clusters and cloud."
-        meta_twitter_card = "Scientific workflows and pipelines for genomics, bioinformatics and data science at scale across clusters and cloud."
+        meta_og_description = "Scientific workflows and HPC pipelines for genomics, bioinformatics and data science at scale across clusters and cloud."
+        meta_twitter_card = "Scientific workflows and HPC pipelines for genomics, bioinformatics and data science at scale across clusters and cloud."
         meta_twitter_site = "https://www.nextflow.io"
         meta_twitter_creator = "Evan Floden"
 
@@ -75,7 +75,7 @@ pygmentsOptions = "linenos=table"
         install_link_text = "See installation docs"
 
         show_partners = true
-        partners_heading = "Trusted by the world's most innovative organisations since 2014"
+        partners_heading = "Trusted by the world's most innovative organizations since 2014"
         partners_subheading = "Along with a community of thousands of scientists, engineers and developers."
 
         show_work_section = false
@@ -87,14 +87,6 @@ pygmentsOptions = "linenos=table"
         # Work Page
         order_work_grid = 'weight' # shuffle, lastmod, weight
         show_filters = true # show filters
-
-    [params.learn]
-        show_features = true
-        show_splash_one_section = true
-        splash_one_background_image = "images/kaleidico-754543-unsplash.jpg"
-        splash_one_heading = "We build great software"
-        splash_one_paragraph = "Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit."
-
 
     [params.repo]
         url = "https://github.com/nextflow-io/nextflow"
@@ -122,8 +114,8 @@ pygmentsOptions = "linenos=table"
 	weight = 4
 
 [[menu.main]]
-    name = "Support"
-    url = "/support/"
+    name = "Events"
+    url = "/events/"
     weight = 5
 
 [[menu.main]]
@@ -169,7 +161,7 @@ pygmentsOptions = "linenos=table"
 
 [[menu.footer_primary]]
     name = "About"
-    url = "/team/"
+    url = "/about/"
     weight = 7
 
 # Footer Menu Secondary
