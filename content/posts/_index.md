@@ -8,7 +8,7 @@ heroHeading: 'Blog'
 heroSubHeading: ''
 heroBackground: 'posts/lines.jpg'
 heroDiagonal: true
-heroDiagonalFill: '#eee'
+heroDiagonalFill: '#fff'
 heroHeight: 300
 image: 'posts/lines.jpg'
 ---

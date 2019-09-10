@@ -9,7 +9,7 @@ heroHeading: 'Community'
 heroSubHeading: ''
 heroBackground: 'community/pyramids.jpg'
 heroDiagonal: true
-heroDiagonalFill: '#eee'
+heroDiagonalFill: '#fff'
 heroHeight: 300
 image: 'community/pyramids.jpg'
 ---

@@ -8,8 +8,9 @@ heroHeading: 'About'
 heroSubHeading: ''
 heroBackground: 'team/bubble.jpg'
 heroDiagonal: true
-heroDiagonalFill: '#eee'
+heroDiagonalFill: '#ffffff'
 heroHeight: 300
+type: 'team'
 image: 'team/bubble.jpg'
 ---
 # Meet the core team

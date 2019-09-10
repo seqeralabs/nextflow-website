@@ -46,6 +46,16 @@ process helloWorld {
 
 {{< / highlight >}}
 
+```
+test code triple
+```
+
+something
+
+`
+test code single
+`
+
 ### CHANNELS
 
 Channels hold data and define how it flows through a workflow. They are used to connect processes and allow them to communicate with each other. Channels can contain any data structure including values, objects, files or directories. Importantly, it is the contents of a channel that implicitly defines the execution. The channel `helloworld` contains four files, therefore the process upperCase is executed four times.

@@ -9,7 +9,7 @@ heroHeading: 'Support'
 heroSubHeading: ''
 heroBackground: 'support/triangles.jpg'
 heroDiagonal: true
-heroDiagonalFill: '#eee'
+heroDiagonalFill: '#fff'
 heroHeight: 300
 image: 'support/triangles.jpg'
 ---

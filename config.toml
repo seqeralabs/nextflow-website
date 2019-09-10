@@ -95,18 +95,6 @@ pygmentsOptions = "linenos=table"
         splash_one_heading = "We build great software"
         splash_one_paragraph = "Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit."
 
-    [params.services]
-        show_features = true
-        show_splash_one_section = true
-        splash_one_background_image = "images/kaleidico-754543-unsplash.jpg"
-        splash_one_heading = "We build great software"
-        splash_one_paragraph = "Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit."
-
-    [params.contact_cta]
-        heading = "Ready to get started?"
-        subheading = "Get in touch and get a quote."
-        button_url = "contact"
-        button_text = "Contact us"
 
     [params.repo]
         url = "https://github.com/nextflow-io/nextflow"
@@ -145,7 +133,7 @@ pygmentsOptions = "linenos=table"
 
 [[menu.main]]
     name = "About"
-    url = "/team/"
+    url = "/about/"
     weight = 7
 
 # Footer Menu Primary
