@@ -2,12 +2,15 @@
 title: 'Mixing Scripting Languages'
 date: 2018-12-20T15:46:10+10:00
 draft: false
-weight: 3
-thumbnail: 'work/blue-circuit.jpg'
+weight: 5
+thumbnail: 'learn/mixing-languages.jpg'
 headerTransparent: true
 heroHeading: 'Mixing Scripting Languages'
 heroSubHeading: 'A basic pipeline example'
-heroBackground: 'work/blue-circuit.jpg'
+heroBackground: 'learn/mixing-languages.jpg'
+heroDiagonal: true
+heroDiagonalFill: '#fff'
+heroHeight: 300
 works: ['Examples']
 desciption: 'This example shows how write a pipeline made up of two simple BASH processes.'
 type: 'work'
