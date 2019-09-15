@@ -15,3 +15,5 @@ type: 'work'
 # Learn
 
 Our portfolio showcases our most recent client work across all disciplines.
+
+Remember to check out the documentation or the community support channels.
