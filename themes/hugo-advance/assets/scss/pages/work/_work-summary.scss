@@ -1,7 +1,7 @@
 .work-summary {
   height: 100%;
   display: flex;
-  align-items: flex-start;
+  //align-items: flex-start;
   flex-direction: column;
   @include whitebox(0);
   .work-image {

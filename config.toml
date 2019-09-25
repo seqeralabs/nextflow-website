@@ -104,7 +104,7 @@ pygmentsOptions = "linenos=table"
 
 [[menu.main]]
 	name = "Docs"
-	url = "/docs/latest/index.html"
+	url = "/docs/"
     weight = 3
 
 
@@ -119,14 +119,20 @@ pygmentsOptions = "linenos=table"
     weight = 5
 
 [[menu.main]]
+    name = "Support"
+    url = "/support/"
+    weight = 6
+
+[[menu.main]]
     name = "Blog"
     url = "/posts/"
-    weight = 6
+    weight = 7
+
 
 [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 7
+    weight = 8
 
 # Footer Menu Primary
 [[menu.footer_primary]]
