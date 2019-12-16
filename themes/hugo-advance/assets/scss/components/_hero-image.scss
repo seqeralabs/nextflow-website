@@ -6,6 +6,9 @@
   background-image: linear-gradient(to right, $primary, $secondary);
   height: 400px;
   position: relative;
+  @include media-breakpoint-down(sm) {
+    height:auto!important;
+  }
   .container {
     height: 100%;
     display: flex;
@@ -66,9 +69,6 @@
 }
 .hero-image-fullscreen {
   height: 100vh;
-}
-.hero-image-set-height {
-  height: 600px;
 }
 .hero-image-blend-overlay {
   background-blend-mode: overlay;

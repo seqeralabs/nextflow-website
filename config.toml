@@ -103,10 +103,22 @@ pygmentsOptions = "linenos=table"
         weight = 2
 
 [[menu.main]]
+    identifier = "Docs"
 	name = "Docs"
 	url = "/docs/"
     weight = 3
 
+[[menu.main]]
+    parent = "Docs"
+    name = "Reference"
+    url = "/docs/latest/"
+    weight = 1
+
+[[menu.main]]
+    parent = "Docs"
+    name = "Edge"
+    url = "/docs/edge/"
+    weight = 2
 
 [[menu.main]]
 	name = "Community"
