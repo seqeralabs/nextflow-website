@@ -36,7 +36,23 @@
   // as much space as possible, ensuring footers are aligned to the bottom.
   flex: 1 1 auto;
   padding: $card-spacer-x;
+  padding-left:50px;
+  padding-right:50px;
   color: $card-color;
+  p.card-text{
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  a.detail-link{
+    text-decoration:none;
+    @include hover{
+      text-decoration:underline;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    padding-left: $card-spacer-x;
+    padding-right: $card-spacer-x;
+  }
 }
 
 .card-title {
@@ -46,11 +62,6 @@
 .card-subtitle {
   margin-top: -$card-spacer-y / 2;
   margin-bottom: 0;
-}
-
-.card-text:last-child {
-  margin-bottom: 0;
-  margin-right: 0;
 }
 
 .card-link {

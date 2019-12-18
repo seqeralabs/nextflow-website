@@ -8,7 +8,7 @@
     font-size: 2.4rem;
     line-height: 1.2;
     font-family: $font-family-heading;
-    width: 70%;
+    width: 100%;
     font-weight: 500;
     @include media-breakpoint-up(sm) {
       width: 70%;
@@ -23,7 +23,7 @@
     }
   }
   p {
-    width: 80%;
+    width: 100%;
     font-size: 1.3rem;
     font-weight: lighter;
     line-height: 1.4;

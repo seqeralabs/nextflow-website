@@ -5,4 +5,8 @@
   .wrapper {
     flex: 1;
   }
+  @include media-breakpoint-down(sm) {
+    text-align:center;
+  }
 }
+

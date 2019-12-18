@@ -1,11 +1,11 @@
 <div class="col-12 col-lg-6" style="padding-top: 15px; padding-bottom: 15px;">
   <div class="card h-100 work-summary">
-    <a href="{{ .Get "link" }}" target="_blank"><img class="card-img-top" style="width: 100%; height: 15vw; object-fit: cover; margin: 0px" src="{{ .Get "image" }}" alt="{{ .Get "alt" }}"></a>
+    <a href="{{ .Get "link" }}" target="_blank"><img class="card-img-top" style="width: 100%; object-fit: cover; margin: 0px" src="{{ .Get "image" }}" alt="{{ .Get "alt" }}"></a>
     <div class="card-body">
-      <h3 class="card-title">{{ .Get "card_title" }}</h3>
+      <h3 class="card-title"><a href="{{ .Get "link" }}" target="_blank">{{ .Get "card_title" }}</a></h3>
       <h4 class="card-title" style="color:#28AE61">{{ .Get "card_subtitle" }}</h4>
       <p class="card-text">{{ .Get "description" }}</p>
-      <a href="{{ .Get "link" }}" class="btn btn-primary">More details</a>
+      <a href="{{ .Get "link" }}" class="detail-link">More details<i class="fas fa-long-arrow-alt-right ml-1"></i></a>
     </div>
   </div>
 </div>

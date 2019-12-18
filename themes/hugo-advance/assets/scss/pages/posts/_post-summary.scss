@@ -10,10 +10,15 @@
   }
   .post-content {
     margin-bottom: 20px;
+    p{
+      text-align: left;
+    }
   }
   .post-tags {
     display: inline-block;
     margin-right: 10px;
+    width: 100%;
+    text-align: left;
     strong {
       color: rgb(26, 26, 26);
       font-weight: 700;
@@ -23,6 +28,8 @@
   }
   .post-categories {
     display: inline-block;
+    text-align: left;
+    width:100%;
     strong {
       color: #333;
       font-weight: 700;
@@ -53,6 +60,8 @@
   a.post-read-more {
     font-weight: 400;
     font-family: $font-family-heading;
+    display: block;
+    text-align: right;
   }
   .post-meta {
     display: flex;

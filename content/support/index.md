@@ -24,17 +24,14 @@ image: 'community/pyramids.jpg'
 ## Seqera Labs
 If your team or organization needs Nextflow support or long-term maintenance of Nextflow releases, Seqera Labs provides 
 
-<div class="container">
-  <div class="row">
-    {{< medium_card
-      image="seqera.png" 
-      alt_image_text="Seqera Labs"
-      card_title="Professional Services & Support" 
-      card_subtitle="Provided by Seqera Labs" 
-      description="Timely support, maintenance releases, and workflow engineering for organizations who wish to run Nextflow in production environments."
-      link="https://www.seqera.io/"
-    >}}
-  </div>
-  </br>
+<div class="row">
+  {{< small_card
+    image="seqera.png" 
+    alt_image_text="Seqera Labs"
+    card_title="Professional Services & Support" 
+    card_subtitle="Provided by Seqera Labs" 
+    description="Timely support, maintenance releases, and workflow engineering for organizations who wish to run Nextflow in production environments."
+    link="https://www.seqera.io/"
+  >}}
 </div>
-
+</br>
