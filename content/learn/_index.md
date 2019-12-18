@@ -14,6 +14,5 @@ type: 'work'
 
 # Learn
 
-Our portfolio showcases our most recent client work across all disciplines.
-
-Remember to check out the documentation or the community support channels.
+Get up to speed with Nextflow concepts, try out example workflows
+and discover the power of dataflow programming for yourself.

@@ -81,21 +81,3 @@ Training events taught by Nextflow expert trainers. </br> Contact [Seqera Labs](
   </div>
   </br>
 </div>
-
-
-## Professional Support
-If your team or organization needs support or long-term maintenance, consider the commercial offerings provided by Seqera Labs.
-
-<div class="container">
-  <div class="row">
-    {{< medium_card
-      image="seqera.png" 
-      alt_image_text="Seqera Labs"
-      card_title="Professional Services & Support" 
-      card_subtitle="Provided by Seqera Labs" 
-      description="Timely support, maintenance releases, and workflow engineering for organizations who wish to run Nextflow in production environments."
-      link="https://www.seqera.io/"
-    >}}
-  </div>
-  </br>
-</div>

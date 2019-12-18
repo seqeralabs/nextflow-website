@@ -5,32 +5,88 @@ draft: false
 weight: 1
 thumbnail: 'learn/basic-concepts.jpg'
 headerTransparent: true
-heroHeading: 'Concepts'
-heroSubHeading: 'A basic pipeline example'
+heroHeading: 'Basic Concepts'
+heroSubHeading: ''
 heroBackground: 'learn/basic-concepts.jpg'
 heroDiagonal: true
 heroDiagonalFill: '#fff'
 heroHeight: 300
 works: ['Concepts']
-desciption: 'This example shows how write a pipeline made up of two simple BASH processes.'
+desciption: 'This example shows how write a pipeline made up of two simple BASH *.'
 type: 'work'
 ---
 
-### EXECUTION
-Nextflow is both a language and a workflow engine. A Nextflow script is made by joining together different processes with channels. Each process can be written in any scripting language (Bash, Perl, Ruby, Python, etc.). Workflows can be run with nextflow run. Try it out with:
+## Executing workflows
+Nextflow is both a programming language and a workflow engine.
 
-{{< highlight bash >}}
+It can be installed on most systems with:
 
-$ nextflow run hello
+```
+$ curl -s https://get.nextflow.io | bash
+```
+
+Workflows are executed using the `nextflow run` command.
+
+Try it out the example below:
+
+```
+$ ./nextflow run hello
+```
+
+## Nextflow scripts
+
+A Nextflow script is a plain text file that defines the workflow 
+and usually denoted with the `.nf` extension. 
+
+The main components of a workflow script are *processes* and *channels*.
+
+## Processes
+
+A Nextflow script is typically a collection of processes which are joined together with channels. 
+
+Processes can be written in any scripting language (Bash, Perl, Ruby, Python, etc.) and form the building blocks of any workflow. 
+
+In their most used form, they are composed of an input, output and script section. 
+
+In the example below, the process `helloWorld` consumes values from the `greetings` channel and echos the greeting.
+
+<br>
+{{< highlight groovy "linenos=table" >}}
+
+greetings = Channel.from "Hello", "Ciao", "Hola", "Bonjour"
+
+process helloWorld {
+
+    input:
+      val x from greetings
+    
+    script:
+      """
+      echo "$x world!"
+      """
+}
 
 {{< / highlight >}}
+</br>
 
-### PARAMETERS
+Try it for yourself. Save the snippet above in a file `hello.nf` and execute
+`nextflow run hello.nf`.
 
 
-### PROCESSES
+## Channels
 
-Processes form the building blocks of any workflow. In their most basic form, they are defined with an input, output and script. Let’s first create some data with a channel containing some values. The process consumes values from the `greetings` channel and echos the contents.
+Channels connect processes and allow them to communicate. 
+
+They hold data and define how it flows through a workflow. 
+
+Channels can contain any data structure including values, objects, files or directories. 
+
+Importantly, it is the contents of a channel that implicitly defines the workflow execution. 
+
+In the example below, the channel `greetings` contains four values, therefore the process helloWorld is executed four times. 
+
+The `welcomes` channel will contain four files which will each be converted to uppercase.
+
 
 {{< highlight groovy "linenos=table" >}}
 
@@ -39,116 +95,149 @@ greetings = Channel.from "Hello", "Ciao", "Hola", "Bonjour"
 process helloWorld {
 
     input:
-    val x from greetings
+      val x from greetings
+
+    output:
+      file "greeting.txt" into welcomes
     
     script:
     """
-    printf "$x world!"
+      echo "$x world!" > 'greeting.txt'
     """
 }
-
-{{< / highlight >}}
-
-```
-test code triple
-```
-
-something
-
-`
-test code single
-`
-
-### CHANNELS
-
-Channels hold data and define how it flows through a workflow. They are used to connect processes and allow them to communicate with each other. Channels can contain any data structure including values, objects, files or directories. Importantly, it is the contents of a channel that implicitly defines the execution. The channel `helloworld` contains four files, therefore the process upperCase is executed four times.
-
-
-{{< highlight groovy "linenos=table" >}}
 
 process upperCase {
 
     input:
-    file y from helloworld_channel
+      file y from welcomes
 
     output:
-    file "uppercase.txt" into uppercase_channel 
+      file "uppercase.txt" into loud_welcomes 
 
     script:
 
     """
-    cat $y | tr '[a-z]' '[A-Z]' > uppercase.txt
+       cat $y | tr '[a-z]' '[A-Z]' > uppercase.txt
     """
 }
 
 {{< / highlight >}}
 
 
-### OPERATORS
+## Operators
 
-Channels can be filtered, split, modified and combined using operators. Operators shape the data, and therefore implicitly orchestrate the workflow execution. Consider the operator `collect` which collects all the contents of a channel in a single element. If we apply the collect operator to our `uppercase` channel, the process will run only once.
+Operators shape the data inside *channels* thereby implicitly defining the workflow execution. 
 
+The can be used to transform channels by filtering, splitting, modiyfing or 
+combining using operators.
+
+Consider the operator `collect` which collects all the contents of a channel into
+a single element. 
+
+If we apply this operator to the `greetings` channel, the 
+channel will now contain one element, a tuple of four strings, 
+and the process will only run once.
+
+<br>
 {{< highlight groovy "linenos=table" >}}
 
-process combineFiles {
+greetings = Channel.from "Hello", "Ciao", "Hola", "Bonjour"
+
+process helloWorld {
 
     input:
-    file z from uppercase.collect()
-
-    output:
-    file "collected.txt" into combinedFiles
-
+      val x from greetings.collect()
+    
     script:
-
-    """
-    cat *.txt > combined.txt
-
-    """
+      """
+      echo "$x world!"
+      """
 }
 
 {{< / highlight >}}
+</br>
 
+### Polyglot
 
-### POLYGOT
+Nextflow processes are polygot, they can be written in any language. 
 
-Nextflow processes are polygot, they can be written in any language. Define the appropriate shebang and go ahead with your favourites including Python, R, Perl, Julia, Rust and Go. Nextflow variables are injected into the script at runtime. Consider this python process where `x` is a Nextflow variable injected into some python code.
+Define the appropriate shebang and go ahead with your favorite including Python, R, Perl and Julia. 
 
+Nextflow variables are injected into the script at runtime. 
+
+Below `$x` is a Nextflow variable injected into some python code.
+
+<br>
 {{< highlight groovy "linenos=table" >}}
 
 sequence = Channel.from(0, 2, 4, 8, 16)
   
-process myPythonProcess {
+process pythonProcess {
 
     input:
-    val x from sequence
+      val x from sequence
 
-    """
-    #!/usr/bin/env python
-    import random
+    script:
+      """
+      #!/usr/bin/env python
+      import random
 
-    def average ( x, y ):
-        average = x + y / 2
-        return average
+      def average ( a, b ):
+          average = a + b / 2
+          return average
 
-    y = random.randint ( 1, 16 ) 
-    average = average ( ${x},  y )
+      y = random.randint ( 1, 16 ) 
+      average = average ( ${x},  y )
 
     """
 }
-
 {{< / highlight >}}
+<br>
 
 
-### CONTAINERS
+## Parameters
+
+Parameters are special variables that can be defined at the command line.
+
+They are denoted `params` in a nextflow script and often used to define
+input parameters such as files.
+
+Default parameters can be defined in a script and overridden on the command line
+with `--<param_name>`.
+
+<br>
+{{< highlight groovy "linenos=table" >}}
+
+greetings = Channel.from "Hello", "Ciao", "Hola", "Bonjour"
+params.planet = "Earth"
+
+process helloWorld {
+
+    input:
+      val x from greetings
+    
+    script:
+      """
+      echo "$x $param.planet"
+      """
+}
+{{< / highlight >}}
+</br>
+
+We can change the parameter with `--planet`.
+
+```
+nextflow run hello.nf --planet "Mars"
+```
+
+### Containers
 Containers allow the encapsulation software and enable full portability Build your own containers or use pre-built images from registries such Dockerhub and Biocontainers. Native support for Singularity is especially useful for shared and on-premise environments. Build-in support for conda means that you ca. If we wanted to extract a particular region from three 1000 genomes samples using samtools.
 
 Copy the code to a file named script.nf and run with:
 
-{{< highlight bash "linenos=table" >}}
-
-$ nextflow run script.nf -with-docker *OR* -with-singularity 
-
-{{< / highlight >}}
+```
+$ nextflow run script.nf -with-docker
+```
 
 
 {{< highlight groovy "linenos=table" >}}
@@ -175,3 +264,10 @@ process samtools {
 sams.println()
 
 {{< / highlight >}}
+
+
+### Resume and the working directory
+
+
+### Git-intergration
+
