@@ -34,6 +34,9 @@ $paragrah-color: #3f3f3f;
     color: $heading-color;
     margin-top: 40px;
     margin-bottom: 15px;
+    @include media-breakpoint-down(sm){
+      font-size: 2.4rem;
+    }
   }
   h2 {
     font-size: 2rem;
@@ -53,6 +56,12 @@ $paragrah-color: #3f3f3f;
     margin-bottom: 20px;
     margin-top: 30px;
     margin-bottom: 15px;
+    a{
+      text-decoration:none;
+      @include hover{
+        text-decoration:underline;
+      }
+    }
   }
   
   h4 {

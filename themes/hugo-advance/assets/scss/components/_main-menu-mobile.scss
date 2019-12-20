@@ -112,17 +112,6 @@ $button-width: 35px;
   }
 }
 
-@keyframes fadeAndSlide {
-  0% {
-    opacity: 0;
-    height:0;
-  }
-  100% {
-    opacity: 1;
-    height:auto;
-  }
-}
-
 .lock-scroll {
   overflow: hidden;
 }

@@ -64,6 +64,7 @@
     }
     .team-content {
       margin-top: 20px;
+      text-align: left;
       @include media-breakpoint-up(lg) {
         width: auto;
       }

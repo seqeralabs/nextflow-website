@@ -6,13 +6,13 @@
             <div class="row">
 
               {{ if .Site.Params.footer.show_menu_footer_primary }}
-                <div class="col-12 col-md-3">
+                <div class="col-6 col-md-3">
                   <h3>Site</h3>
                   {{ partial "menu-footer-primary.html" . }}
                 </div>
               {{ end }}
 
-              <div class="col-12 col-md-3">
+              <div class="col-6 col-md-3">
                 <h3>Learn</h3>
                 <ul>
                       <li><a href="/learn/">Basics</a></li>
@@ -23,7 +23,7 @@
                 </ul>
               </div>
 
-              <div class="col-12 col-md-3">
+              <div class="col-6 col-md-3">
                 <h3>External</h3>
                 <ul>
                     <li><a href="https://github.com/nextflow-io/nextflow">GitHub</a></li>
@@ -34,7 +34,7 @@
               </div>
               
               {{ if .Site.Params.footer.show_menu_footer_secondary }}
-              <div class="col-12 col-md-3">
+              <div class="col-6 col-md-3">
                 <h3>Support</h3>
                 <ul>
                 <li><a href="/about/#contact">Contact</a></li>
