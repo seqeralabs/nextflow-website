@@ -1,10 +1,10 @@
 ---
-title: 'Blog'
+title: ''
 date: 2019-07-16T15:23:36+10:00
 draft: false
 featured: true
 weight: 1
-heroHeading: 'Blog'
+heroHeading: ''
 heroSubHeading: ''
 heroBackground: 'posts/lines.jpg'
 heroDiagonal: true
@@ -14,4 +14,4 @@ image: 'posts/lines.jpg'
 ---
 # The Nextflow Blog
 
-### Updates, thoughts and ideas from the core team along with guest posts discussing all things Nextflow.
+Updates, thoughts and ideas from the core team along with guest posts discussing all things Nextflow.
