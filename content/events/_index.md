@@ -5,14 +5,6 @@ draft: false
 type: 'events'
 featured: true
 weight: 1
-heroHeading: ''
-heroSubHeading: ''
-heroBackground: 'events/triangles.jpg'
-heroDiagonal: true
-heroDiagonalFill: '#fff'
-heroHeight: 300
-image: 'events/triangles.jpg'
-layout: 'index'
 ---
 
 # Events, training opportunities and professional support.

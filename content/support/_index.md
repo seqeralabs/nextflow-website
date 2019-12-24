@@ -5,13 +5,6 @@ draft: false
 type: 'support'
 featured: true
 weight: 1
-heroHeading: 'Support'
-heroSubHeading: ''
-heroBackground: 'community/pyramids.jpg'
-heroDiagonal: true
-heroDiagonalFill: '#fff'
-heroHeight: 300
-image: 'community/pyramids.jpg'
 ---
 # Professional support
 
