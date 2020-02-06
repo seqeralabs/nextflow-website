@@ -59,7 +59,7 @@ pygmentsOptions = "linenos=table"
         install_step_one_title = "Check"
         install_step_one_description = "Java <span>8 or later</span> is required"
         install_step_one_command = "java -version"
-        install_step_one_subtitle = "Version numbers 1.8.y_z and 8 identify the same Java release."
+        install_step_one_subtitle = "Version numbers <code class=\"text-muted\">1.8.y_z</code> and <code class=\"text-muted\">8</code> identify the same Java release."
 
         install_step_two_title = "Install"
         install_step_two_description = "<span>One line</span> installation"
@@ -83,7 +83,7 @@ pygmentsOptions = "linenos=table"
         work_count = 2
         show_view_all_work_button = true
 
-    [params.work] 
+    [params.work]
         # Work Page
         order_work_grid = 'weight' # shuffle, lastmod, weight
         show_filters = true # show filters
