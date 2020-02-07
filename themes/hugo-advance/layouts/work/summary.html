@@ -9,7 +9,7 @@
   </div>
   {{ if .Params.works }}
   <div class="work-meta">
-    <p>{{ delimit .Params.works ""}}</p>
+    <span>{{ delimit .Params.works ""}}</span>
   </div>
   {{ end }}
   <div class="work-content">{{ .Params.desciption | plainify | truncate 120 "..." }}</div>
