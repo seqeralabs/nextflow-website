@@ -1,8 +1,8 @@
-# nextflow.io website
+# [nextflow.io](https://nextflow.io) website
 
 ![screenshot](website_screenshot.png)
 
-The nextflow.io website is built using Hugo and is based on the _Advance_ premium Hugo theme.
+The [nextflow.io](https://nextflow.io) website is built using Hugo and is based on the _Advance_ premium Hugo theme.
 
 ## Installation
 
