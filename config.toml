@@ -83,7 +83,7 @@ pygmentsOptions = "linenos=table"
         work_count = 2
         show_view_all_work_button = true
 
-    [params.work] 
+    [params.work]
         # Work Page
         order_work_grid = 'weight' # shuffle, lastmod, weight
         show_filters = true # show filters
@@ -105,6 +105,7 @@ pygmentsOptions = "linenos=table"
 [[menu.main]]
     identifier = "Docs"
 	name = "Docs"
+    url = "/docs/latest/"
     weight = 3
 
 [[menu.main]]
