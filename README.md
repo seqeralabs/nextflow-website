@@ -1,10 +1,8 @@
-# Hugo Advance Theme
+# [nextflow.io](https://nextflow.io) website
 
-Advance is a premium Hugo theme.
+![screenshot](website_screenshot.png)
 
-[Live Demo](https://hugo-advance-pro.netlify.com/) | [Live Docs](https://www.zerostatic.io/docs/hugo-advance-pro/install-theme/)
-
-![Hugo Advance Pro Theme screenshot](https://www.zerostatic.io/theme/hugo-advance-pro/screenshot-full.jpg)
+The [nextflow.io](https://nextflow.io) website is built using Hugo and is based on the _Advance_ premium Hugo theme.
 
 ## Installation
 
@@ -12,18 +10,16 @@ Make sure you have Hugo installed - For more information read the official [setu
 
 ## Getting started
 
-Unzip the hugo advance pro zip file. It already contains the Hugo site and theme. All content is ready to go.
-
-Inside the unziped folder run:
+Clone this repository and build the site:
 
 ```
-hugo
+$ hugo
 ```
 
-Hugo's built-in local server.
+You can then run the website using Hugo's built-in local server:
 
 ```
-hugo server
+$ hugo server
 ```
 
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
