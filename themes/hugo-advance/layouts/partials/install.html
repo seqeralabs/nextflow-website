@@ -33,9 +33,9 @@
                 </div>
                 <div class="head_bg"></div>
                 <div class="head">
-                  <highlight>{{ .Site.Params.homepage.install_step_one_command }}</highlight>
+                  <code class="text-muted">{{ .Site.Params.homepage.install_step_one_command }}</code>
                 </div> </br></br>
-                <p>{{ .Site.Params.homepage.install_step_one_subtitle }}</p>
+                <p>{{ .Site.Params.homepage.install_step_one_subtitle | safeHTML }}</p>
               </div>
             </div>
             <div class="col-md-4">
@@ -60,8 +60,8 @@
                 </div>
                 <div class="head_bg"></div>
                 <div class="head">
-                  <highlight>{{ .Site.Params.homepage.install_step_two_command }}</highlight>
-                </div> 
+                  <code class="text-muted">{{ .Site.Params.homepage.install_step_two_command }}</code>
+                </div>
                 <br><br>
                 <p>{{ .Site.Params.homepage.install_step_two_subtitle }}</p>
               </div>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="head_bg"></div>
                 <div class="head">
-                  <highlight>{{ .Site.Params.homepage.install_step_three_command }}</highlight>
+                  <code class="text-muted">{{ .Site.Params.homepage.install_step_three_command }}</code>
                 </div> </br></br>
                 <p>{{ .Site.Params.homepage.install_step_three_subtitle }}</p>
                 </br>
