@@ -93,13 +93,13 @@ pygmentsOptions = "linenos=table"
 
 # Main Menu
 [[menu.main]]
-	name = "Learn"
-	url = "/learn/"
+    name = "Learn"
+    url = "/learn/"
     weight = 1
 
 [[menu.main]]
     identifier = "Docs"
-	name = "Docs"
+    name = "Docs"
     url = "/docs/latest/"
     weight = 2
 
@@ -116,9 +116,9 @@ pygmentsOptions = "linenos=table"
     weight = 2
 
 [[menu.main]]
-	name = "Community"
-	url = "/community/"
-	weight = 3
+    name = "Community"
+    url = "/community/"
+    weight = 3
 
 [[menu.main]]
     name = "Events"
@@ -143,19 +143,19 @@ pygmentsOptions = "linenos=table"
 
 # Footer Menu Primary
 [[menu.footer_primary]]
-	name = "Home"
-	url = "/"
+    name = "Home"
+    url = "/"
     weight = 1
 
 [[menu.footer_primary]]
-	name = "Learn"
-	url = "/learn/"
+    name = "Learn"
+    url = "/learn/"
     weight = 2
 
 [[menu.footer_primary]]
-	name = "Docs"
-	url = "/docs/"
-	weight = 3
+    name = "Docs"
+    url = "/docs/"
+    weight = 3
 
 [[menu.footer_primary]]
     name = "Community"
