@@ -93,20 +93,15 @@ pygmentsOptions = "linenos=table"
 
 # Main Menu
 [[menu.main]]
-	name = "Quick Start"
-	url = "/#getting-started"
+	name = "Learn"
+	url = "/learn/"
     weight = 1
-
-[[menu.main]]
-    	name = "Learn"
-    	url = "/learn/"
-        weight = 2
 
 [[menu.main]]
     identifier = "Docs"
 	name = "Docs"
     url = "/docs/latest/"
-    weight = 3
+    weight = 2
 
 [[menu.main]]
     parent = "Docs"
@@ -123,22 +118,22 @@ pygmentsOptions = "linenos=table"
 [[menu.main]]
 	name = "Community"
 	url = "/community/"
-	weight = 4
+	weight = 3
 
 [[menu.main]]
     name = "Events"
     url = "/events/"
-    weight = 5
+    weight = 4
 
 [[menu.main]]
     name = "Support"
     url = "/support/"
-    weight = 6
+    weight = 5
 
 [[menu.main]]
     name = "Blog"
     url = "/posts/"
-    weight = 7
+    weight = 6
 
 
 [[menu.main]]
@@ -153,34 +148,29 @@ pygmentsOptions = "linenos=table"
     weight = 1
 
 [[menu.footer_primary]]
-  name = "Quick Start"
-  url = "/#getting-started"
-    weight = 2
-
-[[menu.footer_primary]]
 	name = "Learn"
 	url = "/learn/"
-    weight = 3
+    weight = 2
 
 [[menu.footer_primary]]
 	name = "Docs"
 	url = "/docs/"
-	weight = 4
+	weight = 3
 
 [[menu.footer_primary]]
     name = "Community"
     url = "/community/"
-    weight = 5
+    weight = 4
 
 [[menu.footer_primary]]
     name = "Support"
     url = "/support/"
-    weight = 6
+    weight = 5
 
 [[menu.footer_primary]]
     name = "About"
     url = "/about/"
-    weight = 7
+    weight = 6
 
 # Footer Menu Secondary
 [[menu.footer_secondary]]
