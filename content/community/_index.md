@@ -5,13 +5,6 @@ draft: false
 type: 'community'
 featured: true
 weight: 1
-heroHeading: ''
-heroSubHeading: ''
-heroBackground: 'images/hero_home_1.jpg'
-heroDiagonal: true
-heroDiagonalFill: '#fff'
-heroHeight: 0
-image: 'images/hero_home_1.jpg'
 ---
 
 # Community
