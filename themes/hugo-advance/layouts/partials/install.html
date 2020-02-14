@@ -21,6 +21,7 @@
                     </div>
                   </div>
                   <div class="generic_price_tag clearfix">
+                    <div class="head_bg"></div>
                     <span class="price">
                       <span class="currency">1</span>
                     </span>
@@ -34,8 +35,8 @@
                 <div class="head_bg"></div>
                 <div class="head">
                   <code class="text-muted">{{ .Site.Params.homepage.install_step_one_command }}</code>
-                </div> </br></br>
-                <p>{{ .Site.Params.homepage.install_step_one_subtitle | safeHTML }}</p>
+                </div>
+                <p class="install_subtitle">{{ .Site.Params.homepage.install_step_one_subtitle | safeHTML }}</p>
               </div>
             </div>
             <div class="col-md-4">
@@ -48,6 +49,7 @@
                     </div>
                   </div>
                   <div class="generic_price_tag clearfix">
+                    <div class="head_bg"></div>
                     <span class="price">
                       <span class="currency">2</span>
                     </span>
@@ -62,8 +64,7 @@
                 <div class="head">
                   <code class="text-muted">{{ .Site.Params.homepage.install_step_two_command }}</code>
                 </div>
-                <br><br>
-                <p>{{ .Site.Params.homepage.install_step_two_subtitle }}</p>
+                <p class="install_subtitle">{{ .Site.Params.homepage.install_step_two_subtitle }}</p>
               </div>
             </div>
             <div class="col-md-4">
@@ -76,6 +77,7 @@
                     </div>
                   </div>
                   <div class="generic_price_tag clearfix">
+                    <div class="head_bg"></div>
                     <span class="price">
                       <span class="currency">3</span>
                     </span>
@@ -89,9 +91,8 @@
                 <div class="head_bg"></div>
                 <div class="head">
                   <code class="text-muted">{{ .Site.Params.homepage.install_step_three_command }}</code>
-                </div> </br></br>
-                <p>{{ .Site.Params.homepage.install_step_three_subtitle }}</p>
-                </br>
+                </div>
+                <p class="install_subtitle">{{ .Site.Params.homepage.install_step_three_subtitle }}</p>
               </div>
             </div>
           </div>

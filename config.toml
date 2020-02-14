@@ -57,17 +57,17 @@ pygmentsOptions = "linenos=table"
         install_subsubtitle = "Simply follow these three steps."
 
         install_step_one_title = "Check"
-        install_step_one_description = "Java <span>8 or later</span> is required"
+        install_step_one_description = "Java 8 or later is required"
         install_step_one_command = "java -version"
         install_step_one_subtitle = "Version numbers <code class=\"text-muted\">1.8.y_z</code> and <code class=\"text-muted\">8</code> identify the same Java release."
 
         install_step_two_title = "Install"
-        install_step_two_description = "<span>One line</span> installation"
+        install_step_two_description = "One line installation"
         install_step_two_command = "curl -s https://get.nextflow.io | bash"
         install_step_two_subtitle = "A file nextflow is created in the current directory."
 
         install_step_three_title = "Launch"
-        install_step_three_description = "Try a <span>simple</span> demo"
+        install_step_three_description = "Try a simple demo"
         install_step_three_command = "./nextflow run hello"
         install_step_three_subtitle = "Start creating and launching workflows!"
 
