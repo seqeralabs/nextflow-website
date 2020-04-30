@@ -33,10 +33,81 @@ Nextflow can quickly be installed:
 curl -fsSL https://get.nextflow.io | bash
 ```
 
-## Pull a workflow
+## Create some data
+
+Channels in Nextflow are the primary way to deal with data passing from process to process. 
+```groovy
+data = Channel.fromList(['hello', 'from', 'Nextflow'])
+```
+
+## First process
+A Nextflow process is normally composed of inputs, outputs, and a script block. Here we define a simple that takes our channel defined in the previous step as an input. The script block just echos the word into a file, and the output defines a glob pattern `"*.txt"` which will match all txt files output. Nextflow automatically parallelizes this step for you, as there are three items in the input channel Nextflow will automatically run three processes in parallel. This feature allows you to seamlessly scale your workflow based on the input data. 
+```groovy
+process saveToFile{
+    input:
+    val word from data
+
+    output:
+    file "*.txt" into outs
+    """
+    echo ${word} > ${word}.txt
+    """
+}
+```
+
+## Second process
+For the next process we again define an input, this time it is the output from the previous step. Nextflow implicitly infers the task dependencies based on inputs and output, running this step only once the data from the `saveToFile` process is available. 
+
+```
+process wc{
+	echo true
+	input:
+	file wordfile from outs
+
+	"""
+	cat ${wordfile} | wc
+	"""
+}
+```
+
+## Container process
+
+```
+```
+
+## Putting it all together
+
+The two process together demonstrates again that no explicit process dependency must be defined.  
+
+```groovy
+data = Channel.fromList(['hello', 'from', 'Nextflow'])
+
+process saveToFile{
+    input:
+    val word from data
+
+    output:
+    file "*.txt" into outs
+    """
+    echo ${word} > ${word}.txt
+    """
+}
+
+process wc{
+	echo true
+	input:
+	file wordfile from outs
+
+	"""
+	cat ${wordfile} | wc
+	"""
+}
+```
 
 ## Nextflow configuration
 One key component of Nextflow is the ability to separate the configuration of a workflow from the workflow definition. This enables portable workflows that can be configured across a range of executors. 
+
+Below two profiles are defined, one for local execution and the other for an HPC cluster using SGE. There is no need to alter your workflow 
 
 ```
 profiles {
@@ -55,6 +126,20 @@ profiles {
 }
 ```
 
+## Integration with source control
+Nextflow provides support for pulling workflows directly from source control repositories including GitHub and GitLab. 
+
+```
+nextflow run nextflow-io/rnaseq-nf -with-docker
+```
+## Key takeaways
+
+Although a brief introduction to Nextflow 
+
+* Automatic parallelization of your tasks
+* Portable workflows can run across multiple executors
+* 
+ 
 ## Next steps
 
 -- [Reference documentation](/docs/latest) provides complete documentation of Nextflow's features

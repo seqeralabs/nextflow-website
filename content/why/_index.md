@@ -6,7 +6,6 @@ type: 'why'
 featured: true
 weight: 1
 ---
-# Why Nextflow?
 
 ### You have come to the right place!
 
