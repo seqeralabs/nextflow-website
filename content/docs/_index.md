@@ -8,9 +8,3 @@ weight: 1
 ---
 # Nextflow documentation
 
-## Quick start
-[Quick start guide](/quickstart)
-
-## Reference documentation
-[Reference documentation](/docs/latest)
-## Edge documentation

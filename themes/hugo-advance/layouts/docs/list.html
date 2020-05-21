@@ -1,0 +1,31 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-docs-list{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+
+<div class="intro intro-big">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">{{ .Content }}</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card-deck">
+  <div class="container pb-5 pb-md-8">
+  <div class="row">
+    {{ range.Pages.ByWeight }}
+    <div class="col">{{ .Render "summary" }}</div>
+    {{ end }}
+  </div>
+  </div>
+</div>
+
+
+
+{{ end }}
+
+{{ define "footer_js" }}
+{{ end }}

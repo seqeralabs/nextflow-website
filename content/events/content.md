@@ -67,17 +67,3 @@ Training events taught by Nextflow expert trainers. </br> Contact [Seqera Labs](
   description="Nextflow goes down-under with a four-day workshop, which also includes a two-day hackathon hosted at the Pawsey Supercomputing Centre in Kensington, Western Australia. Applications for expressions of interest are now open."
   link="https://pawsey.org.au/event/eoi-for-nextflow-workshop-at-pawsey"
 >}}
-
-
-## Professional Support
-If your team or organization needs support or long-term maintenance, consider the commercial offerings provided by Seqera Labs.
-
-
-{{< small_card
-  image="seqera.png" 
-  alt_image_text="Seqera Labs"
-  card_title="Professional Services & Support" 
-  card_subtitle="Provided by Seqera Labs" 
-  description="Timely support, maintenance releases, and workflow engineering for organizations who wish to run Nextflow in production environments."
-  link="https://www.seqera.io/"
->}}

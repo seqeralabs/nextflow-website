@@ -1,0 +1,27 @@
+.docs-summary {
+  .docs-image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    width: 50%;
+    @include media-breakpoint-up(md) {
+      text-align: center;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 120px;
+    }
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      display: inline-block;
+      @include media-breakpoint-up(md) {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+  .docs-content {
+    color: #333;
+  }
+}
