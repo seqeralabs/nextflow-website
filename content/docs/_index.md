@@ -7,4 +7,4 @@ featured: true
 weight: 1
 ---
 # Nextflow documentation
-
+Nextflow provides a rich set of features for developing scientific workflows. Dive right in with the Quickstart or explore the complete set of features in the docs.

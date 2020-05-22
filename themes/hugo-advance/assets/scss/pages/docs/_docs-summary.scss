@@ -1,28 +1,30 @@
 .docs-summary {
+  display: flex;
+  flex-direction: column;
+  @include whitebox();
+  padding: 20px;
+  border: none;
+  height: 100%;
   .docs-image {
-    margin-left: auto;
+    width: 60px;
+    margin-bottom: 10px;
+      margin-left: auto;
     margin-right: auto;
-    margin-top: 45px;
-    width: 50%;
-    @include media-breakpoint-up(md) {
-      text-align: center;
-    }
-    @include media-breakpoint-up(lg) {
-      width: 120px;
-    }
     img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      display: inline-block;
-      @include media-breakpoint-up(md) {
-        width: 120px;
-        height: 120px;
-      }
+      width: 50%;
+      height: auto;
     }
   }
-  .docs-content {
-    color: #333;
+  .docs-title {
+    font-family: $font-family-heading;
+    font-size: 1.8rem;
+    font-weight: 400;
   }
-
+  .docs-description {
+    font-size: 1.3rem;
+  }
+  .docs-link {
+    flex: 0;
+    margin-top: auto;
+  }
 }
