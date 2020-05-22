@@ -1,13 +1,52 @@
 .page-home {
+  background-color: #F0F0F0;
   .splash {
     h2 {
       font-size: 2.6rem;
       line-height: 1.2;
-      margin-bottom: 30px;
+      margin-bottom: 5px;
       margin-top: 20px;
       @include media-breakpoint-up(md) {
         margin-top: 0;
       }
+    }
+  }
+  .home-image {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 25px;
+
+    float: left;
+    width: 50%;
+    @include media-breakpoint-up(md) {
+      text-align: center;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 120px;
+    }
+    img {
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      display: inline-block;
+      @include media-breakpoint-up(md) {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+  .home-box {
+    width: 1110px;
+    height: 350px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #F0F0F0;
+    img{
+      float: left;
+      margin-right: 80px;
+    }
+    div{
+      width: 100%;
     }
   }
 }

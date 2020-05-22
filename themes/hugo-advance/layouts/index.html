@@ -20,7 +20,16 @@
 <!-- Hero Image Partial-->
 {{ partial "hero-image-index.html" (dict "background" .Params.heroBackground "fullscreen" .Params.heroFullscreen "height" .Params.heroHeight "heading" .Params.heroHeading "subheading" .Params.heroSubheading "overlay" .Params.heroBackgroundOverlay "diagonal" .Params.heroDiagonal "diagonalfill" .Params.heroDiagonalFill) }}
 
-
+{{range where .Site.Pages "Type" "=" "home_content"}}
+<div class="container">
+  <div class="row justify-content-start">
+      <div class="home-box">
+        <img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="nf main image">
+        <div class="content">{{.Content}}</div>
+      </div>
+    </div>
+</div>
+{{end}}
 
 
 <!-- Getting started partial (Content: config.toml, Template: layouts/patials/install.html) -->

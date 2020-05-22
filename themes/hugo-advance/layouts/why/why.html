@@ -5,6 +5,15 @@
 
 {{ define "main" }}
 
+{{range where .Site.Pages "Type" "=" "why"}}
+<div class="intro intro-big pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">{{ .Content }}</div>
+    </div>
+  </div>
+</div>
+{{end}}
 <!-- Spash features (Content: /data/splash.json ) -->
 {{ range .Site.Data.splash }}
   <div class="strip strip-{{ .colour }} pt-8 pb-8 splash">
