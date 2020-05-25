@@ -15,12 +15,10 @@
 {{end}}
 {{range where .Site.Pages "Type" "=" "events_content"}}
 <div class="container pt-0 pb-4 pb-md-10 ">
+  <h2>{{ .Params.header }} </h2>
+  <h3> {{ .Params.subheader }} </h3>
   <div class="row justify-content-start">
-    <div class="col-12 col-md-12 ">
-      <div class="work work-single">
-        <div class="content">{{.Content}}</div>
-      </div>
-    </div>
+    {{.Content}}
   </div>
 </div>
 {{end}}
