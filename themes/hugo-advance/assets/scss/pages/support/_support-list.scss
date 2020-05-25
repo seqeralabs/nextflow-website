@@ -2,35 +2,31 @@
   .support-image {
     margin-right: auto;
     margin-left: auto;
-    padding-right: 25px;
+    padding-right: auto;
+    padding-left: auto;
 
     float: left;
     width: 50%;
     @include media-breakpoint-up(md) {
       text-align: center;
+      padding-right: 20px;
     }
     @include media-breakpoint-up(lg) {
       width: 120px;
     }
-    img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      display: inline-block;
-      @include img-fluid;
-      @include media-breakpoint-up(md) {
-        width: 120px;
-        height: 120px;
-      }
-    }
   }
   .support-box {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    max-width: 100%;
+    img {
+      width: 100px;
+      height: 80px;
+      max-width: 100%;
+    }
     
     div{
-      width: 750px;
-      align-content: center;
+      width: 700px;
+      max-width: 100%;
+      align-content: left;
       border-bottom: 1px solid #28AE61;
     }
   }

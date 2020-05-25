@@ -13,24 +13,26 @@
   </div>
 </div>
 {{end}}
-<div class="container pt-0 pb-4 pb-md-10 ">
-  <div class="row justify-content-start">
-    {{range where .Site.Pages "Type" "=" "support_content"}}
-    <div class="col-12 col-md-12 ">
-        <img class="img-fluid" src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="Card image cap">
-        <div class="work work-single">
-          <div class="content">{{.Content}}</div>
+<div class="support support-list">
+  <div class="container pt-0 pb-2 pb-md-2 ">
+    <div class="row justify-content-start">
+      {{range where .Site.Pages "Type" "=" "support_content"}}
+      <div class="col-12 col-md-12 ">
+          <img class="img-fluid" src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="Card image cap">
+          <div class="work work-single">
+            <div class="content">{{.Content}}</div>
+        </div>
       </div>
-    </div>
-    {{end}}
+      {{end}}
+    </div> 
   </div>
 </div>
 
 <div class="support support-list">
-  <div class="container pt-0 pb-4 pb-md-10 ">
+  <div class="container pt-0 pb-0 pb-md-5 ">
       {{range where .Site.Pages "Type" "=" "support_type"}}
       <div class="support-box">
-                <img class="support-image" src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="Card image cap">
+          <img class="support-image" src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="Card image cap">
       <div>
         <div class="content">{{.Content}}</div>
       </div>
@@ -41,10 +43,11 @@
 </div>
 
 <div class="support support-list">
-  <div class="container pt-0 pb-4 pb-md-10 ">
-    <a class="button button-primary" href="https://seqera.io/">Learn more</a> 
+  <div class="container pt-0 pb-4 pb-md-10">
+    <a class="button button-primary" href="https://seqera.io/">Learn more</a>
   </div>
 </div>
+
 
 {{ end }}
 
