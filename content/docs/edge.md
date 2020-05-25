@@ -6,4 +6,4 @@ image: '/docs/edge.jpg'
 weight: 3
 ---
 
-Introduction to the core concepts of Nextflow. 
+Documentation for edge releases of Nextflow including features under activate development.

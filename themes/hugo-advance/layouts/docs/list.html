@@ -1,5 +1,5 @@
 {{ define "header_css" }}{{ end }}
-{{ define "body_classes" }}page-docs-list{{ end }}
+{{ define "body_classes" }}page-docs-summary{{ end }}
 {{ define "header_classes" }}{{ end }}
 
 {{ define "main" }}
@@ -13,13 +13,20 @@
 </div>
 
 
-<div class="card-deck">
-  <div class="container pb-5 pb-md-8">
-  <div class="row">
+
+<div class="container">
+  <div class="card-deck">
     {{ range.Pages.ByWeight }}
-    <div class="col">{{ .Render "summary" }}</div>
-    {{ end }}
-  </div>
+    <div class="docs docs-summary">
+      <div class="card">
+        <img class="docs-image" src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="Card image cap">
+        <div class="card-body">
+          <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          <p class="card-text">{{ .Content }}</p>
+        </div>
+      </div>
+    </div>
+    {{end}}
   </div>
 </div>
 

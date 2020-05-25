@@ -6,4 +6,4 @@ image: '/docs/ref.png'
 weight: 2
 ---
 
-Introduction to the core concepts of Nextflow. 
+Complete documentation of Nextflow features

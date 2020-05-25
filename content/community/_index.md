@@ -11,6 +11,6 @@ weight: 1
 
 The Nextflow community is full of talented and awesome people working together. We operate according a [code-of-conduct](https://github.com/nextflow-io/nextflow/blob/master/CODE-OF-CONDUCT.md) to promote and foster inclusive and productive collaborations. 
 
-You can always follow the community news on [Twitter](https://twitter.com/nextflowio) to stay up-to-date with all the latest news and events.
+Follow Nextflow on [Twitter](https://twitter.com/nextflowio) to stay up-to-date with all the latest news and events.
 
 
