@@ -8,7 +8,4 @@ weight: 1
 ---
 # Professional support
 
-### Require support for your teams pipelines in production? 
-
-### You have come to the right place!
 

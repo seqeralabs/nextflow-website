@@ -23,3 +23,9 @@ $ hugo server
 ```
 
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
+
+## Issues
+- [ ] CSS for resize of support images for smaller screens
+- [ ] CSS for events cards so all titles/text are aligned the same
+- [ ] Home page CSS for small screens so text doesn't overlap
+- [ ] Support page Tools text wrap

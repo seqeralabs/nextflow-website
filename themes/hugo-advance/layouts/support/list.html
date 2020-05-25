@@ -17,9 +17,9 @@
   <div class="row justify-content-start">
     {{range where .Site.Pages "Type" "=" "support_content"}}
     <div class="col-12 col-md-12 ">
-      <img class="docs-image" src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="Card image cap">
-      <div class="work work-single">
-        <div class="content">{{.Content}}</div>
+        <img class="img-fluid" src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="Card image cap">
+        <div class="work work-single">
+          <div class="content">{{.Content}}</div>
       </div>
     </div>
     {{end}}
