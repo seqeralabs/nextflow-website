@@ -118,14 +118,20 @@ pygmentsOptions = "linenos=table"
 [[menu.main]]
     parent = "Docs"
     name = "Reference"
-    url = "/docs/latest/"
+    url = "https://www.nextflow.io/docs/latest/index.html"
     weight = 1
 
 [[menu.main]]
     parent = "Docs"
     name = "Edge"
-    url = "/docs/edge/"
+    url = "https://www.nextflow.io/docs/edge/index.html"
     weight = 2
+
+[[menu.main]]
+    parent = "Docs"
+    name = "Coding Patterns"
+    url = "https://nextflow-io.github.io/patterns/index.html"
+    weight = 3
 
 [[menu.main]]
     name = "Community"

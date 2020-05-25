@@ -1,8 +1,8 @@
 ---
 title: 'Reference Docs'
 type: 'docs'
-url: '/docs/latest/'
-image: '/docs/ref.png'
+externalUrl: 'https://www.nextflow.io/docs/latest/index.html'
+image: '/docs/ref.svg'
 weight: 2
 ---
 

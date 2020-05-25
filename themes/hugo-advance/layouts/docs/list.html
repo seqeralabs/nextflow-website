@@ -15,13 +15,17 @@
 
 
 <div class="container">
-  <div class="card-deck">
+  <div class="card-deck pb-10">
     {{ range.Pages.ByWeight }}
     <div class="docs docs-summary">
       <div class="card">
         <img class="docs-image" src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="Card image cap">
         <div class="card-body">
+          {{ if .Params.externalUrl }}
+          <h2><a href="{{ .Params.externalUrl }}">{{ .Title }}</a></h2>
+          {{ else }}
           <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          {{ end }}
           <p class="card-text">{{ .Content }}</p>
         </div>
       </div>

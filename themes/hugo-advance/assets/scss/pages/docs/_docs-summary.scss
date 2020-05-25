@@ -4,21 +4,21 @@
   border: none;
   height: 100%;
   .docs-image {
-    width: 80px;
-    height: 150px;
-    margin-bottom: 10px;
+    width: 120px;
+    height: 240px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+
     img {
       width: 50%;
       height: auto;
+
     }
   }
   .card{
     border: none;
     @include whitebox();
-    width: 500px;
+    width: 400px;
   }
   .docs-title {
     font-family: $font-family-heading;

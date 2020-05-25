@@ -1,9 +1,9 @@
 ---
 title: 'Edge Docs'
 type: 'docs'
-url: '/docs/latest/'
-image: '/docs/edge.jpg'
+externalUrl: 'https://www.nextflow.io/docs/edge/index.html'
+image: '/docs/edge.svg'
 weight: 3
 ---
 
-Documentation for edge releases of Nextflow including features under activate development.
+Edge release documentation for features under development
