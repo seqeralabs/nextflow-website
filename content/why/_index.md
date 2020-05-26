@@ -7,4 +7,5 @@ featured: true
 weight: 1
 ---
 
-# Why Nextflow
+# Why Nextflow?
+What makes Nextflow a leading scientific workflow management system? The features. 

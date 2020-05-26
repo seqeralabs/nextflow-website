@@ -1,16 +1,23 @@
-{{ define "title" }}{{ end}}
 {{ define "header_css" }}{{ end }}
-{{ define "body_classes" }}page-why{{ end }}
-
-
+{{ define "body_classes" }}event-summary{{ end }}
 {{ define "main" }}
 
 {{range where .Site.Pages "Type" "=" "why"}}
-<div class="intro intro-small pb-0"></div>
+<div class="intro intro-big pb-0"></div>
   <div class="container">
     <div class="row">
       <div class="col-12">{{ .Content }}</div>
     </div>
+
+    <div class="row">
+      {{range where .Site.Pages "Type" "=" "key_features"}}
+      <div class="col-md-6 pb-2">
+        <h1 style="color:#28AE61"> {{ .Params.title }}</h1>
+        {{ .Content }}
+      </div>
+      {{ end }}
+    </div>
+
   </div>
 </div>
 {{end}}
