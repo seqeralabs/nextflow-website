@@ -5,6 +5,7 @@ image: 'team/evan.png'
 jobtitle: 'Workflow Developer'
 linkedin_url: 'https://www.linkedin.com/in/evan-floden-36137018'
 twitter_url: 'https://twitter.com/evanfloden'
+github_url: 'https://github.com/evanfloden/'
 flag_image: 'team/new-zealand.svg'
 weight: 2
 type: 'team'

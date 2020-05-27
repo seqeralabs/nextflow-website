@@ -6,6 +6,7 @@ jobtitle: 'Workflow Developer'
 linkedin_url: 'https://www.linkedin.com/in/sayersk/'
 twitter_url: 'https://twitter.com/KevinTSayers'
 flag_image: 'team/united-states.svg'
+github_url: 'https://github.com/KevinSayers'
 weight: 3
 type: 'team'
 ---
