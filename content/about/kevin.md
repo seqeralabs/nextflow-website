@@ -2,7 +2,7 @@
 title: 'Kevin Sayers'
 draft: false
 image: 'team/kevin.jpeg'
-jobtitle: 'Workflow Developer'
+jobtitle: 'Bioinformatician'
 linkedin_url: 'https://www.linkedin.com/in/sayersk/'
 twitter_url: 'https://twitter.com/KevinTSayers'
 flag_image: 'team/united-states.svg'

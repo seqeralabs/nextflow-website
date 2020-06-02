@@ -58,7 +58,7 @@ process saveToFile{
 ## Second process
 For the next process we again define an input, this time it is the output from the previous step. Nextflow implicitly infers the task dependencies based on inputs and output, running this step only once the data from the `saveToFile` process is available. 
 
-```
+```groovy
 process wc{
 	echo true
 	input:

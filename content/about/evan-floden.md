@@ -1,5 +1,5 @@
 ---
-title: 'Evan Floden'
+title: 'Evan Floden, PhD'
 draft: false
 image: 'team/evan.png'
 jobtitle: 'Workflow Developer'

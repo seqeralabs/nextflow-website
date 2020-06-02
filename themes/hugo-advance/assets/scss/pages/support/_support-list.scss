@@ -15,16 +15,21 @@
       width: 120px;
     }
   }
+  .header-img {
+    img {
+      width: 60%;
+
+    }
+  }
   .support-box {
     max-width: 100%;
     img {
-      width: 100px;
-      height: 80px;
+      width: 60px;
+      height: 40px;
       max-width: 100%;
     }
-    
     div{
-      width: 700px;
+      width: 600px;
       max-width: 100%;
       align-content: left;
       border-bottom: 1px solid #28AE61;
