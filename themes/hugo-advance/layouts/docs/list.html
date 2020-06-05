@@ -19,7 +19,11 @@
     {{ range.Pages.ByWeight }}
     <div class="docs docs-summary">
       <div class="card">
-        <img class="docs-image" src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="Card image cap">
+        <!-- <img class="docs-image" src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="Card image cap"> -->
+        
+        <svg class="svg-image">
+            {{ readFile (path.Join "static/" .Params.image) | safeHTML }}
+        </svg>
         <div class="card-body">
           {{ if .Params.externalUrl }}
           <h2><a href="{{ .Params.externalUrl }}">{{ .Title }}</a></h2>

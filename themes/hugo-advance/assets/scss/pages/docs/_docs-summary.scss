@@ -20,6 +20,14 @@
     @include whitebox();
     width: 400px;
   }
+  .svg-image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    width: 80%;
+    stroke-width: 1%;
+    fill: #28AE61;
+  }
   .docs-title {
     font-family: $font-family-heading;
     font-size: 1.8rem;

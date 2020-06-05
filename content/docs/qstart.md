@@ -1,7 +1,7 @@
 ---
 title: 'Quickstart'
 type: 'docs'
-image: '/docs/qstart.svg'
+image: '/docs/dashboard.svg'
 url: '/quickstart/'
 weight: 1
 ---
