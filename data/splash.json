@@ -54,7 +54,6 @@
     "show" : true,
     "colour": "white",
     "points": "0,0 0,0 0,0",
-    "image":"/images/apache.svg",
     "heading":"100% Open-source",
     "subheading": "Free to use, modify & distribute.",
     "paragraph": "Licensed under the Apache software license 2.0."

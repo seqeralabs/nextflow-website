@@ -99,11 +99,6 @@ pygmentsOptions = "linenos=table"
     weight = 1 
 
 [[menu.main]]
-    name = "Learn"
-    url = "/learn/"
-    weight = 2
-
-[[menu.main]]
     identifier = "Docs"
     name = "Docs"
     url = "/docs/"
@@ -123,8 +118,8 @@ pygmentsOptions = "linenos=table"
 
 [[menu.main]]
     parent = "Docs"
-    name = "Edge"
-    url = "https://www.nextflow.io/docs/edge/index.html"
+    name = "Learn"
+    url = "/learn/"
     weight = 2
 
 [[menu.main]]
@@ -132,6 +127,13 @@ pygmentsOptions = "linenos=table"
     name = "Coding Patterns"
     url = "https://nextflow-io.github.io/patterns/index.html"
     weight = 3
+
+[[menu.main]]
+    parent = "Docs"
+    name = "Edge"
+    url = "https://www.nextflow.io/docs/edge/index.html"
+    weight = 2
+
 
 [[menu.main]]
     name = "Community"
