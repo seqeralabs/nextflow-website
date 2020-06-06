@@ -2,13 +2,18 @@
 {{ define "body_classes" }}event-summary{{ end }}
 {{ define "main" }}
 
+
+
 {{range where .Site.Pages "Type" "=" "why"}}
-<div class="intro intro-big pb-0"></div>
+<div class="intro intro-big pb-2">
   <div class="container">
     <div class="row">
       <div class="col-12">{{ .Content }}</div>
     </div>
-
+  </div>
+</div>
+<div>
+  <div class="container">
     <div class="row">
       {{range where .Site.Pages "Type" "=" "key_features"}}
       <div class="col-md-6 pb-2">
@@ -17,7 +22,6 @@
       </div>
       {{ end }}
     </div>
-
   </div>
 </div>
 {{end}}
