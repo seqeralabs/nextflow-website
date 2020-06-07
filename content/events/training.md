@@ -5,7 +5,7 @@ header: "Training & Hackathons"
 subheader: "Training events taught by Nextflow expert trainers."
 ---
 
-{{< small_card
+{{< event_card
   image="bcc2020.jpg" 
   alt_image_text="BCC 2020"
   card_title="BCC 2020" 
@@ -14,7 +14,7 @@ subheader: "Training events taught by Nextflow expert trainers."
   link="https://bcc2020.github.io/training/"
 >}}
 
-{{< small_card 
+{{< event_card 
   image="barcelona_1.jpg" 
   alt_image_text="Nextflow Training 2019"
   card_title="Nextflow Camp Training 2019" 
@@ -23,7 +23,7 @@ subheader: "Training events taught by Nextflow expert trainers."
   link="https://www.crg.eu/en/event/coursescrg-nextflow-2019"
 >}}
 
-{{< small_card
+{{< event_card
   image="lyon_1.jpg" 
   alt_image_text="Training at IARC"
   card_title="Training at IARC" 
@@ -32,7 +32,7 @@ subheader: "Training events taught by Nextflow expert trainers."
   link="https://www.canceropole-clara.com/agenda/formation-nextflow-reproducible-and-portable-bioinformatics-data-analyses/"
 >}}
 
-{{< small_card 
+{{< event_card 
   image="oslo_1.jpg" 
   alt_image_text="NVI Nextflow Training"
   card_title="NVI Nextflow Training" 
@@ -41,7 +41,7 @@ subheader: "Training events taught by Nextflow expert trainers."
   link="#"
 >}}
 
-{{< small_card
+{{< event_card
   image="perth_1.jpg" 
   alt_image_text="Pawsey Workshop 2019"
   card_title="Pawsey Workshop 2019" 
