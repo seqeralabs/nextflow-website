@@ -19,8 +19,6 @@
     {{ range.Pages.ByWeight }}
     <div class="docs docs-summary">
       <div class="card">
-        <!-- <img class="docs-image" src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="Card image cap"> -->
-        
         <svg class="svg-image">
             {{ if .Params.externalUrl }}
               <a href="{{ .Params.externalUrl }}">            
