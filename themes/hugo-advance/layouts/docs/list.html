@@ -22,7 +22,15 @@
         <!-- <img class="docs-image" src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="Card image cap"> -->
         
         <svg class="svg-image">
-            {{ readFile (path.Join "static/" .Params.image) | safeHTML }}
+            {{ if .Params.externalUrl }}
+              <a href="{{ .Params.externalUrl }}">            
+                {{ readFile (path.Join "static/" .Params.image) | safeHTML }}
+              </a>
+            {{ else }}
+              <a href="{{ .Permalink }}">
+                {{ readFile (path.Join "static/" .Params.image) | safeHTML }}
+              </a>
+            {{ end }}
         </svg>
         <div class="card-body">
           {{ if .Params.externalUrl }}
