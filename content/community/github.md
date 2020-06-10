@@ -2,7 +2,7 @@
 type: 'community_content'
 weight: 3
 ---
-{{< small_card
+{{< community_card
   image="github-logo.png" 
   alt_image_text="Github"
   card_title="Nextflow GitHub Issues" 

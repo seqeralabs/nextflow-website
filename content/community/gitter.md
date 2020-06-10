@@ -3,7 +3,7 @@ type: 'community_content'
 weight: 1
 ---
 
-{{< small_card 
+{{< community_card 
   image="gitter-logo.png" 
   alt_image_text="Gitter"
   card_title="Gitter Channel" 
