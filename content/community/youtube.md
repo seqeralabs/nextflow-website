@@ -7,5 +7,5 @@ weight: 3
   alt_image_text="YouTube"
   card_title="Nextflow YouTube Channel" 
   description="Watch previous Nextflow presentations."
-  link="https://github.com/nextflow-io/nextflow/issues"
+  link="https://www.youtube.com/channel/UCB-5LCKLdTKVn2F4V4KlPbQ"
 >}}

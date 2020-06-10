@@ -13,7 +13,7 @@
   </div>
 </div>
 {{end}}
-<div class="container pt-0 pb-2 pb-md-10 ">
+<div class="container pb-2">
   <div class="row justify-content-start">
       {{range where .Site.Pages "Type" "=" "community_content"}}
       <div class="community community-services">
@@ -27,13 +27,43 @@
 <div class="intro intro-small pb-0">
   <div class="container pt-0 pb-2 pb-md-2 ">
     <div class="row">
-        {{range where .Site.Pages "Type" "=" "contribs"}}
-          <div class="col-12">{{ .Content }}</div>
+        {{range where .Site.Pages "Type" "=" "community_twitter"}}
+          <div class="col-12">
+            {{ .Content }}
+            <a href="https://twitter.com/nextflowio?ref_src=twsrc%5Etfw" 
+            class="twitter-follow-button" data-show-count="false">Follow @nextflowio</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
         {{end}}
     </div>
   </div>
 </div>
+
+<div class="container pt-0 pb-5 pl-5">
+  <div class="row">
+    <div class="col-md-5">
+      <blockquote class="twitter-tweet">
+        <p lang="en" dir="ltr">I’m very excited to announce the release of Tower Launch for AWS Batch and Google Cloud LifeSciences along with 
+          a bunch of new features! Deployment of Nextflow pipelines couldn&#39;t be easier! 🎉🎉<a href="https://t.co/e8CrTSiJ1G">https://t.co/e8CrTSiJ1G</a> <a href="https://t.co/fyL4NFDCTJ">pic.twitter.com/fyL4NFDCTJ</a>
+        </p>&mdash; paoloditommaso (@PaoloDiTommaso) <a href="https://twitter.com/PaoloDiTommaso/status/1267827631992365059?ref_src=twsrc%5Etfw">June 2, 2020</a>
+        </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    </div>
+    <div class="col-md-5">
+      <blockquote class="twitter-tweet"><p lang="en" dir="ltr">We are extremely honoured that the Nextflow project and the <a href="https://twitter.com/nf_core?ref_src=twsrc%5Etfw">@nf_core</a> community have been awarded an EOSS grant from <a href="https://twitter.com/cziscience?ref_src=twsrc%5Etfw">@cziscience</a> to support further development of scientific workflows. 🙏🙏🎉🎉</p>&mdash; Nextflow (@nextflowio) <a href="https://twitter.com/nextflowio/status/1265677207806107648?ref_src=twsrc%5Etfw">May 27, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+      <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Awesome to see Nextflow featured into AWS Biotech Blueprint guides! Don&#39;t miss it! 🎉🎉<a href="https://t.co/2nDIhl1omb">https://t.co/2nDIhl1omb</a></p>&mdash; Nextflow (@nextflowio) <a href="https://twitter.com/nextflowio/status/1233400643706064897?ref_src=twsrc%5Etfw">February 28, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>     </div>
+    </div>
+</div>
+
+
+<div class="intro intro-small pb-0">
+  <div class="container pt-0 pb-2 pb-md-2 ">
+      {{range where .Site.Pages "Type" "=" "contribs"}}
+        <div class="col-12">{{ .Content }}</div>
+      {{end}}
+  </div>
+</div>
 <div class="community community-list">
+  <div class="intro intro-small pb-0">
     <div class="container pt-0 pb-5 pl-5">
       <div class="row justify-content-start">
         {{ range .Site.Data.contributors }}
@@ -45,6 +75,8 @@
         {{ end }}
       </div>
     </div>
+  </div>
+
 </div>
 
 
