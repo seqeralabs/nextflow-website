@@ -12,7 +12,9 @@
   .card:hover {
     svg{
       fill: #28AE61;
+      fill-opacity: 20%;
     }
+    border: 5px;
 
   }
 

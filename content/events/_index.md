@@ -7,7 +7,7 @@ featured: true
 weight: 1
 ---
 
-# Events and training opportunities.
+# Events and training opportunities
 
 Looking to get up to speed fast with Nextflow or require support for your teams production pipelines? 
 
