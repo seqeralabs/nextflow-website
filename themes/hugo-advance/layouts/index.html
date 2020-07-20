@@ -20,34 +20,17 @@
 <!-- Hero Image Partial-->
 {{ partial "hero-image-index.html" (dict "background" .Params.heroBackground "fullscreen" .Params.heroFullscreen "height" .Params.heroHeight "heading" .Params.heroHeading "subheading" .Params.heroSubheading "overlay" .Params.heroBackgroundOverlay "diagonal" .Params.heroDiagonal "diagonalfill" .Params.heroDiagonalFill) }}
 
-
-<!-- Spash features (Content: data/splash.json ) -->
-{{ range .Site.Data.splash }}
-  <div class="strip strip-{{ .colour }} pt-8 pb-8 splash">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 ">
-          {{if not (modBool .title 2)}} <img class="img-fluid" src="{{ .image }}" />
-          {{ else }} <h2 class="right-align">{{ .heading }}</h2>
-                     <p class="xlarge right-align" style="color:#28AE61">{{ .subheading }}</p>
-                     <p class="large right-align">{{ .paragraph }}</p>
-          {{ end }}
-        </div>
-        <div class="col-12  col-md-6">
-          {{if (modBool .title 2)}} <img class="img-fluid" src="{{ .image }}" />
-          {{ else }} <h2>{{ .heading }}</h2> 
-                     <p class="xlarge" style="color:#28AE61">{{ .subheading }}</p>
-                     <p class="large">{{ .paragraph }}</p>
-          {{ end }}
-        </div>
+{{range where .Site.Pages "Type" "=" "home_content"}}
+<div class="container">
+  <div class="row justify-content-start">
+      <div class="home-box">
+        <img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="nf main image">
+        <div class="content">{{.Content}}</div>
       </div>
     </div>
-  </div>
-  <svg class="hero-diagonal" aria-hidden="true" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 10" preserveAspectRatio="none">
-    <polygon fill="#F0F0F0" points="{{ .points }}"/>
-  </svg>
-  </div>
-{{ end }}
+</div>
+{{end}}
+
 
 <!-- Getting started partial (Content: config.toml, Template: layouts/patials/install.html) -->
 {{ partial "install.html" . }}

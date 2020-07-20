@@ -92,28 +92,48 @@ pygmentsOptions = "linenos=table"
         url = "https://github.com/nextflow-io/nextflow"
 
 # Main Menu
+
 [[menu.main]]
-    name = "Learn"
-    url = "/learn/"
-    weight = 1
+    name = "Why Nextflow"
+    url = "/why/"
+    weight = 1 
 
 [[menu.main]]
     identifier = "Docs"
     name = "Docs"
-    url = "/docs/latest/"
+    url = "/docs/"
     weight = 2
 
 [[menu.main]]
     parent = "Docs"
-    name = "Reference"
-    url = "/docs/latest/"
+    name = "Quick start"
+    url = "/quickstart"
     weight = 1
 
 [[menu.main]]
     parent = "Docs"
-    name = "Edge"
-    url = "/docs/edge/"
+    name = "Reference"
+    url = "https://www.nextflow.io/docs/latest/index.html"
+    weight = 1
+
+[[menu.main]]
+    parent = "Docs"
+    name = "Learn"
+    url = "/learn/"
     weight = 2
+
+[[menu.main]]
+    parent = "Docs"
+    name = "Coding Patterns"
+    url = "https://nextflow-io.github.io/patterns/index.html"
+    weight = 3
+
+[[menu.main]]
+    parent = "Docs"
+    name = "Edge"
+    url = "https://www.nextflow.io/docs/edge/index.html"
+    weight = 2
+
 
 [[menu.main]]
     name = "Community"
@@ -171,12 +191,6 @@ pygmentsOptions = "linenos=table"
     name = "About"
     url = "/about/"
     weight = 6
-
-# Footer Menu Secondary
-[[menu.footer_secondary]]
-    name = "Privacy Policy"
-    url = "/privacy/"
-    weight = 1
 
 [[menu.footer_secondary]]
     name = "404"

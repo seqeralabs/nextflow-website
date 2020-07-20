@@ -1,0 +1,38 @@
+.support-list {
+  .support-image {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: auto;
+    padding-left: auto;
+
+    float: left;
+    width: 50%;
+    @include media-breakpoint-up(md) {
+      text-align: center;
+      padding-right: 20px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 120px;
+    }
+  }
+  .header-img {
+    img {
+      width: 60%;
+
+    }
+  }
+  .support-box {
+    max-width: 100%;
+    img {
+      width: 60px;
+      height: 40px;
+      max-width: 100%;
+    }
+    div{
+      width: 600px;
+      max-width: 100%;
+      align-content: left;
+      border-bottom: 1px solid #28AE61;
+    }
+  }
+}

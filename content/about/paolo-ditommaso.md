@@ -5,6 +5,7 @@ image: 'team/paolo.png'
 jobtitle: 'Project Lead'
 linkedin_url: 'https://www.linkedin.com/in/paoloditommaso/'
 twitter_url: 'https://twitter.com/PaoloDiTommaso'
+github_url: 'https://github.com/pditommaso'
 flag_image: 'team/italy.svg'
 weight: 1
 type: 'team'

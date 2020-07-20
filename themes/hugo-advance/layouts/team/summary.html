@@ -23,16 +23,12 @@
             <i class="fab fa-twitter-square"></i>
         </a> 
       {{ end }}
-      {{ if .Params.dribble_url }}
-        <a class="team-linkedin" target="_blank" href="{{ .Params.dribble_url }}">
-            <i class="fab fa-dribbble-square"></i>
-        </a> 
-      {{ end }}
-      {{ if .Params.behance_url }}
-        <a class="team-linkedin" target="_blank" href="{{ .Params.behance_url }}">
-            <i class="fab fa-behance-square"></i>
-        </a> 
-      {{ end }}
+      {{ if .Params.github_url }}
+      <a class="team-linkedin" target="_blank" href="{{ .Params.github_url }}">
+          <i class="fab fa-github-square"></i>
+      </a> 
+    {{ end }}
+
 
       </div>
     </div>
